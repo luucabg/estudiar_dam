@@ -1,0 +1,465 @@
+{
+  "slug": "gestion_empresarial",
+  "asignatura": "Sistemas de gestión empresarial",
+  "dificultad": "media",
+  "prioridad": "media-alta",
+  "configuracion_examen": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "resumen_para_novato": "ERP, CRM y Odoo. Muy de definiciones: Odoo usa PostgreSQL, modelo es clase Python, parametrizar es configurar.",
+  "conceptos_memorizar_literal": [
+    {
+      "concepto": "ERP",
+      "respuesta": "Integra departamentos."
+    },
+    {
+      "concepto": "CRM",
+      "respuesta": "Clientes."
+    },
+    {
+      "concepto": "Odoo",
+      "respuesta": "ERP modular."
+    },
+    {
+      "concepto": "PostgreSQL",
+      "respuesta": "BD de Odoo."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "tema": "crm",
+      "probabilidad": "alta",
+      "pregunta": "¿Objetivo principal de un CRM?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Gestionar la relación con clientes"
+      ],
+      "respuesta_correcta": "Gestionar la relación con clientes",
+      "explicacion": "Gestionar la relación con clientes"
+    },
+    {
+      "id": 2,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Riesgo en migración de datos ERP?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Pérdida o degradación de calidad de datos",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Pérdida o degradación de calidad de datos",
+      "explicacion": "Pérdida o degradación de calidad de datos"
+    },
+    {
+      "id": 3,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Impacto de automatizar procesos contables?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Reduce errores manuales y acelera operaciones",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Reduce errores manuales y acelera operaciones",
+      "explicacion": "Reduce errores manuales y acelera operaciones"
+    },
+    {
+      "id": 4,
+      "tema": "implantacion",
+      "probabilidad": "alta",
+      "pregunta": "¿Primera fase crítica de implantación ERP?",
+      "opciones": [
+        "Análisis de requisitos y planificación",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Análisis de requisitos y planificación",
+      "explicacion": "Análisis de requisitos y planificación"
+    },
+    {
+      "id": 5,
+      "tema": "odoo",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué base de datos usa Odoo?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "PostgreSQL"
+      ],
+      "respuesta_correcta": "PostgreSQL",
+      "explicacion": "PostgreSQL"
+    },
+    {
+      "id": 6,
+      "tema": "arquitectura",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es SOA?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Arquitectura basada en servicios independientes",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Arquitectura basada en servicios independientes",
+      "explicacion": "Arquitectura basada en servicios independientes"
+    },
+    {
+      "id": 7,
+      "tema": "odoo",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es un modelo en Odoo?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Clase Python que define un objeto de negocio",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Clase Python que define un objeto de negocio",
+      "explicacion": "Clase Python que define un objeto de negocio"
+    },
+    {
+      "id": 8,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa parametrizar un ERP?",
+      "opciones": [
+        "Configurar sin modificar código fuente",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Configurar sin modificar código fuente",
+      "explicacion": "Configurar sin modificar código fuente"
+    },
+    {
+      "id": 9,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Diferencia de ERP actuales frente a heredados?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Integración en tiempo real entre departamentos"
+      ],
+      "respuesta_correcta": "Integración en tiempo real entre departamentos",
+      "explicacion": "Integración en tiempo real entre departamentos"
+    },
+    {
+      "id": 10,
+      "tema": "odoo",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja de Odoo Studio?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Personalizar sin requerir programación avanzada",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Personalizar sin requerir programación avanzada",
+      "explicacion": "Personalizar sin requerir programación avanzada"
+    },
+    {
+      "id": 11,
+      "tema": "odoo",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué ejecuta lógica de negocio en Odoo?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Servidor de aplicaciones o backend",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Servidor de aplicaciones o backend",
+      "explicacion": "Servidor de aplicaciones o backend"
+    },
+    {
+      "id": 12,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué aporta modularidad ERP?",
+      "opciones": [
+        "Instalar solo módulos necesarios y crecer progresivamente",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Instalar solo módulos necesarios y crecer progresivamente",
+      "explicacion": "Instalar solo módulos necesarios y crecer progresivamente"
+    },
+    {
+      "id": 13,
+      "tema": "crm",
+      "probabilidad": "alta",
+      "pregunta": "¿Actividad propia de CRM?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Registrar interacciones y preferencias de clientes"
+      ],
+      "respuesta_correcta": "Registrar interacciones y preferencias de clientes",
+      "explicacion": "Registrar interacciones y preferencias de clientes"
+    },
+    {
+      "id": 14,
+      "tema": "odoo",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es ORM en Odoo?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Mapeo entre modelos Python y tablas de BD",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Mapeo entre modelos Python y tablas de BD",
+      "explicacion": "Mapeo entre modelos Python y tablas de BD"
+    },
+    {
+      "id": 15,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué beneficio da diseño modular?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Adaptar la solución seleccionando módulos necesarios",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Adaptar la solución seleccionando módulos necesarios",
+      "explicacion": "Adaptar la solución seleccionando módulos necesarios"
+    },
+    {
+      "id": 16,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es un ERP?",
+      "opciones": [
+        "Sistema que integra procesos empresariales",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Sistema que integra procesos empresariales",
+      "explicacion": "Sistema que integra procesos empresariales"
+    },
+    {
+      "id": 17,
+      "tema": "crm",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa CRM?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Customer Relationship Management"
+      ],
+      "respuesta_correcta": "Customer Relationship Management",
+      "explicacion": "Customer Relationship Management"
+    },
+    {
+      "id": 18,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué módulo gestiona stock?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Inventario",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Inventario",
+      "explicacion": "Inventario"
+    },
+    {
+      "id": 19,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué módulo gestiona facturas?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Contabilidad",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Contabilidad",
+      "explicacion": "Contabilidad"
+    },
+    {
+      "id": 20,
+      "tema": "low_code",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es low-code?",
+      "opciones": [
+        "Desarrollo con poco código usando herramientas visuales",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Desarrollo con poco código usando herramientas visuales",
+      "explicacion": "Desarrollo con poco código usando herramientas visuales"
+    },
+    {
+      "id": 21,
+      "tema": "no_code",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es no-code?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Crear soluciones sin escribir código"
+      ],
+      "respuesta_correcta": "Crear soluciones sin escribir código",
+      "explicacion": "Crear soluciones sin escribir código"
+    },
+    {
+      "id": 22,
+      "tema": "implantacion",
+      "probabilidad": "alta",
+      "pregunta": "¿Por qué hacer pruebas antes de activar ERP?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Para detectar errores antes de producción",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Para detectar errores antes de producción",
+      "explicacion": "Para detectar errores antes de producción"
+    },
+    {
+      "id": 23,
+      "tema": "datos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es integridad de datos?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Datos correctos, coherentes y completos",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Datos correctos, coherentes y completos",
+      "explicacion": "Datos correctos, coherentes y completos"
+    },
+    {
+      "id": 24,
+      "tema": "odoo",
+      "probabilidad": "alta",
+      "pregunta": "¿Lenguaje principal para modelos Odoo?",
+      "opciones": [
+        "Python",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Python",
+      "explicacion": "Python"
+    },
+    {
+      "id": 25,
+      "tema": "odoo",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué define un campo en Odoo?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Dato o atributo del objeto de negocio"
+      ],
+      "respuesta_correcta": "Dato o atributo del objeto de negocio",
+      "explicacion": "Dato o atributo del objeto de negocio"
+    },
+    {
+      "id": 26,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es personalización mediante código?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Ampliar funcionalidad programando",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Ampliar funcionalidad programando",
+      "explicacion": "Ampliar funcionalidad programando"
+    },
+    {
+      "id": 27,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Por qué formar usuarios en ERP?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Reduce errores y mejora adopción",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Reduce errores y mejora adopción",
+      "explicacion": "Reduce errores y mejora adopción"
+    },
+    {
+      "id": 28,
+      "tema": "integracion",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué facilita una API en ERP?",
+      "opciones": [
+        "Conectar el ERP con otros sistemas",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Conectar el ERP con otros sistemas",
+      "explicacion": "Conectar el ERP con otros sistemas"
+    },
+    {
+      "id": 29,
+      "tema": "soa",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja de SOA?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Interoperabilidad y flexibilidad"
+      ],
+      "respuesta_correcta": "Interoperabilidad y flexibilidad",
+      "explicacion": "Interoperabilidad y flexibilidad"
+    },
+    {
+      "id": 30,
+      "tema": "erp",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué pasa con ERP sin análisis previo?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Aumentan riesgos de sobrecostes, retrasos y fallos",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Aumentan riesgos de sobrecostes, retrasos y fallos",
+      "explicacion": "Aumentan riesgos de sobrecostes, retrasos y fallos"
+    }
+  ],
+  "tips_examen": [
+    "Clientes = CRM. Departamentos = ERP. Modelo Odoo = clase Python. Parametrizar = configurar sin código."
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "slug": "itp",
+  "asignatura": "Itinerario personal para la empleabilidad 2",
+  "dificultad": "media-baja",
+  "prioridad": "media",
+  "configuracion_examen": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "resumen_para_novato": "Contratos, entrevistas, CV, LinkedIn y empleabilidad. Muy de memorizar plazos y tipos de contrato.",
+  "conceptos_memorizar_literal": [
+    {
+      "concepto": "SEPE",
+      "respuesta": "10 días."
+    },
+    {
+      "concepto": "Fijo-discontinuo",
+      "respuesta": "Indefinido estacional."
+    },
+    {
+      "concepto": "Networking",
+      "respuesta": "Relaciones profesionales."
+    },
+    {
+      "concepto": "Antigüedad",
+      "respuesta": "No es elemento esencial."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Contrato de inserción laboral con formación?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Contrato formativo"
+      ],
+      "respuesta_correcta": "Contrato formativo",
+      "explicacion": "Contrato formativo"
+    },
+    {
+      "id": 2,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Modalidad usada en campañas agrícolas?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Fijo-discontinuo",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Fijo-discontinuo",
+      "explicacion": "Fijo-discontinuo"
+    },
+    {
+      "id": 3,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Duración general del contrato por circunstancias de producción?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "6 meses ampliables a 12 por convenio",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "6 meses ampliables a 12 por convenio",
+      "explicacion": "6 meses ampliables a 12 por convenio"
+    },
+    {
+      "id": 4,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué contrato favorece estabilidad?",
+      "opciones": [
+        "Indefinido",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Indefinido",
+      "explicacion": "Indefinido"
+    },
+    {
+      "id": 5,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué elemento NO es esencial en contrato?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Antigüedad"
+      ],
+      "respuesta_correcta": "Antigüedad",
+      "explicacion": "Antigüedad"
+    },
+    {
+      "id": 6,
+      "tema": "seleccion",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja de entrevista estructurada?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Aumenta la objetividad",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Aumenta la objetividad",
+      "explicacion": "Aumenta la objetividad"
+    },
+    {
+      "id": 7,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Cuál es contrato formativo?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Contrato de formación en alternancia",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Contrato de formación en alternancia",
+      "explicacion": "Contrato de formación en alternancia"
+    },
+    {
+      "id": 8,
+      "tema": "seguridad_social",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué pasa si no hay alta en Seguridad Social?",
+      "opciones": [
+        "El contrato se presume indefinido",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "El contrato se presume indefinido",
+      "explicacion": "El contrato se presume indefinido"
+    },
+    {
+      "id": 9,
+      "tema": "empleabilidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué define networking?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Crear relaciones profesionales"
+      ],
+      "respuesta_correcta": "Crear relaciones profesionales",
+      "explicacion": "Crear relaciones profesionales"
+    },
+    {
+      "id": 10,
+      "tema": "seleccion",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es prueba psicométrica?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Mide inteligencia, personalidad o capacidad emocional",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Mide inteligencia, personalidad o capacidad emocional",
+      "explicacion": "Mide inteligencia, personalidad o capacidad emocional"
+    },
+    {
+      "id": 11,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Para qué se usa contrato de sustitución?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Sustituir a trabajador con reserva del puesto",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Sustituir a trabajador con reserva del puesto",
+      "explicacion": "Sustituir a trabajador con reserva del puesto"
+    },
+    {
+      "id": 12,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué sustituye al antiguo obra o servicio?",
+      "opciones": [
+        "Contrato por circunstancias de la producción",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Contrato por circunstancias de la producción",
+      "explicacion": "Contrato por circunstancias de la producción"
+    },
+    {
+      "id": 13,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué documento se entrega junto al contrato?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Copia básica del contrato"
+      ],
+      "respuesta_correcta": "Copia básica del contrato",
+      "explicacion": "Copia básica del contrato"
+    },
+    {
+      "id": 14,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "Durante periodo de prueba, ¿quién puede extinguir?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Cualquiera de las partes",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Cualquiera de las partes",
+      "explicacion": "Cualquiera de las partes"
+    },
+    {
+      "id": 15,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Dónde se regulan modalidades de contratación?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Estatuto de los Trabajadores",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Estatuto de los Trabajadores",
+      "explicacion": "Estatuto de los Trabajadores"
+    },
+    {
+      "id": 16,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "Finalidad de formación en alternancia",
+      "opciones": [
+        "Compatibilizar trabajo y formación",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Compatibilizar trabajo y formación",
+      "explicacion": "Compatibilizar trabajo y formación"
+    },
+    {
+      "id": 17,
+      "tema": "sepe",
+      "probabilidad": "alta",
+      "pregunta": "¿Quién comunica contrato al SEPE?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "El empresario"
+      ],
+      "respuesta_correcta": "El empresario",
+      "explicacion": "El empresario"
+    },
+    {
+      "id": 18,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es periodo de prueba?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Tiempo inicial para comprobar idoneidad",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Tiempo inicial para comprobar idoneidad",
+      "explicacion": "Tiempo inicial para comprobar idoneidad"
+    },
+    {
+      "id": 19,
+      "tema": "empleabilidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué plataforma filtra ofertas por sector o ubicación?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "LinkedIn",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "LinkedIn",
+      "explicacion": "LinkedIn"
+    },
+    {
+      "id": 20,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Forma habitual del contrato?",
+      "opciones": [
+        "Escrita o verbal, salvo excepciones",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Escrita o verbal, salvo excepciones",
+      "explicacion": "Escrita o verbal, salvo excepciones"
+    },
+    {
+      "id": 21,
+      "tema": "seleccion",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué pide entrevista por competencias?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Situaciones pasadas y conductas reales"
+      ],
+      "respuesta_correcta": "Situaciones pasadas y conductas reales",
+      "explicacion": "Situaciones pasadas y conductas reales"
+    },
+    {
+      "id": 22,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Cuál es contrato indefinido?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Fijo-discontinuo",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Fijo-discontinuo",
+      "explicacion": "Fijo-discontinuo"
+    },
+    {
+      "id": 23,
+      "tema": "empleabilidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué caracteriza carta de presentación efectiva?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Estar personalizada para cada empresa",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Estar personalizada para cada empresa",
+      "explicacion": "Estar personalizada para cada empresa"
+    },
+    {
+      "id": 24,
+      "tema": "sepe",
+      "probabilidad": "alta",
+      "pregunta": "¿Plazo de comunicación al SEPE?",
+      "opciones": [
+        "10 días",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "10 días",
+      "explicacion": "10 días"
+    },
+    {
+      "id": 25,
+      "tema": "linkedin",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué mejora perfil de LinkedIn?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Publicar contenido relevante y participar en grupos"
+      ],
+      "respuesta_correcta": "Publicar contenido relevante y participar en grupos",
+      "explicacion": "Publicar contenido relevante y participar en grupos"
+    },
+    {
+      "id": 26,
+      "tema": "herramientas",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja de Trello o Asana?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Facilitan coordinación y control de tareas",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Facilitan coordinación y control de tareas",
+      "explicacion": "Facilitan coordinación y control de tareas"
+    },
+    {
+      "id": 27,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué contrato no tiene límite de duración?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Indefinido",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Indefinido",
+      "explicacion": "Indefinido"
+    },
+    {
+      "id": 28,
+      "tema": "contratos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué sustituye al contrato en prácticas?",
+      "opciones": [
+        "Contrato para obtención de práctica profesional",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Contrato para obtención de práctica profesional",
+      "explicacion": "Contrato para obtención de práctica profesional"
+    },
+    {
+      "id": 29,
+      "tema": "emprendimiento",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué busca Design Thinking?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Resolver problemas centrados en el usuario"
+      ],
+      "respuesta_correcta": "Resolver problemas centrados en el usuario",
+      "explicacion": "Resolver problemas centrados en el usuario"
+    },
+    {
+      "id": 30,
+      "tema": "empleabilidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es marca personal?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Imagen profesional que proyectas",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Imagen profesional que proyectas",
+      "explicacion": "Imagen profesional que proyectas"
+    }
+  ],
+  "tips_examen": [
+    "10 días = SEPE. 6 meses ampliables a 12 = circunstancias de producción. Fijo-discontinuo = indefinido."
+  ]
+}

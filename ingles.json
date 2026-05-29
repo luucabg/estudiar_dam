@@ -1,0 +1,465 @@
+{
+  "slug": "ingles",
+  "asignatura": "Inglés",
+  "dificultad": "variable",
+  "prioridad": "media",
+  "configuracion_examen": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "resumen_para_novato": "Vocabulario profesional, llamadas, emails y reuniones. Lo más útil es memorizar frases comunes.",
+  "conceptos_memorizar_literal": [
+    {
+      "concepto": "job",
+      "respuesta": "Puesto concreto."
+    },
+    {
+      "concepto": "work",
+      "respuesta": "Trabajo general."
+    },
+    {
+      "concepto": "I agree",
+      "respuesta": "Correcto, no I am agree."
+    },
+    {
+      "concepto": "Best regards",
+      "respuesta": "Cierre formal."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa job normalmente?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Puesto o empleo concreto"
+      ],
+      "respuesta_correcta": "Puesto o empleo concreto",
+      "explicacion": "Puesto o empleo concreto"
+    },
+    {
+      "id": 2,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa work normalmente?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Trabajo en general o lugar de trabajo",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Trabajo en general o lugar de trabajo",
+      "explicacion": "Trabajo en general o lugar de trabajo"
+    },
+    {
+      "id": 3,
+      "tema": "telefono",
+      "probabilidad": "alta",
+      "pregunta": "¿Frase para pedir hablar con alguien?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Could I speak to...?",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Could I speak to...?",
+      "explicacion": "Could I speak to...?"
+    },
+    {
+      "id": 4,
+      "tema": "telefono",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa Can I take a message?",
+      "opciones": [
+        "¿Puedo tomar un mensaje?",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "¿Puedo tomar un mensaje?",
+      "explicacion": "¿Puedo tomar un mensaje?"
+    },
+    {
+      "id": 5,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Frase para pedir aclaración?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Could you clarify that?"
+      ],
+      "respuesta_correcta": "Could you clarify that?",
+      "explicacion": "Could you clarify that?"
+    },
+    {
+      "id": 6,
+      "tema": "email",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué cierre es formal?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Best regards",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Best regards",
+      "explicacion": "Best regards"
+    },
+    {
+      "id": 7,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Frase para dar opinión?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "In my opinion...",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "In my opinion...",
+      "explicacion": "In my opinion..."
+    },
+    {
+      "id": 8,
+      "tema": "gramatica",
+      "probabilidad": "alta",
+      "pregunta": "¿Cuál expresa acuerdo correctamente?",
+      "opciones": [
+        "I agree",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "I agree",
+      "explicacion": "I agree"
+    },
+    {
+      "id": 9,
+      "tema": "telefono",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué tema corresponde a telephoning?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Contestar llamadas y dejar mensajes"
+      ],
+      "respuesta_correcta": "Contestar llamadas y dejar mensajes",
+      "explicacion": "Contestar llamadas y dejar mensajes"
+    },
+    {
+      "id": 10,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué tema corresponde a meetings?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Participar en reuniones",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Participar en reuniones",
+      "explicacion": "Participar en reuniones"
+    },
+    {
+      "id": 11,
+      "tema": "email",
+      "probabilidad": "alta",
+      "pregunta": "¿Inicio formal si no conoces el nombre?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Dear Sir or Madam",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Dear Sir or Madam",
+      "explicacion": "Dear Sir or Madam"
+    },
+    {
+      "id": 12,
+      "tema": "telefono",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa I'm calling about...?",
+      "opciones": [
+        "Llamo por...",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Llamo por...",
+      "explicacion": "Llamo por..."
+    },
+    {
+      "id": 13,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Frase para discrepar?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "I disagree"
+      ],
+      "respuesta_correcta": "I disagree",
+      "explicacion": "I disagree"
+    },
+    {
+      "id": 14,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Frase para interrumpir educadamente?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Sorry to interrupt, but...",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Sorry to interrupt, but...",
+      "explicacion": "Sorry to interrupt, but..."
+    },
+    {
+      "id": 15,
+      "tema": "email",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa Please find attached...?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Adjunto...",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Adjunto...",
+      "explicacion": "Adjunto..."
+    },
+    {
+      "id": 16,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa employee?",
+      "opciones": [
+        "Empleado",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Empleado",
+      "explicacion": "Empleado"
+    },
+    {
+      "id": 17,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa employer?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Empleador o empresa que contrata"
+      ],
+      "respuesta_correcta": "Empleador o empresa que contrata",
+      "explicacion": "Empleador o empresa que contrata"
+    },
+    {
+      "id": 18,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa salary?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Salario",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Salario",
+      "explicacion": "Salario"
+    },
+    {
+      "id": 19,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa deadline?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Fecha límite",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Fecha límite",
+      "explicacion": "Fecha límite"
+    },
+    {
+      "id": 20,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Frase para resumir?",
+      "opciones": [
+        "To sum up...",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "To sum up...",
+      "explicacion": "To sum up..."
+    },
+    {
+      "id": 21,
+      "tema": "telefono",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa Hold on, please?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Espere, por favor"
+      ],
+      "respuesta_correcta": "Espere, por favor",
+      "explicacion": "Espere, por favor"
+    },
+    {
+      "id": 22,
+      "tema": "email",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa I look forward to hearing from you?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Espero recibir noticias suyas",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Espero recibir noticias suyas",
+      "explicacion": "Espero recibir noticias suyas"
+    },
+    {
+      "id": 23,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa apply for a job?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Solicitar un empleo",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Solicitar un empleo",
+      "explicacion": "Solicitar un empleo"
+    },
+    {
+      "id": 24,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa CV o resume?",
+      "opciones": [
+        "Currículum",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Currículum",
+      "explicacion": "Currículum"
+    },
+    {
+      "id": 25,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa agenda en una reunión?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Orden del día"
+      ],
+      "respuesta_correcta": "Orden del día",
+      "explicacion": "Orden del día"
+    },
+    {
+      "id": 26,
+      "tema": "telefono",
+      "probabilidad": "alta",
+      "pregunta": "¿Frase para pasar una llamada?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "I'll put you through",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "I'll put you through",
+      "explicacion": "I'll put you through"
+    },
+    {
+      "id": 27,
+      "tema": "email",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué frase es más formal?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "I would like to...",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "I would like to...",
+      "explicacion": "I would like to..."
+    },
+    {
+      "id": 28,
+      "tema": "reuniones",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa Could you repeat that?",
+      "opciones": [
+        "¿Podrías repetir eso?",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "¿Podrías repetir eso?",
+      "explicacion": "¿Podrías repetir eso?"
+    },
+    {
+      "id": 29,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa colleague?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Compañero de trabajo"
+      ],
+      "respuesta_correcta": "Compañero de trabajo",
+      "explicacion": "Compañero de trabajo"
+    },
+    {
+      "id": 30,
+      "tema": "vocabulario",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa full-time job?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Trabajo a jornada completa",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Trabajo a jornada completa",
+      "explicacion": "Trabajo a jornada completa"
+    }
+  ],
+  "tips_examen": [
+    "job = puesto. work = trabajo general. I agree, no I am agree."
+  ]
+}

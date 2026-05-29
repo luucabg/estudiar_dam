@@ -16,7 +16,16 @@ import {
   Target,
   X,
 } from "lucide-react"
-import studyInfo from "@/info.json"
+import accesoDatosData from "@/acceso_datos.json"
+import desarrolloInterfacesData from "@/desarrollo_interfaces.json"
+import digitalizacionData from "@/digitalizacion.json"
+import gestionEmpresarialData from "@/gestion_empresarial.json"
+import inglesData from "@/ingles.json"
+import studyPack from "@/index.json"
+import itpData from "@/itp.json"
+import multimediaData from "@/multimedia_dispositivos_moviles.json"
+import pspData from "@/psp.json"
+import sostenibilidadData from "@/sostenibilidad.json"
 
 export type Subject = {
   id: string
@@ -31,6 +40,7 @@ export type Subject = {
   likely?: string[]
   cheatSheet?: string[]
   probableQuestions?: ProbableQuestion[]
+  probableQuestionsTitle?: string
 }
 
 export type TheorySection = {
@@ -1747,6 +1757,12 @@ type CourseConfig = {
   kicker: string
   description: string
   subjects: Subject[]
+  exam?: {
+    format: string
+    questionCount: number
+    penalty: string
+    strategy: string[]
+  }
 }
 
 const secondDamAccents = [
@@ -1773,33 +1789,43 @@ const firstDamSubjects: Subject[] = subjects.map((subject, index) => ({
   })),
 }))
 
-const secondDamSubjects: Subject[] = studyInfo.asignaturas.map((subject, index) => ({
-  id: slugify(subject.nombre),
-  name: subject.nombre,
-  icon: getInitials(subject.nombre),
+const secondDamData = [
+  pspData,
+  accesoDatosData,
+  multimediaData,
+  desarrolloInterfacesData,
+  gestionEmpresarialData,
+  digitalizacionData,
+  sostenibilidadData,
+  itpData,
+  inglesData,
+]
+
+const secondDamSubjects: Subject[] = secondDamData.map((subject, index) => ({
+  id: subject.slug,
+  name: subject.asignatura,
+  icon: getInitials(subject.asignatura),
   color: "",
   accent: secondDamAccents[index % secondDamAccents.length],
   difficulty: subject.dificultad,
   priority: subject.prioridad,
-  likely: subject.lo_que_mas_probablemente_sale,
-  cheatSheet: subject.chuleta,
-  probableQuestions: subject.preguntas_muy_probables,
+  probableQuestionsTitle: "Conceptos a memorizar",
+  probableQuestions: subject.conceptos_memorizar_literal.map((item) => ({
+    pregunta: item.concepto,
+    respuesta: item.respuesta,
+  })),
   theory: [
     {
-      title: "Temario super resumido",
-      content: subject.temario_super_resumido,
+      title: "Resumen para novato",
+      content: [subject.resumen_para_novato],
     },
     {
-      title: "Lo que más probablemente sale",
-      content: subject.lo_que_mas_probablemente_sale,
-    },
-    {
-      title: "Chuleta",
-      content: subject.chuleta,
+      title: "Tips de examen",
+      content: subject.tips_examen,
     },
   ],
-  questions: subject.preguntas_tipo_test.map((question, questionIndex) => ({
-    id: questionIndex + 1,
+  questions: subject.preguntas.map((question) => ({
+    id: question.id,
     question: question.pregunta,
     options: question.opciones,
     correctAnswer: Math.max(question.opciones.indexOf(question.respuesta_correcta), 0),
@@ -1819,9 +1845,20 @@ const courses: Record<CourseId, CourseConfig> = {
     id: "2dam",
     title: "2 DAM",
     kicker: "Segundo curso",
-    description: studyInfo.objetivo,
+    description: studyPack.descripcion,
     subjects: secondDamSubjects,
+    exam: {
+      format: studyPack.pack.toLowerCase().includes("tipo test") ? "Tipo test" : "Test",
+      questionCount: studyPack.configuracion_examen_general.numero_preguntas,
+      penalty: formatPenalty(studyPack.configuracion_examen_general.puntuacion.incorrecta),
+      strategy: studyPack.configuracion_examen_general.estrategia,
+    },
   },
+}
+
+function formatPenalty(value: number) {
+  if (Math.abs(value + 1 / 3) < 0.0001) return "Fallo: -1/3"
+  return `Fallo: ${value}`
 }
 
 function slugify(value: string) {
@@ -2025,14 +2062,14 @@ function SubjectBrowser({
         <Metric
           icon={<Target aria-hidden="true" />}
           label={course.id === "2dam" ? "Formato" : "Modo"}
-          value={course.id === "2dam" ? studyInfo.contexto_examen.formato : "Repaso"}
+          value={course.exam?.format ?? "Repaso"}
         />
       </div>
 
-      {course.id === "2dam" && (
+      {course.exam && (
         <div className="exam-strip">
-          <span>{studyInfo.contexto_examen.preguntas_aproximadas} preguntas aprox.</span>
-          <span>{studyInfo.contexto_examen.penalizacion}</span>
+          <span>{course.exam.questionCount} preguntas</span>
+          <span>{course.exam.penalty}</span>
         </div>
       )}
 
@@ -2067,14 +2104,14 @@ function SubjectBrowser({
         ))}
       </div>
 
-      {course.id === "2dam" && (
+      {course.exam && (
         <details className="study-section compact">
           <summary>
             <Sparkles aria-hidden="true" />
             Estrategia
           </summary>
           <ul>
-            {studyInfo.contexto_examen.estrategia.map((item) => (
+            {course.exam.strategy.map((item) => (
               <li key={item}>{item}</li>
             ))}
           </ul>
@@ -2137,7 +2174,7 @@ function SubjectStudy({
           <details className="study-section">
             <summary>
               <Target aria-hidden="true" />
-              Preguntas muy probables
+              {subject.probableQuestionsTitle ?? "Preguntas muy probables"}
             </summary>
             <div className="qa-list">
               {subject.probableQuestions.map((item) => (

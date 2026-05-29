@@ -1,0 +1,497 @@
+{
+  "slug": "psp",
+  "asignatura": "Programación de servicios y procesos",
+  "dificultad": "alta",
+  "prioridad": "muy alta",
+  "configuracion_examen": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "resumen_para_novato": "Hilos, procesos, concurrencia, sockets, TCP/UDP, servicios y seguridad. Lo clave es distinguir conceptos parecidos: start/run, wait/sleep, TCP/UDP, deadlock/starvation.",
+  "conceptos_memorizar_literal": [
+    {
+      "concepto": "Proceso",
+      "respuesta": "Programa en ejecución."
+    },
+    {
+      "concepto": "Hilo",
+      "respuesta": "Unidad de ejecución dentro de un proceso."
+    },
+    {
+      "concepto": "start()",
+      "respuesta": "Inicia un hilo nuevo."
+    },
+    {
+      "concepto": "run() directo",
+      "respuesta": "Se ejecuta como método normal."
+    },
+    {
+      "concepto": "synchronized",
+      "respuesta": "Acceso exclusivo a recurso compartido."
+    },
+    {
+      "concepto": "wait()",
+      "respuesta": "Hace esperar a un hilo."
+    },
+    {
+      "concepto": "notifyAll()",
+      "respuesta": "Despierta a todos los hilos esperando."
+    },
+    {
+      "concepto": "Deadlock",
+      "respuesta": "Bloqueo mutuo."
+    },
+    {
+      "concepto": "Starvation",
+      "respuesta": "Un hilo no recibe recursos o CPU."
+    },
+    {
+      "concepto": "TCP",
+      "respuesta": "Fiable, con conexión y ordenado."
+    },
+    {
+      "concepto": "UDP",
+      "respuesta": "Rápido, sin conexión y no garantiza entrega."
+    },
+    {
+      "concepto": "RBAC",
+      "respuesta": "Control de acceso basado en roles."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "tema": "hilos",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué ocurre si llamas directamente a run() en vez de start()?",
+      "opciones": [
+        "Se crea un hilo nuevo",
+        "Se abre un socket UDP",
+        "Se bloquea siempre",
+        "Se ejecuta como método normal en el hilo actual"
+      ],
+      "respuesta_correcta": "Se ejecuta como método normal en el hilo actual",
+      "explicacion": "start() crea el hilo nuevo; run() directo no."
+    },
+    {
+      "id": 2,
+      "tema": "hilos",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Diferencia principal entre proceso e hilo?",
+      "opciones": [
+        "El hilo es siempre independiente",
+        "No hay diferencia",
+        "El hilo comparte memoria con otros hilos del mismo proceso",
+        "El proceso comparte siempre memoria"
+      ],
+      "respuesta_correcta": "El hilo comparte memoria con otros hilos del mismo proceso",
+      "explicacion": "El hilo comparte memoria con otros hilos del mismo proceso"
+    },
+    {
+      "id": 3,
+      "tema": "hilos",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Por qué se prefiere Runnable frente a extender Thread?",
+      "opciones": [
+        "Porque evita todos los deadlocks",
+        "Porque Java permite varias interfaces pero no herencia múltiple de clases",
+        "Porque Thread no compila",
+        "Porque Runnable cifra datos"
+      ],
+      "respuesta_correcta": "Porque Java permite varias interfaces pero no herencia múltiple de clases",
+      "explicacion": "Porque Java permite varias interfaces pero no herencia múltiple de clases"
+    },
+    {
+      "id": 4,
+      "tema": "hilos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué método pausa temporalmente un hilo?",
+      "opciones": [
+        "sleep()",
+        "join()",
+        "notify()",
+        "accept()"
+      ],
+      "respuesta_correcta": "sleep()",
+      "explicacion": "sleep()"
+    },
+    {
+      "id": 5,
+      "tema": "hilos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué hace join()?",
+      "opciones": [
+        "Crea una conexión UDP",
+        "Despierta todos los hilos",
+        "Cifra contraseñas",
+        "Espera a que otro hilo termine"
+      ],
+      "respuesta_correcta": "Espera a que otro hilo termine",
+      "explicacion": "Espera a que otro hilo termine"
+    },
+    {
+      "id": 6,
+      "tema": "sincronizacion",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué hace synchronized?",
+      "opciones": [
+        "Cifra datos automáticamente",
+        "Convierte una app en web",
+        "Controla el acceso exclusivo a un recurso compartido",
+        "Ordena procesos por nombre"
+      ],
+      "respuesta_correcta": "Controla el acceso exclusivo a un recurso compartido",
+      "explicacion": "Controla el acceso exclusivo a un recurso compartido"
+    },
+    {
+      "id": 7,
+      "tema": "sincronizacion",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué hace notify()?",
+      "opciones": [
+        "Cierra un socket TCP",
+        "Despierta a un único hilo en espera",
+        "Despierta siempre a todos",
+        "Pausa un hilo 5 segundos"
+      ],
+      "respuesta_correcta": "Despierta a un único hilo en espera",
+      "explicacion": "Despierta a un único hilo en espera"
+    },
+    {
+      "id": 8,
+      "tema": "sincronizacion",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Diferencia entre notify() y notifyAll()?",
+      "opciones": [
+        "notify() despierta uno y notifyAll() despierta todos",
+        "notify() usa TCP y notifyAll() UDP",
+        "No hay diferencia",
+        "notifyAll() crea procesos"
+      ],
+      "respuesta_correcta": "notify() despierta uno y notifyAll() despierta todos",
+      "explicacion": "notify() despierta uno y notifyAll() despierta todos"
+    },
+    {
+      "id": 9,
+      "tema": "sincronizacion",
+      "probabilidad": "alta",
+      "pregunta": "¿Dónde deben usarse wait(), notify() y notifyAll()?",
+      "opciones": [
+        "Solo en XML",
+        "Solo en constructores",
+        "Fuera de cualquier método",
+        "Dentro de código synchronized"
+      ],
+      "respuesta_correcta": "Dentro de código synchronized",
+      "explicacion": "Dentro de código synchronized"
+    },
+    {
+      "id": 10,
+      "tema": "concurrencia",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué es una race condition?",
+      "opciones": [
+        "Una técnica de cifrado",
+        "Un componente gráfico",
+        "Acceso concurrente incorrecto a datos compartidos",
+        "Un protocolo rápido"
+      ],
+      "respuesta_correcta": "Acceso concurrente incorrecto a datos compartidos",
+      "explicacion": "Acceso concurrente incorrecto a datos compartidos"
+    },
+    {
+      "id": 11,
+      "tema": "concurrencia",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué es un deadlock?",
+      "opciones": [
+        "Proceso en segundo plano",
+        "Bloqueo mutuo entre hilos o procesos",
+        "Conexión TCP correcta",
+        "Hilo terminado"
+      ],
+      "respuesta_correcta": "Bloqueo mutuo entre hilos o procesos",
+      "explicacion": "Bloqueo mutuo entre hilos o procesos"
+    },
+    {
+      "id": 12,
+      "tema": "concurrencia",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué es starvation?",
+      "opciones": [
+        "Un hilo nunca recibe recursos o tiempo de CPU",
+        "Un hilo recibe demasiada memoria",
+        "Un servidor abre muchos puertos",
+        "Un proceso se convierte en daemon"
+      ],
+      "respuesta_correcta": "Un hilo nunca recibe recursos o tiempo de CPU",
+      "explicacion": "Un hilo nunca recibe recursos o tiempo de CPU"
+    },
+    {
+      "id": 13,
+      "tema": "concurrencia",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué solución se usó en Mars Pathfinder para priority inversion?",
+      "opciones": [
+        "Eliminar todos los locks",
+        "Usar UDP",
+        "Cambiar a Python",
+        "Herencia de prioridad"
+      ],
+      "respuesta_correcta": "Herencia de prioridad",
+      "explicacion": "Herencia de prioridad"
+    },
+    {
+      "id": 14,
+      "tema": "estados",
+      "probabilidad": "alta",
+      "pregunta": "¿Estado de un proceso listo para ejecutarse pero esperando CPU?",
+      "opciones": [
+        "Cifrado",
+        "Zombie obligatorio",
+        "Listo o preparado",
+        "Finalizado"
+      ],
+      "respuesta_correcta": "Listo o preparado",
+      "explicacion": "Listo o preparado"
+    },
+    {
+      "id": 15,
+      "tema": "estados",
+      "probabilidad": "alta",
+      "pregunta": "¿Estado de un hilo con Thread.sleep(5000)?",
+      "opciones": [
+        "RUNNING_FOREVER",
+        "TIMED_WAITING",
+        "NEW",
+        "TERMINATED"
+      ],
+      "respuesta_correcta": "TIMED_WAITING",
+      "explicacion": "TIMED_WAITING"
+    },
+    {
+      "id": 16,
+      "tema": "estados",
+      "probabilidad": "media_alta",
+      "pregunta": "¿Qué ocurre con los locks cuando un hilo ejecuta sleep()?",
+      "opciones": [
+        "Los mantiene",
+        "Los libera siempre",
+        "Los convierte en sockets",
+        "Los elimina"
+      ],
+      "respuesta_correcta": "Los mantiene",
+      "explicacion": "Los mantiene"
+    },
+    {
+      "id": 17,
+      "tema": "redes",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué característica distingue a UDP frente a TCP?",
+      "opciones": [
+        "Garantiza entrega y orden",
+        "Solo sirve con HTTPS",
+        "Usa certificados obligatorios",
+        "No establece conexión previa ni garantiza entrega u orden"
+      ],
+      "respuesta_correcta": "No establece conexión previa ni garantiza entrega u orden",
+      "explicacion": "No establece conexión previa ni garantiza entrega u orden"
+    },
+    {
+      "id": 18,
+      "tema": "redes",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué protocolo es más rápido pero menos fiable?",
+      "opciones": [
+        "HTTPS",
+        "SSH",
+        "UDP",
+        "TCP"
+      ],
+      "respuesta_correcta": "UDP",
+      "explicacion": "UDP"
+    },
+    {
+      "id": 19,
+      "tema": "redes",
+      "probabilidad": "muy_alta",
+      "pregunta": "¿Qué protocolo garantiza entrega y orden?",
+      "opciones": [
+        "ICMP sin control",
+        "TCP",
+        "UDP",
+        "DNS"
+      ],
+      "respuesta_correcta": "TCP",
+      "explicacion": "TCP"
+    },
+    {
+      "id": 20,
+      "tema": "redes",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué clase se usa para UDP en Java?",
+      "opciones": [
+        "DatagramSocket",
+        "ServerSocket",
+        "FXMLLoader",
+        "PreparedStatement"
+      ],
+      "respuesta_correcta": "DatagramSocket",
+      "explicacion": "DatagramSocket"
+    },
+    {
+      "id": 21,
+      "tema": "redes",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué se envía en UDP usando Java?",
+      "opciones": [
+        "ServerSocket",
+        "ThreadGroup",
+        "JFrame",
+        "DatagramPacket"
+      ],
+      "respuesta_correcta": "DatagramPacket",
+      "explicacion": "DatagramPacket"
+    },
+    {
+      "id": 22,
+      "tema": "redes",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué clase usa un servidor TCP para escuchar conexiones?",
+      "opciones": [
+        "ArrayList",
+        "Scanner",
+        "ServerSocket",
+        "DatagramPacket"
+      ],
+      "respuesta_correcta": "ServerSocket",
+      "explicacion": "ServerSocket"
+    },
+    {
+      "id": 23,
+      "tema": "redes",
+      "probabilidad": "media_alta",
+      "pregunta": "¿Qué es un puerto en redes?",
+      "opciones": [
+        "Contraseña del router",
+        "Canal lógico de comunicación identificado por un número",
+        "Cable físico obligatorio",
+        "Archivo Java compilado"
+      ],
+      "respuesta_correcta": "Canal lógico de comunicación identificado por un número",
+      "explicacion": "Canal lógico de comunicación identificado por un número"
+    },
+    {
+      "id": 24,
+      "tema": "ipc",
+      "probabilidad": "media_alta",
+      "pregunta": "¿Qué conecta la salida de un proceso con la entrada de otro?",
+      "opciones": [
+        "Pipe o tubería",
+        "Hash SHA-256",
+        "RBAC",
+        "TLS"
+      ],
+      "respuesta_correcta": "Pipe o tubería",
+      "explicacion": "Pipe o tubería"
+    },
+    {
+      "id": 25,
+      "tema": "servicios",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es un daemon o servicio?",
+      "opciones": [
+        "Documento XML",
+        "Hilo solo de Android",
+        "Consulta SQL",
+        "Proceso en segundo plano continuo y sin interfaz gráfica"
+      ],
+      "respuesta_correcta": "Proceso en segundo plano continuo y sin interfaz gráfica",
+      "explicacion": "Proceso en segundo plano continuo y sin interfaz gráfica"
+    },
+    {
+      "id": 26,
+      "tema": "seguridad",
+      "probabilidad": "alta",
+      "pregunta": "¿Configuración mínima recomendada para comunicaciones seguras?",
+      "opciones": [
+        "HTTP plano",
+        "Telnet visible",
+        "TLSv1.2 o superior con validación de certificados",
+        "SSLv3 sin validar"
+      ],
+      "respuesta_correcta": "TLSv1.2 o superior con validación de certificados",
+      "explicacion": "TLSv1.2 o superior con validación de certificados"
+    },
+    {
+      "id": 27,
+      "tema": "seguridad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué puerto usa HTTPS por defecto?",
+      "opciones": [
+        "25",
+        "443",
+        "80",
+        "21"
+      ],
+      "respuesta_correcta": "443",
+      "explicacion": "443"
+    },
+    {
+      "id": 28,
+      "tema": "seguridad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué modelo asigna permisos según roles?",
+      "opciones": [
+        "RBAC",
+        "UDP",
+        "SOAP",
+        "WSDL"
+      ],
+      "respuesta_correcta": "RBAC",
+      "explicacion": "RBAC"
+    },
+    {
+      "id": 29,
+      "tema": "seguridad",
+      "probabilidad": "media_alta",
+      "pregunta": "¿Qué define mejor a una función hash criptográfica?",
+      "opciones": [
+        "Aleatoria y reversible",
+        "Siempre usa la misma clave",
+        "Solo funciona con UDP",
+        "Longitud fija, determinista, irreversible y resistente a colisiones"
+      ],
+      "respuesta_correcta": "Longitud fija, determinista, irreversible y resistente a colisiones",
+      "explicacion": "Longitud fija, determinista, irreversible y resistente a colisiones"
+    },
+    {
+      "id": 30,
+      "tema": "servicios_web",
+      "probabilidad": "media_alta",
+      "pregunta": "En SOAP, ¿qué documento XML describe la interfaz del servicio?",
+      "opciones": [
+        "FXML",
+        "CSV",
+        "WSDL",
+        "JSON"
+      ],
+      "respuesta_correcta": "WSDL",
+      "explicacion": "WSDL"
+    }
+  ],
+  "tips_examen": [
+    "TCP = fiable. UDP = rápido. Deadlock = espera mutua. Starvation = nunca recibe recursos. RBAC = roles."
+  ]
+}

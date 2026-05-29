@@ -1,0 +1,75 @@
+{
+  "pack": "DAM 2º curso - JSON de estudio tipo test",
+  "descripcion": "Pack para montar una web de estudio. Cada asignatura tiene resumen, conceptos y 30 preguntas de 4 opciones.",
+  "configuracion_examen_general": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "archivos": [
+    {
+      "slug": "psp",
+      "nombre": "Programación de servicios y procesos",
+      "archivo": "psp.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "acceso_datos",
+      "nombre": "Acceso a datos",
+      "archivo": "acceso_datos.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "multimedia_dispositivos_moviles",
+      "nombre": "Programación multimedia y dispositivos móviles",
+      "archivo": "multimedia_dispositivos_moviles.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "desarrollo_interfaces",
+      "nombre": "Desarrollo de interfaces",
+      "archivo": "desarrollo_interfaces.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "gestion_empresarial",
+      "nombre": "Sistemas de gestión empresarial",
+      "archivo": "gestion_empresarial.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "digitalizacion",
+      "nombre": "Digitalización aplicada",
+      "archivo": "digitalizacion.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "sostenibilidad",
+      "nombre": "Sostenibilidad aplicada",
+      "archivo": "sostenibilidad.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "itp",
+      "nombre": "Itinerario personal para la empleabilidad 2",
+      "archivo": "itp.json",
+      "preguntas": 30
+    },
+    {
+      "slug": "ingles",
+      "nombre": "Inglés",
+      "archivo": "ingles.json",
+      "preguntas": 30
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "slug": "desarrollo_interfaces",
+  "asignatura": "Desarrollo de interfaces",
+  "dificultad": "media-alta",
+  "prioridad": "alta",
+  "configuracion_examen": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "resumen_para_novato": "JavaFX, FXML, Scene Builder, Maven, JasperReports y usabilidad. Aprende herramientas y principios de diseño.",
+  "conceptos_memorizar_literal": [
+    {
+      "concepto": "fx:id",
+      "respuesta": "Identifica nodos FXML."
+    },
+    {
+      "concepto": "Scene Builder",
+      "respuesta": "Editor visual JavaFX."
+    },
+    {
+      "concepto": "FXMLLoader",
+      "respuesta": "Carga FXML."
+    },
+    {
+      "concepto": "Maven",
+      "respuesta": "Dependencias."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "tema": "arquitectura",
+      "probabilidad": "alta",
+      "pregunta": "¿Beneficio de separar presentación y lógica?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Mayor flexibilidad y mantenimiento"
+      ],
+      "respuesta_correcta": "Mayor flexibilidad y mantenimiento",
+      "explicacion": "Mayor flexibilidad y mantenimiento"
+    },
+    {
+      "id": 2,
+      "tema": "usabilidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es usabilidad?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Facilidad para usar una aplicación",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Facilidad para usar una aplicación",
+      "explicacion": "Facilidad para usar una aplicación"
+    },
+    {
+      "id": 3,
+      "tema": "maven",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué hace Maven?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Gestionar dependencias automáticamente",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Gestionar dependencias automáticamente",
+      "explicacion": "Gestionar dependencias automáticamente"
+    },
+    {
+      "id": 4,
+      "tema": "editores",
+      "probabilidad": "alta",
+      "pregunta": "¿Función principal de editores visuales?",
+      "opciones": [
+        "Construir interfaces arrastrando y soltando componentes",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Construir interfaces arrastrando y soltando componentes",
+      "explicacion": "Construir interfaces arrastrando y soltando componentes"
+    },
+    {
+      "id": 5,
+      "tema": "javafx",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué hace FXMLLoader?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Leer FXML e instanciar la interfaz"
+      ],
+      "respuesta_correcta": "Leer FXML e instanciar la interfaz",
+      "explicacion": "Leer FXML e instanciar la interfaz"
+    },
+    {
+      "id": 6,
+      "tema": "jasper",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué separa JasperReports?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Estructura visual del informe y datos",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Estructura visual del informe y datos",
+      "explicacion": "Estructura visual del informe y datos"
+    },
+    {
+      "id": 7,
+      "tema": "android",
+      "probabilidad": "alta",
+      "pregunta": "¿Dónde se guardan layouts Android?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "res/layout",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "res/layout",
+      "explicacion": "res/layout"
+    },
+    {
+      "id": 8,
+      "tema": "ui",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué afirmación sobre estética y usabilidad es correcta?",
+      "opciones": [
+        "Pueden trabajarse conjuntamente",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Pueden trabajarse conjuntamente",
+      "explicacion": "Pueden trabajarse conjuntamente"
+    },
+    {
+      "id": 9,
+      "tema": "fxml",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué atributo identifica un nodo FXML?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "fx:id"
+      ],
+      "respuesta_correcta": "fx:id",
+      "explicacion": "fx:id"
+    },
+    {
+      "id": 10,
+      "tema": "javafx",
+      "probabilidad": "alta",
+      "pregunta": "¿Tecnología estándar moderna para GUI en Java?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "JavaFX",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "JavaFX",
+      "explicacion": "JavaFX"
+    },
+    {
+      "id": 11,
+      "tema": "flutter",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué framework usa Dart?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Flutter",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Flutter",
+      "explicacion": "Flutter"
+    },
+    {
+      "id": 12,
+      "tema": "scene_builder",
+      "probabilidad": "alta",
+      "pregunta": "¿Herramienta visual oficial de JavaFX?",
+      "opciones": [
+        "Scene Builder",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Scene Builder",
+      "explicacion": "Scene Builder"
+    },
+    {
+      "id": 13,
+      "tema": "ux",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué principio permite corregir acciones?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Control y libertad del usuario"
+      ],
+      "respuesta_correcta": "Control y libertad del usuario",
+      "explicacion": "Control y libertad del usuario"
+    },
+    {
+      "id": 14,
+      "tema": "ux",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué reduce la carga cognitiva?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Jerarquía visual clara y consistente",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Jerarquía visual clara y consistente",
+      "explicacion": "Jerarquía visual clara y consistente"
+    },
+    {
+      "id": 15,
+      "tema": "jasper",
+      "probabilidad": "alta",
+      "pregunta": "¿De dónde obtiene datos un informe dinámico?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Controladores, bases de datos u otros orígenes",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Controladores, bases de datos u otros orígenes",
+      "explicacion": "Controladores, bases de datos u otros orígenes"
+    },
+    {
+      "id": 16,
+      "tema": "componentes",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja de reutilizar componentes?",
+      "opciones": [
+        "Aplicar soluciones en diferentes contextos y proyectos",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Aplicar soluciones en diferentes contextos y proyectos",
+      "explicacion": "Aplicar soluciones en diferentes contextos y proyectos"
+    },
+    {
+      "id": 17,
+      "tema": "arquitectura",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja de separar diseño y lógica de negocio?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Facilita mantenimiento y trabajo independiente"
+      ],
+      "respuesta_correcta": "Facilita mantenimiento y trabajo independiente",
+      "explicacion": "Facilita mantenimiento y trabajo independiente"
+    },
+    {
+      "id": 18,
+      "tema": "componentes",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué permite desacoplar apariencia y funcionalidad?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Cambiar tema visual sin modificar lógica",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Cambiar tema visual sin modificar lógica",
+      "explicacion": "Cambiar tema visual sin modificar lógica"
+    },
+    {
+      "id": 19,
+      "tema": "ux",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué estrategia reduce carga cognitiva?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Agrupar funciones relacionadas y mostrar opciones relevantes",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Agrupar funciones relacionadas y mostrar opciones relevantes",
+      "explicacion": "Agrupar funciones relacionadas y mostrar opciones relevantes"
+    },
+    {
+      "id": 20,
+      "tema": "usabilidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué NO forma parte directa de usabilidad?",
+      "opciones": [
+        "Capacidad de procesamiento del servidor",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Capacidad de procesamiento del servidor",
+      "explicacion": "Capacidad de procesamiento del servidor"
+    },
+    {
+      "id": 21,
+      "tema": "javafx",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué conecta controlador con FXML?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "@FXML y fx:id"
+      ],
+      "respuesta_correcta": "@FXML y fx:id",
+      "explicacion": "@FXML y fx:id"
+    },
+    {
+      "id": 22,
+      "tema": "javafx",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa WYSIWYG?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "What You See Is What You Get",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "What You See Is What You Get",
+      "explicacion": "What You See Is What You Get"
+    },
+    {
+      "id": 23,
+      "tema": "maven",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué archivo configura Maven?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "pom.xml",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "pom.xml",
+      "explicacion": "pom.xml"
+    },
+    {
+      "id": 24,
+      "tema": "ui",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es interfaz declarativa?",
+      "opciones": [
+        "Interfaz descrita separada de la lógica",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Interfaz descrita separada de la lógica",
+      "explicacion": "Interfaz descrita separada de la lógica"
+    },
+    {
+      "id": 25,
+      "tema": "ux",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es carga cognitiva?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Esfuerzo mental para entender y usar una interfaz"
+      ],
+      "respuesta_correcta": "Esfuerzo mental para entender y usar una interfaz",
+      "explicacion": "Esfuerzo mental para entender y usar una interfaz"
+    },
+    {
+      "id": 26,
+      "tema": "ux",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué causa mala jerarquía visual?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Confusión sobre qué es importante",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Confusión sobre qué es importante",
+      "explicacion": "Confusión sobre qué es importante"
+    },
+    {
+      "id": 27,
+      "tema": "jasper",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué lenguaje describe plantillas JasperReports?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "JRXML",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "JRXML",
+      "explicacion": "JRXML"
+    },
+    {
+      "id": 28,
+      "tema": "android",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué representa res en Android?",
+      "opciones": [
+        "Carpeta de recursos",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Carpeta de recursos",
+      "explicacion": "Carpeta de recursos"
+    },
+    {
+      "id": 29,
+      "tema": "ui",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es prototipado?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Versión inicial para probar diseño o interacción"
+      ],
+      "respuesta_correcta": "Versión inicial para probar diseño o interacción",
+      "explicacion": "Versión inicial para probar diseño o interacción"
+    },
+    {
+      "id": 30,
+      "tema": "ux",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es consistencia visual?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Mantener patrones, estilos y comportamientos coherentes",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Mantener patrones, estilos y comportamientos coherentes",
+      "explicacion": "Mantener patrones, estilos y comportamientos coherentes"
+    }
+  ],
+  "tips_examen": [
+    "fx:id conecta con controlador. Scene Builder diseña visualmente. Maven gestiona dependencias."
+  ]
+}

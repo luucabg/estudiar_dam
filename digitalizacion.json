@@ -1,0 +1,465 @@
+{
+  "slug": "digitalizacion",
+  "asignatura": "Digitalización aplicada",
+  "dificultad": "media",
+  "prioridad": "media",
+  "configuracion_examen": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "resumen_para_novato": "IA, cloud, Big Data, blockchain, ciberseguridad e Industria 5.0. Es conceptual y de memoria.",
+  "conceptos_memorizar_literal": [
+    {
+      "concepto": "IaaS",
+      "respuesta": "Infraestructura."
+    },
+    {
+      "concepto": "SaaS",
+      "respuesta": "Aplicación."
+    },
+    {
+      "concepto": "Blockchain",
+      "respuesta": "Registro inmutable."
+    },
+    {
+      "concepto": "Industria 5.0",
+      "respuesta": "Humano en el centro."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "tema": "ciberseguridad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa CIA?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Confidencialidad, Integridad y Disponibilidad"
+      ],
+      "respuesta_correcta": "Confidencialidad, Integridad y Disponibilidad",
+      "explicacion": "Confidencialidad, Integridad y Disponibilidad"
+    },
+    {
+      "id": 2,
+      "tema": "cloud",
+      "probabilidad": "alta",
+      "pregunta": "¿Modelo de responsabilidad compartida cloud?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Proveedor infraestructura; cliente datos, apps y accesos",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Proveedor infraestructura; cliente datos, apps y accesos",
+      "explicacion": "Proveedor infraestructura; cliente datos, apps y accesos"
+    },
+    {
+      "id": 3,
+      "tema": "datos",
+      "probabilidad": "alta",
+      "pregunta": "¿Secuencia batch del ciclo de vida del dato?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Captura, almacenamiento, procesamiento, análisis, archivo o destrucción",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Captura, almacenamiento, procesamiento, análisis, archivo o destrucción",
+      "explicacion": "Captura, almacenamiento, procesamiento, análisis, archivo o destrucción"
+    },
+    {
+      "id": 4,
+      "tema": "plataformas",
+      "probabilidad": "alta",
+      "pregunta": "¿Para qué sirve Gravity?",
+      "opciones": [
+        "Facilitar creación de aplicaciones propias",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Facilitar creación de aplicaciones propias",
+      "explicacion": "Facilitar creación de aplicaciones propias"
+    },
+    {
+      "id": 5,
+      "tema": "blockchain",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué describe Blockchain?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Registro distribuido e inmutable"
+      ],
+      "respuesta_correcta": "Registro distribuido e inmutable",
+      "explicacion": "Registro distribuido e inmutable"
+    },
+    {
+      "id": 6,
+      "tema": "cloud",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué modelo permite instalar tu propio SO?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "IaaS",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "IaaS",
+      "explicacion": "IaaS"
+    },
+    {
+      "id": 7,
+      "tema": "ia",
+      "probabilidad": "alta",
+      "pregunta": "¿Herramienta Google para entrenar modelos sin código?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Teachable Machine",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Teachable Machine",
+      "explicacion": "Teachable Machine"
+    },
+    {
+      "id": 8,
+      "tema": "ia",
+      "probabilidad": "alta",
+      "pregunta": "¿Relación entre ML y Deep Learning?",
+      "opciones": [
+        "Deep Learning es subcampo de Machine Learning",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Deep Learning es subcampo de Machine Learning",
+      "explicacion": "Deep Learning es subcampo de Machine Learning"
+    },
+    {
+      "id": 9,
+      "tema": "industria",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es un gemelo digital?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Réplica virtual dinámica sincronizada con sensores"
+      ],
+      "respuesta_correcta": "Réplica virtual dinámica sincronizada con sensores",
+      "explicacion": "Réplica virtual dinámica sincronizada con sensores"
+    },
+    {
+      "id": 10,
+      "tema": "blockchain",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja de Blockchain?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Inmutabilidad y trazabilidad",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Inmutabilidad y trazabilidad",
+      "explicacion": "Inmutabilidad y trazabilidad"
+    },
+    {
+      "id": 11,
+      "tema": "cloud",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué mitiga brechas cloud por accesos?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "MFA, IAM y control estricto de accesos",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "MFA, IAM y control estricto de accesos",
+      "explicacion": "MFA, IAM y control estricto de accesos"
+    },
+    {
+      "id": 12,
+      "tema": "plataformas",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué hacen plataformas tipo Gravity?",
+      "opciones": [
+        "Estandarizan creación, integración y despliegue",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Estandarizan creación, integración y despliegue",
+      "explicacion": "Estandarizan creación, integración y despliegue"
+    },
+    {
+      "id": 13,
+      "tema": "industria",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué diferencia Industria 5.0?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Factor humano como eje central"
+      ],
+      "respuesta_correcta": "Factor humano como eje central",
+      "explicacion": "Factor humano como eje central"
+    },
+    {
+      "id": 14,
+      "tema": "agile",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué metodología usa tablero visual?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Kanban",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Kanban",
+      "explicacion": "Kanban"
+    },
+    {
+      "id": 15,
+      "tema": "fabricacion",
+      "probabilidad": "alta",
+      "pregunta": "¿Ventaja ambiental de fabricación aditiva?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Minimiza residuos agregando material capa a capa",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Minimiza residuos agregando material capa a capa",
+      "explicacion": "Minimiza residuos agregando material capa a capa"
+    },
+    {
+      "id": 16,
+      "tema": "datos",
+      "probabilidad": "alta",
+      "pregunta": "¿Diferencia entre S3 y Redshift?",
+      "opciones": [
+        "S3 Data Lake; Redshift Data Warehouse",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "S3 Data Lake; Redshift Data Warehouse",
+      "explicacion": "S3 Data Lake; Redshift Data Warehouse"
+    },
+    {
+      "id": 17,
+      "tema": "cloud",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es SaaS?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Aplicación como servicio lista por internet"
+      ],
+      "respuesta_correcta": "Aplicación como servicio lista por internet",
+      "explicacion": "Aplicación como servicio lista por internet"
+    },
+    {
+      "id": 18,
+      "tema": "cloud",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es PaaS?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Plataforma para desarrollar sin gestionar toda infraestructura",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Plataforma para desarrollar sin gestionar toda infraestructura",
+      "explicacion": "Plataforma para desarrollar sin gestionar toda infraestructura"
+    },
+    {
+      "id": 19,
+      "tema": "bigdata",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es Big Data?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Gestión y análisis de grandes volúmenes de datos",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Gestión y análisis de grandes volúmenes de datos",
+      "explicacion": "Gestión y análisis de grandes volúmenes de datos"
+    },
+    {
+      "id": 20,
+      "tema": "datos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es Data Lake?",
+      "opciones": [
+        "Repositorio flexible para datos brutos o variados",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Repositorio flexible para datos brutos o variados",
+      "explicacion": "Repositorio flexible para datos brutos o variados"
+    },
+    {
+      "id": 21,
+      "tema": "datos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es Data Warehouse?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Almacén estructurado para análisis y BI"
+      ],
+      "respuesta_correcta": "Almacén estructurado para análisis y BI",
+      "explicacion": "Almacén estructurado para análisis y BI"
+    },
+    {
+      "id": 22,
+      "tema": "ciberseguridad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es confidencialidad?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Solo acceden usuarios autorizados",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Solo acceden usuarios autorizados",
+      "explicacion": "Solo acceden usuarios autorizados"
+    },
+    {
+      "id": 23,
+      "tema": "ciberseguridad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es integridad?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Los datos no se alteran indebidamente",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Los datos no se alteran indebidamente",
+      "explicacion": "Los datos no se alteran indebidamente"
+    },
+    {
+      "id": 24,
+      "tema": "ciberseguridad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es disponibilidad?",
+      "opciones": [
+        "Sistemas accesibles cuando se necesitan",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Sistemas accesibles cuando se necesitan",
+      "explicacion": "Sistemas accesibles cuando se necesitan"
+    },
+    {
+      "id": 25,
+      "tema": "ia",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué son redes neuronales profundas?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Redes con múltiples capas"
+      ],
+      "respuesta_correcta": "Redes con múltiples capas",
+      "explicacion": "Redes con múltiples capas"
+    },
+    {
+      "id": 26,
+      "tema": "iot",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es IoT?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Objetos conectados que recopilan e intercambian datos",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Objetos conectados que recopilan e intercambian datos",
+      "explicacion": "Objetos conectados que recopilan e intercambian datos"
+    },
+    {
+      "id": 27,
+      "tema": "automatizacion",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué busca automatización empresarial?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Reducir tareas manuales y mejorar eficiencia",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Reducir tareas manuales y mejorar eficiencia",
+      "explicacion": "Reducir tareas manuales y mejorar eficiencia"
+    },
+    {
+      "id": 28,
+      "tema": "cloud",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es elasticidad cloud?",
+      "opciones": [
+        "Ajustar recursos según demanda",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Ajustar recursos según demanda",
+      "explicacion": "Ajustar recursos según demanda"
+    },
+    {
+      "id": 29,
+      "tema": "blockchain",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es contrato inteligente?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Código que ejecuta acuerdos automáticamente"
+      ],
+      "respuesta_correcta": "Código que ejecuta acuerdos automáticamente",
+      "explicacion": "Código que ejecuta acuerdos automáticamente"
+    },
+    {
+      "id": 30,
+      "tema": "agile",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué muestra Kanban?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Tareas por estado: pendiente, en progreso, hecho",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Tareas por estado: pendiente, en progreso, hecho",
+      "explicacion": "Tareas por estado: pendiente, en progreso, hecho"
+    }
+  ],
+  "tips_examen": [
+    "IaaS = infraestructura. SaaS = aplicación. Blockchain = inmutable. Kanban = tablero."
+  ]
+}

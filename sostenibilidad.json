@@ -1,0 +1,465 @@
+{
+  "slug": "sostenibilidad",
+  "asignatura": "Sostenibilidad aplicada",
+  "dificultad": "media-baja",
+  "prioridad": "media",
+  "configuracion_examen": {
+    "numero_preguntas": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "Si no puedes descartar ninguna opción, deja en blanco.",
+      "Si puedes descartar una opción, suele compensar responder.",
+      "Si dudas entre dos opciones, responde.",
+      "Prioriza preguntas muy probables y conceptos repetidos en tests."
+    ]
+  },
+  "resumen_para_novato": "Asignatura de memoria directa: 5R, ODS, AROPE, OIT, economía circular y cambio climático.",
+  "conceptos_memorizar_literal": [
+    {
+      "concepto": "5R",
+      "respuesta": "Rechazar, reducir, reutilizar, reparar, reciclar."
+    },
+    {
+      "concepto": "AROPE",
+      "respuesta": "Riesgo de pobreza o exclusión."
+    },
+    {
+      "concepto": "OIT",
+      "respuesta": "Trabajo digno."
+    },
+    {
+      "concepto": "Economía lineal",
+      "respuesta": "Extraer, fabricar, usar y tirar."
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "tema": "residuos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué acción representa las 5R?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Reducir recursos consumidos y residuos generados en origen"
+      ],
+      "respuesta_correcta": "Reducir recursos consumidos y residuos generados en origen",
+      "explicacion": "Reducir recursos consumidos y residuos generados en origen"
+    },
+    {
+      "id": 2,
+      "tema": "circular",
+      "probabilidad": "alta",
+      "pregunta": "¿Actividad principal de Back Market?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Reacondicionar y vender equipos electrónicos usados",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Reacondicionar y vender equipos electrónicos usados",
+      "explicacion": "Reacondicionar y vender equipos electrónicos usados"
+    },
+    {
+      "id": 3,
+      "tema": "social",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué mide AROPE?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Población en riesgo de pobreza o exclusión social",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Población en riesgo de pobreza o exclusión social",
+      "explicacion": "Población en riesgo de pobreza o exclusión social"
+    },
+    {
+      "id": 4,
+      "tema": "clima",
+      "probabilidad": "alta",
+      "pregunta": "¿Causa principal del cambio climático actual?",
+      "opciones": [
+        "Emisión humana de gases de efecto invernadero",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Emisión humana de gases de efecto invernadero",
+      "explicacion": "Emisión humana de gases de efecto invernadero"
+    },
+    {
+      "id": 5,
+      "tema": "clima",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa neutralidad climática?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Equilibrar emisiones con reducciones o compensaciones"
+      ],
+      "respuesta_correcta": "Equilibrar emisiones con reducciones o compensaciones",
+      "explicacion": "Equilibrar emisiones con reducciones o compensaciones"
+    },
+    {
+      "id": 6,
+      "tema": "circular",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué hace Back Market en sostenibilidad?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Facilita compraventa de reacondicionados y segunda mano",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Facilita compraventa de reacondicionados y segunda mano",
+      "explicacion": "Facilita compraventa de reacondicionados y segunda mano"
+    },
+    {
+      "id": 7,
+      "tema": "social",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué organización promueve trabajo digno?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "OIT",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "OIT",
+      "explicacion": "OIT"
+    },
+    {
+      "id": 8,
+      "tema": "clima",
+      "probabilidad": "alta",
+      "pregunta": "¿Cómo cambian eventos extremos por calentamiento?",
+      "opciones": [
+        "Aumentan en intensidad y frecuencia",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Aumentan en intensidad y frecuencia",
+      "explicacion": "Aumentan en intensidad y frecuencia"
+    },
+    {
+      "id": 9,
+      "tema": "biodiversidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Objetivo de Kunming-Montreal?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Proteger al menos el 30% del territorio planetario"
+      ],
+      "respuesta_correcta": "Proteger al menos el 30% del territorio planetario",
+      "explicacion": "Proteger al menos el 30% del territorio planetario"
+    },
+    {
+      "id": 10,
+      "tema": "biodiversidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es biodiversidad?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Variedad de organismos, genes, especies y ecosistemas",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Variedad de organismos, genes, especies y ecosistemas",
+      "explicacion": "Variedad de organismos, genes, especies y ecosistemas"
+    },
+    {
+      "id": 11,
+      "tema": "economia",
+      "probabilidad": "alta",
+      "pregunta": "¿Modelo de extraer, fabricar, usar y tirar?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Economía lineal",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Economía lineal",
+      "explicacion": "Economía lineal"
+    },
+    {
+      "id": 12,
+      "tema": "ods",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué naturaleza tienen los ODS?",
+      "opciones": [
+        "Universales, integrados y aplicables a todos los países",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Universales, integrados y aplicables a todos los países",
+      "explicacion": "Universales, integrados y aplicables a todos los países"
+    },
+    {
+      "id": 13,
+      "tema": "industria",
+      "probabilidad": "alta",
+      "pregunta": "¿Acción de descarbonización industrial?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Sustituir fuentes energéticas por renovables"
+      ],
+      "respuesta_correcta": "Sustituir fuentes energéticas por renovables",
+      "explicacion": "Sustituir fuentes energéticas por renovables"
+    },
+    {
+      "id": 14,
+      "tema": "movilidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué caracteriza transporte sostenible?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Priorizar transporte público, bicicleta y reducir motorizados",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Priorizar transporte público, bicicleta y reducir motorizados",
+      "explicacion": "Priorizar transporte público, bicicleta y reducir motorizados"
+    },
+    {
+      "id": 15,
+      "tema": "huella",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué marca el Día de Sobrecapacidad?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Fecha en que consumimos lo que el planeta regenera en un año",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Fecha en que consumimos lo que el planeta regenera en un año",
+      "explicacion": "Fecha en que consumimos lo que el planeta regenera en un año"
+    },
+    {
+      "id": 16,
+      "tema": "reporting",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué comunica reporting no financiero?",
+      "opciones": [
+        "Desempeño ambiental, social y de gobernanza",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Desempeño ambiental, social y de gobernanza",
+      "explicacion": "Desempeño ambiental, social y de gobernanza"
+    },
+    {
+      "id": 17,
+      "tema": "circular",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué busca economía circular?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Mantener productos y materiales en uso"
+      ],
+      "respuesta_correcta": "Mantener productos y materiales en uso",
+      "explicacion": "Mantener productos y materiales en uso"
+    },
+    {
+      "id": 18,
+      "tema": "residuos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa reutilizar?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Usar de nuevo un producto",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Usar de nuevo un producto",
+      "explicacion": "Usar de nuevo un producto"
+    },
+    {
+      "id": 19,
+      "tema": "residuos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa reparar?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Arreglar para seguir usando",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Arreglar para seguir usando",
+      "explicacion": "Arreglar para seguir usando"
+    },
+    {
+      "id": 20,
+      "tema": "residuos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué significa reciclar?",
+      "opciones": [
+        "Transformar residuos en materiales aprovechables",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Transformar residuos en materiales aprovechables",
+      "explicacion": "Transformar residuos en materiales aprovechables"
+    },
+    {
+      "id": 21,
+      "tema": "clima",
+      "probabilidad": "alta",
+      "pregunta": "¿Gas muy asociado al cambio climático?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "CO2"
+      ],
+      "respuesta_correcta": "CO2",
+      "explicacion": "CO2"
+    },
+    {
+      "id": 22,
+      "tema": "social",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es sostenibilidad social?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Bienestar, equidad e inclusión",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Bienestar, equidad e inclusión",
+      "explicacion": "Bienestar, equidad e inclusión"
+    },
+    {
+      "id": 23,
+      "tema": "empresa",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es RSC?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Compromiso empresarial social, ambiental y ético",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Compromiso empresarial social, ambiental y ético",
+      "explicacion": "Compromiso empresarial social, ambiental y ético"
+    },
+    {
+      "id": 24,
+      "tema": "clima",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es huella de carbono?",
+      "opciones": [
+        "Gases de efecto invernadero asociados a una actividad",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Gases de efecto invernadero asociados a una actividad",
+      "explicacion": "Gases de efecto invernadero asociados a una actividad"
+    },
+    {
+      "id": 25,
+      "tema": "biodiversidad",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué son servicios ecosistémicos?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Beneficios que la naturaleza aporta"
+      ],
+      "respuesta_correcta": "Beneficios que la naturaleza aporta",
+      "explicacion": "Beneficios que la naturaleza aporta"
+    },
+    {
+      "id": 26,
+      "tema": "ods",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué agenda se asocia a los ODS?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Agenda 2030",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Agenda 2030",
+      "explicacion": "Agenda 2030"
+    },
+    {
+      "id": 27,
+      "tema": "energia",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es energía renovable?",
+      "opciones": [
+        "Opción demasiado absoluta",
+        "Energía de fuentes que se regeneran naturalmente",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura"
+      ],
+      "respuesta_correcta": "Energía de fuentes que se regeneran naturalmente",
+      "explicacion": "Energía de fuentes que se regeneran naturalmente"
+    },
+    {
+      "id": 28,
+      "tema": "clima",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué son compensaciones de carbono?",
+      "opciones": [
+        "Acciones que compensan emisiones",
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta"
+      ],
+      "respuesta_correcta": "Acciones que compensan emisiones",
+      "explicacion": "Acciones que compensan emisiones"
+    },
+    {
+      "id": 29,
+      "tema": "empresa",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué es gobernanza en ESG?",
+      "opciones": [
+        "Respuesta parecida pero incorrecta",
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Forma de dirigir y controlar éticamente la empresa"
+      ],
+      "respuesta_correcta": "Forma de dirigir y controlar éticamente la empresa",
+      "explicacion": "Forma de dirigir y controlar éticamente la empresa"
+    },
+    {
+      "id": 30,
+      "tema": "residuos",
+      "probabilidad": "alta",
+      "pregunta": "¿Qué 5R suele ser preferible antes que reciclar?",
+      "opciones": [
+        "Concepto de otra asignatura",
+        "Opción demasiado absoluta",
+        "Reducir",
+        "Respuesta parecida pero incorrecta"
+      ],
+      "respuesta_correcta": "Reducir",
+      "explicacion": "Reducir"
+    }
+  ],
+  "tips_examen": [
+    "AROPE = pobreza/exclusión. Back Market = reacondicionados. OIT = trabajo digno."
+  ]
+}
