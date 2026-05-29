@@ -1,0 +1,559 @@
+{
+  "slug": "psp_muy_probables_30",
+  "asignatura": "Programación de servicios y procesos",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "Hilos, sincronización, concurrencia, redes TCP/UDP y seguridad.",
+  "tips": [
+    "TCP=fiable, UDP=rápido, deadlock=espera mutua, RBAC=roles."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "hilos",
+      "pregunta": "¿Qué ocurre si llamas directamente a run() en lugar de start()?",
+      "opciones": [
+        "TLSv1.2 o superior con validación de certificados",
+        "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad",
+        "Despierta a todos los hilos que esperan en ese monitor",
+        "Se ejecuta como un método normal en el hilo actual"
+      ],
+      "respuesta_correcta": "Se ejecuta como un método normal en el hilo actual",
+      "explicacion": "Se ejecuta como un método normal en el hilo actual"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "hilos",
+      "pregunta": "¿Por qué se prefiere Runnable frente a extender Thread?",
+      "opciones": [
+        "TCP",
+        "Herencia de prioridad",
+        "Porque Java permite implementar varias interfaces pero no heredar de varias clases",
+        "Hace que un hilo espere a que otro termine"
+      ],
+      "respuesta_correcta": "Porque Java permite implementar varias interfaces pero no heredar de varias clases",
+      "explicacion": "Porque Java permite implementar varias interfaces pero no heredar de varias clases"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "hilos",
+      "pregunta": "¿Qué diferencia principal hay entre proceso e hilo?",
+      "opciones": [
+        "Hace que el hilo espere y libere temporalmente el monitor",
+        "El hilo comparte memoria con otros hilos del mismo proceso",
+        "Proceso en segundo plano sin interfaz de usuario",
+        "ServerSocket"
+      ],
+      "respuesta_correcta": "El hilo comparte memoria con otros hilos del mismo proceso",
+      "explicacion": "El hilo comparte memoria con otros hilos del mismo proceso"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "hilos",
+      "pregunta": "¿Qué método inicia realmente un hilo nuevo?",
+      "opciones": [
+        "start()",
+        "Los mantiene",
+        "Bloqueo mutuo donde varios hilos se esperan entre sí",
+        "Despierta a todos los hilos que esperan en ese monitor"
+      ],
+      "respuesta_correcta": "start()",
+      "explicacion": "start()"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "hilos",
+      "pregunta": "¿Qué hace join()?",
+      "opciones": [
+        "sleep()",
+        "Proceso en segundo plano sin interfaz de usuario",
+        "Resultado incorrecto o impredecible por acceso concurrente a datos compartidos",
+        "Hace que un hilo espere a que otro termine"
+      ],
+      "respuesta_correcta": "Hace que un hilo espere a que otro termine",
+      "explicacion": "Hace que un hilo espere a que otro termine"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "hilos",
+      "pregunta": "¿Qué método pausa temporalmente un hilo?",
+      "opciones": [
+        "UDP",
+        "Herencia de prioridad",
+        "sleep()",
+        "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad"
+      ],
+      "respuesta_correcta": "sleep()",
+      "explicacion": "sleep()"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "estados",
+      "pregunta": "¿En qué estado entra un hilo con Thread.sleep(5000)?",
+      "opciones": [
+        "DatagramSocket",
+        "TIMED_WAITING",
+        "Confidencialidad, Integridad y Disponibilidad",
+        "sleep()"
+      ],
+      "respuesta_correcta": "TIMED_WAITING",
+      "explicacion": "TIMED_WAITING"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "estados",
+      "pregunta": "¿Qué pasa con los locks cuando un hilo hace sleep()?",
+      "opciones": [
+        "Los mantiene",
+        "sleep()",
+        "TCP",
+        "ServerSocket"
+      ],
+      "respuesta_correcta": "Los mantiene",
+      "explicacion": "Los mantiene"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sincronizacion",
+      "pregunta": "¿Qué hace synchronized?",
+      "opciones": [
+        "start()",
+        "DatagramPacket",
+        "RBAC",
+        "Permite acceso exclusivo a una sección crítica o recurso compartido"
+      ],
+      "respuesta_correcta": "Permite acceso exclusivo a una sección crítica o recurso compartido",
+      "explicacion": "Permite acceso exclusivo a una sección crítica o recurso compartido"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sincronizacion",
+      "pregunta": "¿Dónde deben usarse wait(), notify() y notifyAll()?",
+      "opciones": [
+        "Despierta a un hilo que espera en ese monitor",
+        "TLSv1.2 o superior con validación de certificados",
+        "Dentro de un bloque o método synchronized",
+        "Hace que el hilo espere y libere temporalmente el monitor"
+      ],
+      "respuesta_correcta": "Dentro de un bloque o método synchronized",
+      "explicacion": "Dentro de un bloque o método synchronized"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sincronizacion",
+      "pregunta": "¿Qué hace wait()?",
+      "opciones": [
+        "Para volver a comprobar la condición al despertar",
+        "Hace que el hilo espere y libere temporalmente el monitor",
+        "TLSv1.2 o superior con validación de certificados",
+        "Dentro de un bloque o método synchronized"
+      ],
+      "respuesta_correcta": "Hace que el hilo espere y libere temporalmente el monitor",
+      "explicacion": "Hace que el hilo espere y libere temporalmente el monitor"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sincronizacion",
+      "pregunta": "¿Qué hace notify()?",
+      "opciones": [
+        "Despierta a un hilo que espera en ese monitor",
+        "TIMED_WAITING",
+        "start()",
+        "Socket"
+      ],
+      "respuesta_correcta": "Despierta a un hilo que espera en ese monitor",
+      "explicacion": "Despierta a un hilo que espera en ese monitor"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sincronizacion",
+      "pregunta": "¿Qué hace notifyAll()?",
+      "opciones": [
+        "UDP",
+        "start()",
+        "TCP garantiza conexión, orden y entrega; UDP no",
+        "Despierta a todos los hilos que esperan en ese monitor"
+      ],
+      "respuesta_correcta": "Despierta a todos los hilos que esperan en ese monitor",
+      "explicacion": "Despierta a todos los hilos que esperan en ese monitor"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sincronizacion",
+      "pregunta": "¿Por qué se usa while antes de wait()?",
+      "opciones": [
+        "Proceso en segundo plano sin interfaz de usuario",
+        "Se ejecuta como un método normal en el hilo actual",
+        "Para volver a comprobar la condición al despertar",
+        "DatagramSocket"
+      ],
+      "respuesta_correcta": "Para volver a comprobar la condición al despertar",
+      "explicacion": "Para volver a comprobar la condición al despertar"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "concurrencia",
+      "pregunta": "¿Qué es una race condition?",
+      "opciones": [
+        "ServerSocket",
+        "Resultado incorrecto o impredecible por acceso concurrente a datos compartidos",
+        "Bloqueo mutuo donde varios hilos se esperan entre sí",
+        "Permite acceso exclusivo a una sección crítica o recurso compartido"
+      ],
+      "respuesta_correcta": "Resultado incorrecto o impredecible por acceso concurrente a datos compartidos",
+      "explicacion": "Resultado incorrecto o impredecible por acceso concurrente a datos compartidos"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "concurrencia",
+      "pregunta": "¿Qué es un deadlock?",
+      "opciones": [
+        "Bloqueo mutuo donde varios hilos se esperan entre sí",
+        "Despierta a todos los hilos que esperan en ese monitor",
+        "start()",
+        "Herencia de prioridad"
+      ],
+      "respuesta_correcta": "Bloqueo mutuo donde varios hilos se esperan entre sí",
+      "explicacion": "Bloqueo mutuo donde varios hilos se esperan entre sí"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "concurrencia",
+      "pregunta": "¿Qué es starvation?",
+      "opciones": [
+        "Confidencialidad, Integridad y Disponibilidad",
+        "ServerSocket",
+        "UDP",
+        "Un hilo no recibe recursos o CPU durante mucho tiempo o nunca"
+      ],
+      "respuesta_correcta": "Un hilo no recibe recursos o CPU durante mucho tiempo o nunca",
+      "explicacion": "Un hilo no recibe recursos o CPU durante mucho tiempo o nunca"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "concurrencia",
+      "pregunta": "¿Qué es priority inversion?",
+      "opciones": [
+        "Despierta a todos los hilos que esperan en ese monitor",
+        "Se ejecuta como un método normal en el hilo actual",
+        "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad",
+        "DatagramSocket"
+      ],
+      "respuesta_correcta": "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad",
+      "explicacion": "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "concurrencia",
+      "pregunta": "¿Qué solución se usó en Mars Pathfinder?",
+      "opciones": [
+        "Bloqueo mutuo donde varios hilos se esperan entre sí",
+        "Herencia de prioridad",
+        "TCP garantiza conexión, orden y entrega; UDP no",
+        "El hilo comparte memoria con otros hilos del mismo proceso"
+      ],
+      "respuesta_correcta": "Herencia de prioridad",
+      "explicacion": "Herencia de prioridad"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "redes",
+      "pregunta": "¿Qué diferencia principal hay entre TCP y UDP?",
+      "opciones": [
+        "TCP garantiza conexión, orden y entrega; UDP no",
+        "Un hilo no recibe recursos o CPU durante mucho tiempo o nunca",
+        "UDP",
+        "Herencia de prioridad"
+      ],
+      "respuesta_correcta": "TCP garantiza conexión, orden y entrega; UDP no",
+      "explicacion": "TCP garantiza conexión, orden y entrega; UDP no"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "redes",
+      "pregunta": "¿Qué protocolo usarías si importa más la velocidad que la entrega perfecta?",
+      "opciones": [
+        "start()",
+        "DatagramPacket",
+        "Hace que un hilo espere a que otro termine",
+        "UDP"
+      ],
+      "respuesta_correcta": "UDP",
+      "explicacion": "UDP"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "redes",
+      "pregunta": "¿Qué protocolo usarías si necesitas entrega fiable y ordenada?",
+      "opciones": [
+        "Para volver a comprobar la condición al despertar",
+        "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad",
+        "TCP",
+        "Bloqueo mutuo donde varios hilos se esperan entre sí"
+      ],
+      "respuesta_correcta": "TCP",
+      "explicacion": "TCP"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "redes",
+      "pregunta": "¿Qué clase usa un servidor TCP en Java?",
+      "opciones": [
+        "Proceso en segundo plano sin interfaz de usuario",
+        "ServerSocket",
+        "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad",
+        "Hace que el hilo espere y libere temporalmente el monitor"
+      ],
+      "respuesta_correcta": "ServerSocket",
+      "explicacion": "ServerSocket"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "redes",
+      "pregunta": "¿Qué clase representa comunicación TCP en Java?",
+      "opciones": [
+        "Socket",
+        "Proceso en segundo plano sin interfaz de usuario",
+        "Un hilo de alta prioridad queda bloqueado por otro de baja prioridad",
+        "RBAC"
+      ],
+      "respuesta_correcta": "Socket",
+      "explicacion": "Socket"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "redes",
+      "pregunta": "¿Qué clase se usa para UDP en Java?",
+      "opciones": [
+        "Proceso en segundo plano sin interfaz de usuario",
+        "Los mantiene",
+        "Despierta a un hilo que espera en ese monitor",
+        "DatagramSocket"
+      ],
+      "respuesta_correcta": "DatagramSocket",
+      "explicacion": "DatagramSocket"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "redes",
+      "pregunta": "¿Qué se envía en UDP usando Java?",
+      "opciones": [
+        "Los mantiene",
+        "ServerSocket",
+        "DatagramPacket",
+        "Dentro de un bloque o método synchronized"
+      ],
+      "respuesta_correcta": "DatagramPacket",
+      "explicacion": "DatagramPacket"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "servicios",
+      "pregunta": "¿Qué es un daemon o servicio?",
+      "opciones": [
+        "TCP garantiza conexión, orden y entrega; UDP no",
+        "Proceso en segundo plano sin interfaz de usuario",
+        "Resultado incorrecto o impredecible por acceso concurrente a datos compartidos",
+        "Hace que un hilo espere a que otro termine"
+      ],
+      "respuesta_correcta": "Proceso en segundo plano sin interfaz de usuario",
+      "explicacion": "Proceso en segundo plano sin interfaz de usuario"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad",
+      "pregunta": "¿Qué configuración mínima se recomienda para comunicaciones seguras?",
+      "opciones": [
+        "TLSv1.2 o superior con validación de certificados",
+        "Despierta a todos los hilos que esperan en ese monitor",
+        "Bloqueo mutuo donde varios hilos se esperan entre sí",
+        "TCP"
+      ],
+      "respuesta_correcta": "TLSv1.2 o superior con validación de certificados",
+      "explicacion": "TLSv1.2 o superior con validación de certificados"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad",
+      "pregunta": "¿Qué modelo asigna permisos según roles?",
+      "opciones": [
+        "ServerSocket",
+        "Confidencialidad, Integridad y Disponibilidad",
+        "Permite acceso exclusivo a una sección crítica o recurso compartido",
+        "RBAC"
+      ],
+      "respuesta_correcta": "RBAC",
+      "explicacion": "RBAC"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad",
+      "pregunta": "¿Qué significa la tríada CIA?",
+      "opciones": [
+        "Despierta a un hilo que espera en ese monitor",
+        "Proceso en segundo plano sin interfaz de usuario",
+        "Confidencialidad, Integridad y Disponibilidad",
+        "Un hilo no recibe recursos o CPU durante mucho tiempo o nunca"
+      ],
+      "respuesta_correcta": "Confidencialidad, Integridad y Disponibilidad",
+      "explicacion": "Confidencialidad, Integridad y Disponibilidad"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "PSP es, seguramente, una de las asignaturas más difíciles porque mezcla teoría de sistemas con Java. La idea central es entender cómo un programa puede hacer varias cosas a la vez usando procesos e hilos, qué problemas aparecen cuando varios hilos comparten datos, y cómo se comunican programas por red. Si dominas start/run, synchronized/wait/notifyAll, deadlock/starvation y TCP/UDP, llevas una parte muy grande del examen controlada.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "Hilos en Java",
+        "que_saber": "Thread, Runnable, start(), run(), sleep(), join(). La trampa más típica es run() frente a start()."
+      },
+      {
+        "bloque": "Sincronización",
+        "que_saber": "synchronized protege recursos compartidos. wait() hace esperar. notify() despierta uno. notifyAll() despierta todos. Se usan dentro de synchronized."
+      },
+      {
+        "bloque": "Problemas de concurrencia",
+        "que_saber": "Race condition, deadlock, starvation y priority inversion. Son definiciones muy preguntables."
+      },
+      {
+        "bloque": "Redes",
+        "que_saber": "TCP es fiable y ordenado. UDP es rápido pero no garantiza entrega. ServerSocket/Socket son TCP. DatagramSocket/DatagramPacket son UDP."
+      },
+      {
+        "bloque": "Seguridad básica",
+        "que_saber": "TLSv1.2+, validación de certificados, RBAC, tríada CIA, HTTPS 443."
+      }
+    ],
+    "conceptos_literal": [
+      "start() crea hilo nuevo; run() directo no",
+      "Runnable se prefiere por flexibilidad de herencia",
+      "synchronized = acceso exclusivo",
+      "wait/notify/notifyAll dentro de synchronized",
+      "deadlock = espera mutua",
+      "starvation = no recibe recursos",
+      "TCP fiable, UDP rápido no fiable",
+      "RBAC = roles",
+      "CIA = confidencialidad, integridad, disponibilidad"
+    ],
+    "trampas_tipicas": [
+      "run() NO crea hilo nuevo",
+      "sleep() NO libera locks",
+      "wait() debe ir en synchronized",
+      "notifyAll() no finaliza hilos, solo los despierta",
+      "UDP no garantiza entrega ni orden",
+      "deadlock y starvation no son lo mismo"
+    ],
+    "como_estudiarlo": "Haz tarjetas de pregunta-respuesta. Primero métodos de Thread, luego sincronización, luego problemas de concurrencia, luego TCP/UDP y seguridad."
+  },
+  "resumen_explicativo_ampliado": "PSP es, seguramente, una de las asignaturas más difíciles porque mezcla teoría de sistemas con Java. La idea central es entender cómo un programa puede hacer varias cosas a la vez usando procesos e hilos, qué problemas aparecen cuando varios hilos comparten datos, y cómo se comunican programas por red. Si dominas start/run, synchronized/wait/notifyAll, deadlock/starvation y TCP/UDP, llevas una parte muy grande del examen controlada.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "Hilos en Java",
+      "que_saber": "Thread, Runnable, start(), run(), sleep(), join(). La trampa más típica es run() frente a start()."
+    },
+    {
+      "bloque": "Sincronización",
+      "que_saber": "synchronized protege recursos compartidos. wait() hace esperar. notify() despierta uno. notifyAll() despierta todos. Se usan dentro de synchronized."
+    },
+    {
+      "bloque": "Problemas de concurrencia",
+      "que_saber": "Race condition, deadlock, starvation y priority inversion. Son definiciones muy preguntables."
+    },
+    {
+      "bloque": "Redes",
+      "que_saber": "TCP es fiable y ordenado. UDP es rápido pero no garantiza entrega. ServerSocket/Socket son TCP. DatagramSocket/DatagramPacket son UDP."
+    },
+    {
+      "bloque": "Seguridad básica",
+      "que_saber": "TLSv1.2+, validación de certificados, RBAC, tríada CIA, HTTPS 443."
+    }
+  ],
+  "conceptos_literal": [
+    "start() crea hilo nuevo; run() directo no",
+    "Runnable se prefiere por flexibilidad de herencia",
+    "synchronized = acceso exclusivo",
+    "wait/notify/notifyAll dentro de synchronized",
+    "deadlock = espera mutua",
+    "starvation = no recibe recursos",
+    "TCP fiable, UDP rápido no fiable",
+    "RBAC = roles",
+    "CIA = confidencialidad, integridad, disponibilidad"
+  ],
+  "trampas_tipicas": [
+    "run() NO crea hilo nuevo",
+    "sleep() NO libera locks",
+    "wait() debe ir en synchronized",
+    "notifyAll() no finaliza hilos, solo los despierta",
+    "UDP no garantiza entrega ni orden",
+    "deadlock y starvation no son lo mismo"
+  ],
+  "como_estudiarlo": "Haz tarjetas de pregunta-respuesta. Primero métodos de Thread, luego sincronización, luego problemas de concurrencia, luego TCP/UDP y seguridad."
+}

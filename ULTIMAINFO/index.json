@@ -1,0 +1,21 @@
+{
+  "pack": "DAM 2º curso - 30 preguntas muy probables enriquecidas",
+  "descripcion": "Mismos JSON de 30 preguntas muy probables, pero con más resumen explicativo, bloques que casi seguro entran, conceptos literales y trampas típicas.",
+  "archivos": [
+    "acceso_datos_muy_probables_30.json",
+    "digitalizacion_muy_probables_30.json",
+    "gestion_empresarial_muy_probables_30.json",
+    "ingles_muy_probables_30.json",
+    "interfaces_muy_probables_30.json",
+    "itp_muy_probables_30.json",
+    "multimedia_muy_probables_30.json",
+    "psp_muy_probables_30.json",
+    "sostenibilidad_muy_probables_30.json"
+  ],
+  "modo_uso": [
+    "Primero lee resumen_explicativo_ampliado",
+    "Después conceptos_literal",
+    "Luego trampas_tipicas",
+    "Finalmente haz las 30 preguntas"
+  ]
+}

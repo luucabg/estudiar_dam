@@ -1,0 +1,561 @@
+{
+  "slug": "interfaces_muy_probables_30",
+  "asignatura": "Desarrollo de interfaces",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "JavaFX, FXML, Scene Builder, Maven, JasperReports y usabilidad.",
+  "tips": [
+    "fx:id=@FXML, FXMLLoader carga FXML, Scene Builder editor visual."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "usabilidad",
+      "pregunta": "¿Qué es usabilidad?",
+      "opciones": [
+        "Agrupar funciones relacionadas y mostrar opciones relevantes",
+        "Organización visual para marcar importancia",
+        "Interfaz descrita separada de la lógica",
+        "Facilidad con la que un usuario puede usar una aplicación"
+      ],
+      "respuesta_correcta": "Facilidad con la que un usuario puede usar una aplicación",
+      "explicacion": "Facilidad con la que un usuario puede usar una aplicación"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "arquitectura",
+      "pregunta": "¿Ventaja de separar presentación y lógica?",
+      "opciones": [
+        "Construir interfaces arrastrando componentes",
+        "Esfuerzo mental necesario para usar una interfaz",
+        "Facilita mantenimiento y cambios visuales",
+        "Lee FXML e instancia la interfaz"
+      ],
+      "respuesta_correcta": "Facilita mantenimiento y cambios visuales",
+      "explicacion": "Facilita mantenimiento y cambios visuales"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "javafx",
+      "pregunta": "¿Tecnología moderna para interfaces gráficas Java?",
+      "opciones": [
+        "Control y libertad del usuario",
+        "JavaFX",
+        "Ayuda mostrada según la situación del usuario",
+        "Cambiar tema sin tocar lógica"
+      ],
+      "respuesta_correcta": "JavaFX",
+      "explicacion": "JavaFX"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "javafx",
+      "pregunta": "¿Qué es Scene Builder?",
+      "opciones": [
+        "Editor visual WYSIWYG para JavaFX",
+        "Plantilla visual del informe y datos",
+        "JRXML",
+        "Interfaz descrita separada de la lógica"
+      ],
+      "respuesta_correcta": "Editor visual WYSIWYG para JavaFX",
+      "explicacion": "Editor visual WYSIWYG para JavaFX"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "javafx",
+      "pregunta": "¿Qué hace FXMLLoader?",
+      "opciones": [
+        "fx:id",
+        "Ayuda mostrada según la situación del usuario",
+        "pom.xml",
+        "Lee FXML e instancia la interfaz"
+      ],
+      "respuesta_correcta": "Lee FXML e instancia la interfaz",
+      "explicacion": "Lee FXML e instancia la interfaz"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "fxml",
+      "pregunta": "¿Qué atributo identifica un componente FXML?",
+      "opciones": [
+        "@FXML y fx:id",
+        "Esfuerzo mental necesario para usar una interfaz",
+        "fx:id",
+        "Organización visual para marcar importancia"
+      ],
+      "respuesta_correcta": "fx:id",
+      "explicacion": "fx:id"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "maven",
+      "pregunta": "¿Qué hace Maven?",
+      "opciones": [
+        "Carpeta de recursos",
+        "Gestiona dependencias y ciclo de vida del proyecto",
+        "Swing/AWT",
+        "fx:id"
+      ],
+      "respuesta_correcta": "Gestiona dependencias y ciclo de vida del proyecto",
+      "explicacion": "Gestiona dependencias y ciclo de vida del proyecto"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "jasper",
+      "pregunta": "¿Qué separa JasperReports?",
+      "opciones": [
+        "Plantilla visual del informe y datos",
+        "fx:id",
+        "Construir interfaces arrastrando componentes",
+        "Cambiar tema sin tocar lógica"
+      ],
+      "respuesta_correcta": "Plantilla visual del informe y datos",
+      "explicacion": "Plantilla visual del informe y datos"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Dónde se guardan layouts Android?",
+      "opciones": [
+        "Editor visual WYSIWYG para JavaFX",
+        "Versión inicial para probar diseño o interacción",
+        "Archivo XML para definir interfaces JavaFX",
+        "res/layout"
+      ],
+      "respuesta_correcta": "res/layout",
+      "explicacion": "res/layout"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué reduce carga cognitiva?",
+      "opciones": [
+        "Aplicar soluciones en diferentes contextos",
+        "Agrupar funciones relacionadas y mostrar opciones relevantes",
+        "Jerarquía visual clara y consistente",
+        "Control y libertad del usuario"
+      ],
+      "respuesta_correcta": "Jerarquía visual clara y consistente",
+      "explicacion": "Jerarquía visual clara y consistente"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué principio permite corregir acciones?",
+      "opciones": [
+        "What You See Is What You Get",
+        "Control y libertad del usuario",
+        "Agrupar funciones relacionadas y mostrar opciones relevantes",
+        "Jerarquía visual clara y consistente"
+      ],
+      "respuesta_correcta": "Control y libertad del usuario",
+      "explicacion": "Control y libertad del usuario"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "componentes",
+      "pregunta": "¿Ventaja de reutilizar componentes?",
+      "opciones": [
+        "Aplicar soluciones en diferentes contextos",
+        "Gestiona dependencias y ciclo de vida del proyecto",
+        "Editor visual WYSIWYG para JavaFX",
+        "Bases de datos, controladores u otros orígenes"
+      ],
+      "respuesta_correcta": "Aplicar soluciones en diferentes contextos",
+      "explicacion": "Aplicar soluciones en diferentes contextos"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ui",
+      "pregunta": "¿Qué es una interfaz declarativa?",
+      "opciones": [
+        "@FXML y fx:id",
+        "Editor visual WYSIWYG para JavaFX",
+        "Usabilidad y estética pueden trabajarse juntas",
+        "Interfaz descrita separada de la lógica"
+      ],
+      "respuesta_correcta": "Interfaz descrita separada de la lógica",
+      "explicacion": "Interfaz descrita separada de la lógica"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ui",
+      "pregunta": "¿Qué significa WYSIWYG?",
+      "opciones": [
+        "Ayuda mostrada según la situación del usuario",
+        "Facilidad con la que un usuario puede usar una aplicación",
+        "What You See Is What You Get",
+        "Carpeta de recursos"
+      ],
+      "respuesta_correcta": "What You See Is What You Get",
+      "explicacion": "What You See Is What You Get"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "maven",
+      "pregunta": "¿Qué archivo configura Maven?",
+      "opciones": [
+        "Cambiar tema sin tocar lógica",
+        "pom.xml",
+        "JRXML",
+        "res/layout"
+      ],
+      "respuesta_correcta": "pom.xml",
+      "explicacion": "pom.xml"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "jasper",
+      "pregunta": "¿Qué lenguaje describe plantillas JasperReports?",
+      "opciones": [
+        "JRXML",
+        "Interfaz descrita separada de la lógica",
+        "Editor visual WYSIWYG para JavaFX",
+        "Esfuerzo mental necesario para usar una interfaz"
+      ],
+      "respuesta_correcta": "JRXML",
+      "explicacion": "JRXML"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué pasa sin consistencia?",
+      "opciones": [
+        "Swing/AWT",
+        "Cambiar tema sin tocar lógica",
+        "@FXML y fx:id",
+        "El usuario tiene que reaprender patrones"
+      ],
+      "respuesta_correcta": "El usuario tiene que reaprender patrones",
+      "explicacion": "El usuario tiene que reaprender patrones"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué es jerarquía visual?",
+      "opciones": [
+        "Interfaz descrita separada de la lógica",
+        "Facilidad con la que un usuario puede usar una aplicación",
+        "Organización visual para marcar importancia",
+        "Carpeta de recursos"
+      ],
+      "respuesta_correcta": "Organización visual para marcar importancia",
+      "explicacion": "Organización visual para marcar importancia"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué es carga cognitiva?",
+      "opciones": [
+        "JRXML",
+        "Esfuerzo mental necesario para usar una interfaz",
+        "Usabilidad y estética pueden trabajarse juntas",
+        "JavaFX"
+      ],
+      "respuesta_correcta": "Esfuerzo mental necesario para usar una interfaz",
+      "explicacion": "Esfuerzo mental necesario para usar una interfaz"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué afirmación es correcta sobre estética y usabilidad?",
+      "opciones": [
+        "Usabilidad y estética pueden trabajarse juntas",
+        "El usuario tiene que reaprender patrones",
+        "@FXML y fx:id",
+        "Esfuerzo mental necesario para usar una interfaz"
+      ],
+      "respuesta_correcta": "Usabilidad y estética pueden trabajarse juntas",
+      "explicacion": "Usabilidad y estética pueden trabajarse juntas"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "javafx",
+      "pregunta": "¿Qué conecta controlador y FXML?",
+      "opciones": [
+        "Editor visual WYSIWYG para JavaFX",
+        "Versión inicial para probar diseño o interacción",
+        "Lee FXML e instancia la interfaz",
+        "@FXML y fx:id"
+      ],
+      "respuesta_correcta": "@FXML y fx:id",
+      "explicacion": "@FXML y fx:id"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "editores",
+      "pregunta": "¿Función principal de editores visuales?",
+      "opciones": [
+        "What You See Is What You Get",
+        "Organización visual para marcar importancia",
+        "Construir interfaces arrastrando componentes",
+        "JRXML"
+      ],
+      "respuesta_correcta": "Construir interfaces arrastrando componentes",
+      "explicacion": "Construir interfaces arrastrando componentes"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "componentes",
+      "pregunta": "¿Qué permite desacoplar apariencia y funcionalidad?",
+      "opciones": [
+        "Ayuda mostrada según la situación del usuario",
+        "Cambiar tema sin tocar lógica",
+        "Organización visual para marcar importancia",
+        "Control y libertad del usuario"
+      ],
+      "respuesta_correcta": "Cambiar tema sin tocar lógica",
+      "explicacion": "Cambiar tema sin tocar lógica"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "jasper",
+      "pregunta": "¿De dónde puede sacar datos un informe dinámico?",
+      "opciones": [
+        "Bases de datos, controladores u otros orígenes",
+        "Ayuda mostrada según la situación del usuario",
+        "Organización visual para marcar importancia",
+        "Archivo XML para definir interfaces JavaFX"
+      ],
+      "respuesta_correcta": "Bases de datos, controladores u otros orígenes",
+      "explicacion": "Bases de datos, controladores u otros orígenes"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Qué representa res en Android?",
+      "opciones": [
+        "Ayuda mostrada según la situación del usuario",
+        "Plantilla visual del informe y datos",
+        "Aplicar soluciones en diferentes contextos",
+        "Carpeta de recursos"
+      ],
+      "respuesta_correcta": "Carpeta de recursos",
+      "explicacion": "Carpeta de recursos"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ui",
+      "pregunta": "¿Qué es prototipado?",
+      "opciones": [
+        "Plantilla visual del informe y datos",
+        "Cambiar tema sin tocar lógica",
+        "Versión inicial para probar diseño o interacción",
+        "Jerarquía visual clara y consistente"
+      ],
+      "respuesta_correcta": "Versión inicial para probar diseño o interacción",
+      "explicacion": "Versión inicial para probar diseño o interacción"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué es ayuda contextual?",
+      "opciones": [
+        "Usabilidad y estética pueden trabajarse juntas",
+        "Ayuda mostrada según la situación del usuario",
+        "pom.xml",
+        "Lee FXML e instancia la interfaz"
+      ],
+      "respuesta_correcta": "Ayuda mostrada según la situación del usuario",
+      "explicacion": "Ayuda mostrada según la situación del usuario"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ux",
+      "pregunta": "¿Qué estrategia reduce carga cognitiva?",
+      "opciones": [
+        "Agrupar funciones relacionadas y mostrar opciones relevantes",
+        "Interfaz descrita separada de la lógica",
+        "JRXML",
+        "Construir interfaces arrastrando componentes"
+      ],
+      "respuesta_correcta": "Agrupar funciones relacionadas y mostrar opciones relevantes",
+      "explicacion": "Agrupar funciones relacionadas y mostrar opciones relevantes"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "javafx",
+      "pregunta": "¿Qué es FXML?",
+      "opciones": [
+        "Cambiar tema sin tocar lógica",
+        "Swing/AWT",
+        "res/layout",
+        "Archivo XML para definir interfaces JavaFX"
+      ],
+      "respuesta_correcta": "Archivo XML para definir interfaces JavaFX",
+      "explicacion": "Archivo XML para definir interfaces JavaFX"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "java",
+      "pregunta": "¿Qué tecnología anterior a JavaFX se usaba para GUI?",
+      "opciones": [
+        "Aplicar soluciones en diferentes contextos",
+        "Ayuda mostrada según la situación del usuario",
+        "Swing/AWT",
+        "El usuario tiene que reaprender patrones"
+      ],
+      "respuesta_correcta": "Swing/AWT",
+      "explicacion": "Swing/AWT"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "Desarrollo de Interfaces es bastante agradecida si memorizas herramientas y principios. Lo principal: usabilidad, separación entre vista y lógica, JavaFX, FXML, FXMLLoader, fx:id, Scene Builder, Maven, JasperReports y jerarquía visual.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "Usabilidad",
+        "que_saber": "Facilidad de uso. Jerarquía visual clara reduce carga cognitiva. Control y libertad permite corregir acciones."
+      },
+      {
+        "bloque": "Separación vista-lógica",
+        "que_saber": "Permite mantener y cambiar diseño sin romper funcionalidad."
+      },
+      {
+        "bloque": "JavaFX/FXML",
+        "que_saber": "JavaFX crea interfaces Java. FXML define la interfaz en XML. FXMLLoader carga FXML. fx:id conecta con controlador."
+      },
+      {
+        "bloque": "Scene Builder",
+        "que_saber": "Editor visual WYSIWYG para diseñar interfaces JavaFX."
+      },
+      {
+        "bloque": "Maven",
+        "que_saber": "Gestiona dependencias y ciclo de vida mediante pom.xml."
+      },
+      {
+        "bloque": "JasperReports",
+        "que_saber": "Separa plantilla visual del informe y datos."
+      }
+    ],
+    "conceptos_literal": [
+      "Usabilidad = facilidad de uso",
+      "FXMLLoader = carga FXML",
+      "fx:id = identificar nodo para controlador",
+      "Scene Builder = editor visual JavaFX",
+      "Maven = dependencias",
+      "JasperReports = plantilla + datos",
+      "res/layout = layouts Android"
+    ],
+    "trampas_tipicas": [
+      "FXMLLoader no diseña, carga",
+      "Scene Builder diseña visualmente",
+      "fx:id no es id normal de HTML",
+      "Maven no es una herramienta de diseño",
+      "Usabilidad y estética pueden ir juntas"
+    ],
+    "como_estudiarlo": "Estudia por herramientas: JavaFX/FXML, Scene Builder, Maven, JasperReports. Luego UX/usabilidad."
+  },
+  "resumen_explicativo_ampliado": "Desarrollo de Interfaces es bastante agradecida si memorizas herramientas y principios. Lo principal: usabilidad, separación entre vista y lógica, JavaFX, FXML, FXMLLoader, fx:id, Scene Builder, Maven, JasperReports y jerarquía visual.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "Usabilidad",
+      "que_saber": "Facilidad de uso. Jerarquía visual clara reduce carga cognitiva. Control y libertad permite corregir acciones."
+    },
+    {
+      "bloque": "Separación vista-lógica",
+      "que_saber": "Permite mantener y cambiar diseño sin romper funcionalidad."
+    },
+    {
+      "bloque": "JavaFX/FXML",
+      "que_saber": "JavaFX crea interfaces Java. FXML define la interfaz en XML. FXMLLoader carga FXML. fx:id conecta con controlador."
+    },
+    {
+      "bloque": "Scene Builder",
+      "que_saber": "Editor visual WYSIWYG para diseñar interfaces JavaFX."
+    },
+    {
+      "bloque": "Maven",
+      "que_saber": "Gestiona dependencias y ciclo de vida mediante pom.xml."
+    },
+    {
+      "bloque": "JasperReports",
+      "que_saber": "Separa plantilla visual del informe y datos."
+    }
+  ],
+  "conceptos_literal": [
+    "Usabilidad = facilidad de uso",
+    "FXMLLoader = carga FXML",
+    "fx:id = identificar nodo para controlador",
+    "Scene Builder = editor visual JavaFX",
+    "Maven = dependencias",
+    "JasperReports = plantilla + datos",
+    "res/layout = layouts Android"
+  ],
+  "trampas_tipicas": [
+    "FXMLLoader no diseña, carga",
+    "Scene Builder diseña visualmente",
+    "fx:id no es id normal de HTML",
+    "Maven no es una herramienta de diseño",
+    "Usabilidad y estética pueden ir juntas"
+  ],
+  "como_estudiarlo": "Estudia por herramientas: JavaFX/FXML, Scene Builder, Maven, JasperReports. Luego UX/usabilidad."
+}

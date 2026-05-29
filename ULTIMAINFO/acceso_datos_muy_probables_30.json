@@ -1,0 +1,573 @@
+{
+  "slug": "acceso_datos_muy_probables_30",
+  "asignatura": "Acceso a datos",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "SQL, joins, claves, REST, JDBC, MongoDB y Active Record.",
+  "tips": [
+    "INNER JOIN=coincidencias, LEFT JOIN=todo izquierda, WHERE=filas, HAVING=grupos."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué hace DISTINCT?",
+      "opciones": [
+        "SUM()",
+        "PUT",
+        "Para consultas parametrizadas más seguras",
+        "Elimina duplicados del resultado"
+      ],
+      "respuesta_correcta": "Elimina duplicados del resultado",
+      "explicacion": "Elimina duplicados del resultado"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué hace WHERE?",
+      "opciones": [
+        "Conjunto de documentos relacionados",
+        "PATCH",
+        "Filtra filas que cumplen una condición",
+        "Filtra grupos después de agrupar"
+      ],
+      "respuesta_correcta": "Filtra filas que cumplen una condición",
+      "explicacion": "Filtra filas que cumplen una condición"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué hace ORDER BY?",
+      "opciones": [
+        "Crear, leer, actualizar y eliminar",
+        "Ordena los resultados de una consulta",
+        "COUNT()",
+        "Estructura de datos similar a JSON/BSON"
+      ],
+      "respuesta_correcta": "Ordena los resultados de una consulta",
+      "explicacion": "Ordena los resultados de una consulta"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué hace GROUP BY?",
+      "opciones": [
+        "Agrupa registros por una o varias columnas",
+        "Todas las filas de la tabla izquierda y coincidencias de la derecha",
+        "GET",
+        "Para consultas parametrizadas más seguras"
+      ],
+      "respuesta_correcta": "Agrupa registros por una o varias columnas",
+      "explicacion": "Agrupa registros por una o varias columnas"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué hace HAVING?",
+      "opciones": [
+        "WHERE filtra filas y HAVING filtra grupos",
+        "COUNT()",
+        "ResultSet",
+        "Filtra grupos después de agrupar"
+      ],
+      "respuesta_correcta": "Filtra grupos después de agrupar",
+      "explicacion": "Filtra grupos después de agrupar"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Diferencia entre WHERE y HAVING?",
+      "opciones": [
+        "Es seguro e idempotente porque no modifica el servidor",
+        "PATCH",
+        "WHERE filtra filas y HAVING filtra grupos",
+        "PUT"
+      ],
+      "respuesta_correcta": "WHERE filtra filas y HAVING filtra grupos",
+      "explicacion": "WHERE filtra filas y HAVING filtra grupos"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "joins",
+      "pregunta": "¿Qué devuelve INNER JOIN?",
+      "opciones": [
+        "Patrón donde una clase representa una tabla y un objeto un registro",
+        "Solo registros con coincidencia en ambas tablas",
+        "La integridad referencial entre tablas",
+        "WHERE filtra filas y HAVING filtra grupos"
+      ],
+      "respuesta_correcta": "Solo registros con coincidencia en ambas tablas",
+      "explicacion": "Solo registros con coincidencia en ambas tablas"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "joins",
+      "pregunta": "¿Qué devuelve LEFT JOIN?",
+      "opciones": [
+        "Todas las filas de la tabla izquierda y coincidencias de la derecha",
+        "WHERE filtra filas y HAVING filtra grupos",
+        "Conjunto de documentos relacionados",
+        "Estructura de datos similar a JSON/BSON"
+      ],
+      "respuesta_correcta": "Todas las filas de la tabla izquierda y coincidencias de la derecha",
+      "explicacion": "Todas las filas de la tabla izquierda y coincidencias de la derecha"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "modelo_relacional",
+      "pregunta": "¿Qué es una clave primaria?",
+      "opciones": [
+        "Agrupa registros por una o varias columnas",
+        "Trabajar con tablas mediante clases y objetos",
+        "DESC",
+        "Campo que identifica de forma única cada registro"
+      ],
+      "respuesta_correcta": "Campo que identifica de forma única cada registro",
+      "explicacion": "Campo que identifica de forma única cada registro"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "modelo_relacional",
+      "pregunta": "¿Qué es una clave foránea?",
+      "opciones": [
+        "API de Java para conectarse a bases de datos",
+        "SUM()",
+        "Campo que referencia la clave primaria de otra tabla",
+        "Crear, leer, actualizar y eliminar"
+      ],
+      "respuesta_correcta": "Campo que referencia la clave primaria de otra tabla",
+      "explicacion": "Campo que referencia la clave primaria de otra tabla"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "datos",
+      "pregunta": "¿Qué significa CRUD?",
+      "opciones": [
+        "Connection",
+        "Crear, leer, actualizar y eliminar",
+        "SUM()",
+        "Campo que referencia la clave primaria de otra tabla"
+      ],
+      "respuesta_correcta": "Crear, leer, actualizar y eliminar",
+      "explicacion": "Crear, leer, actualizar y eliminar"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "jdbc",
+      "pregunta": "¿Qué es JDBC?",
+      "opciones": [
+        "API de Java para conectarse a bases de datos",
+        "Solo registros con coincidencia en ambas tablas",
+        "Agrupa registros por una o varias columnas",
+        "Permite esquemas flexibles en documentos"
+      ],
+      "respuesta_correcta": "API de Java para conectarse a bases de datos",
+      "explicacion": "API de Java para conectarse a bases de datos"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "jdbc",
+      "pregunta": "¿Para qué sirve PreparedStatement?",
+      "opciones": [
+        "Es seguro e idempotente porque no modifica el servidor",
+        "Agrupa registros por una o varias columnas",
+        "DELETE",
+        "Para consultas parametrizadas más seguras"
+      ],
+      "respuesta_correcta": "Para consultas parametrizadas más seguras",
+      "explicacion": "Para consultas parametrizadas más seguras"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "jdbc",
+      "pregunta": "¿Qué objeto JDBC representa una conexión?",
+      "opciones": [
+        "COUNT()",
+        "Elimina duplicados del resultado",
+        "Connection",
+        "Patrón donde una clase representa una tabla y un objeto un registro"
+      ],
+      "respuesta_correcta": "Connection",
+      "explicacion": "Connection"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "jdbc",
+      "pregunta": "¿Qué objeto JDBC recorre resultados?",
+      "opciones": [
+        "Estructura de datos similar a JSON/BSON",
+        "ResultSet",
+        "GET",
+        "Campo que identifica de forma única cada registro"
+      ],
+      "respuesta_correcta": "ResultSet",
+      "explicacion": "ResultSet"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "rest",
+      "pregunta": "¿Qué verbo HTTP se usa para obtener datos?",
+      "opciones": [
+        "GET",
+        "Para consultas parametrizadas más seguras",
+        "Agrupa registros por una o varias columnas",
+        "PATCH"
+      ],
+      "respuesta_correcta": "GET",
+      "explicacion": "GET"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "rest",
+      "pregunta": "¿Qué verbo HTTP se usa para crear recursos?",
+      "opciones": [
+        "La integridad referencial entre tablas",
+        "Estructura de datos similar a JSON/BSON",
+        "Es seguro e idempotente porque no modifica el servidor",
+        "POST"
+      ],
+      "respuesta_correcta": "POST",
+      "explicacion": "POST"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "rest",
+      "pregunta": "¿Qué verbo HTTP suele actualizar completamente?",
+      "opciones": [
+        "Para consultas parametrizadas más seguras",
+        "Elimina duplicados del resultado",
+        "PUT",
+        "Patrón donde una clase representa una tabla y un objeto un registro"
+      ],
+      "respuesta_correcta": "PUT",
+      "explicacion": "PUT"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "rest",
+      "pregunta": "¿Qué verbo HTTP suele actualizar parcialmente?",
+      "opciones": [
+        "GET",
+        "PATCH",
+        "DELETE",
+        "Ordena los resultados de una consulta"
+      ],
+      "respuesta_correcta": "PATCH",
+      "explicacion": "PATCH"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "rest",
+      "pregunta": "¿Qué verbo HTTP elimina recursos?",
+      "opciones": [
+        "DELETE",
+        "POST",
+        "Es seguro e idempotente porque no modifica el servidor",
+        "PATCH"
+      ],
+      "respuesta_correcta": "DELETE",
+      "explicacion": "DELETE"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "rest",
+      "pregunta": "¿Qué característica tiene GET?",
+      "opciones": [
+        "Agrupa registros por una o varias columnas",
+        "Trabajar con tablas mediante clases y objetos",
+        "Filtra grupos después de agrupar",
+        "Es seguro e idempotente porque no modifica el servidor"
+      ],
+      "respuesta_correcta": "Es seguro e idempotente porque no modifica el servidor",
+      "explicacion": "Es seguro e idempotente porque no modifica el servidor"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "mongodb",
+      "pregunta": "¿Qué es una colección en MongoDB?",
+      "opciones": [
+        "Connection",
+        "PUT",
+        "Conjunto de documentos relacionados",
+        "GET"
+      ],
+      "respuesta_correcta": "Conjunto de documentos relacionados",
+      "explicacion": "Conjunto de documentos relacionados"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "mongodb",
+      "pregunta": "¿Qué es un documento en MongoDB?",
+      "opciones": [
+        "COUNT()",
+        "Estructura de datos similar a JSON/BSON",
+        "PUT",
+        "Crear, leer, actualizar y eliminar"
+      ],
+      "respuesta_correcta": "Estructura de datos similar a JSON/BSON",
+      "explicacion": "Estructura de datos similar a JSON/BSON"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "mongodb",
+      "pregunta": "¿Qué ventaja tiene MongoDB?",
+      "opciones": [
+        "Permite esquemas flexibles en documentos",
+        "COUNT()",
+        "PUT",
+        "DESC"
+      ],
+      "respuesta_correcta": "Permite esquemas flexibles en documentos",
+      "explicacion": "Permite esquemas flexibles en documentos"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "orm",
+      "pregunta": "¿Qué es Active Record?",
+      "opciones": [
+        "COUNT()",
+        "Todas las filas de la tabla izquierda y coincidencias de la derecha",
+        "API de Java para conectarse a bases de datos",
+        "Patrón donde una clase representa una tabla y un objeto un registro"
+      ],
+      "respuesta_correcta": "Patrón donde una clase representa una tabla y un objeto un registro",
+      "explicacion": "Patrón donde una clase representa una tabla y un objeto un registro"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "yii2",
+      "pregunta": "¿Qué permite Active Record en Yii2?",
+      "opciones": [
+        "Todas las filas de la tabla izquierda y coincidencias de la derecha",
+        "Estructura de datos similar a JSON/BSON",
+        "Trabajar con tablas mediante clases y objetos",
+        "Campo que referencia la clave primaria de otra tabla"
+      ],
+      "respuesta_correcta": "Trabajar con tablas mediante clases y objetos",
+      "explicacion": "Trabajar con tablas mediante clases y objetos"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué función cuenta registros?",
+      "opciones": [
+        "DELETE",
+        "COUNT()",
+        "ResultSet",
+        "Filtra grupos después de agrupar"
+      ],
+      "respuesta_correcta": "COUNT()",
+      "explicacion": "COUNT()"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué función suma valores numéricos?",
+      "opciones": [
+        "SUM()",
+        "Para consultas parametrizadas más seguras",
+        "GET",
+        "Conjunto de documentos relacionados"
+      ],
+      "respuesta_correcta": "SUM()",
+      "explicacion": "SUM()"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sql",
+      "pregunta": "¿Qué palabra ordena de mayor a menor?",
+      "opciones": [
+        "Estructura de datos similar a JSON/BSON",
+        "La integridad referencial entre tablas",
+        "Campo que identifica de forma única cada registro",
+        "DESC"
+      ],
+      "respuesta_correcta": "DESC",
+      "explicacion": "DESC"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "integridad",
+      "pregunta": "¿Qué protege una FK?",
+      "opciones": [
+        "API de Java para conectarse a bases de datos",
+        "COUNT()",
+        "La integridad referencial entre tablas",
+        "POST"
+      ],
+      "respuesta_correcta": "La integridad referencial entre tablas",
+      "explicacion": "La integridad referencial entre tablas"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "Acceso a Datos tiene muchas preguntas directas de SQL y APIs. Es muy rentable aprender exactamente qué hace cada palabra: WHERE, HAVING, GROUP BY, DISTINCT, INNER JOIN, LEFT JOIN. También suelen entrar claves primarias/foráneas, CRUD, JDBC, PreparedStatement, REST y MongoDB.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "SQL básico",
+        "que_saber": "SELECT, WHERE, ORDER BY, DISTINCT. WHERE filtra filas, ORDER BY ordena, DISTINCT quita duplicados."
+      },
+      {
+        "bloque": "SQL agrupado",
+        "que_saber": "GROUP BY agrupa; HAVING filtra grupos. Diferenciar WHERE de HAVING es clave."
+      },
+      {
+        "bloque": "JOINs",
+        "que_saber": "INNER JOIN solo coincidencias. LEFT JOIN todo lo de la izquierda aunque no haya coincidencia."
+      },
+      {
+        "bloque": "Modelo relacional",
+        "que_saber": "PK identifica de forma única. FK referencia una PK de otra tabla."
+      },
+      {
+        "bloque": "APIs REST",
+        "que_saber": "GET lee, POST crea, PUT actualiza completo, PATCH parcial, DELETE elimina."
+      },
+      {
+        "bloque": "Java y datos",
+        "que_saber": "JDBC conecta Java con BD. PreparedStatement permite consultas parametrizadas."
+      },
+      {
+        "bloque": "MongoDB/Yii2",
+        "que_saber": "Colección = conjunto de documentos. Documento = JSON/BSON. Active Record = clase que representa tabla."
+      }
+    ],
+    "conceptos_literal": [
+      "DISTINCT = eliminar duplicados",
+      "WHERE = filtrar filas",
+      "HAVING = filtrar grupos",
+      "INNER JOIN = solo coincidencias",
+      "LEFT JOIN = todo izquierda",
+      "CRUD = crear, leer, actualizar, eliminar",
+      "GET = obtener",
+      "POST = crear",
+      "PreparedStatement = consultas parametrizadas seguras"
+    ],
+    "trampas_tipicas": [
+      "WHERE y HAVING no son lo mismo",
+      "LEFT JOIN no es solo coincidencias",
+      "POST no es para leer",
+      "PUT y PATCH se parecen pero PUT suele ser completo y PATCH parcial",
+      "PK identifica, FK relaciona"
+    ],
+    "como_estudiarlo": "Empieza por SQL y REST. Si sabes traducir cada palabra clave a una frase corta, tienes mucho ganado."
+  },
+  "resumen_explicativo_ampliado": "Acceso a Datos tiene muchas preguntas directas de SQL y APIs. Es muy rentable aprender exactamente qué hace cada palabra: WHERE, HAVING, GROUP BY, DISTINCT, INNER JOIN, LEFT JOIN. También suelen entrar claves primarias/foráneas, CRUD, JDBC, PreparedStatement, REST y MongoDB.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "SQL básico",
+      "que_saber": "SELECT, WHERE, ORDER BY, DISTINCT. WHERE filtra filas, ORDER BY ordena, DISTINCT quita duplicados."
+    },
+    {
+      "bloque": "SQL agrupado",
+      "que_saber": "GROUP BY agrupa; HAVING filtra grupos. Diferenciar WHERE de HAVING es clave."
+    },
+    {
+      "bloque": "JOINs",
+      "que_saber": "INNER JOIN solo coincidencias. LEFT JOIN todo lo de la izquierda aunque no haya coincidencia."
+    },
+    {
+      "bloque": "Modelo relacional",
+      "que_saber": "PK identifica de forma única. FK referencia una PK de otra tabla."
+    },
+    {
+      "bloque": "APIs REST",
+      "que_saber": "GET lee, POST crea, PUT actualiza completo, PATCH parcial, DELETE elimina."
+    },
+    {
+      "bloque": "Java y datos",
+      "que_saber": "JDBC conecta Java con BD. PreparedStatement permite consultas parametrizadas."
+    },
+    {
+      "bloque": "MongoDB/Yii2",
+      "que_saber": "Colección = conjunto de documentos. Documento = JSON/BSON. Active Record = clase que representa tabla."
+    }
+  ],
+  "conceptos_literal": [
+    "DISTINCT = eliminar duplicados",
+    "WHERE = filtrar filas",
+    "HAVING = filtrar grupos",
+    "INNER JOIN = solo coincidencias",
+    "LEFT JOIN = todo izquierda",
+    "CRUD = crear, leer, actualizar, eliminar",
+    "GET = obtener",
+    "POST = crear",
+    "PreparedStatement = consultas parametrizadas seguras"
+  ],
+  "trampas_tipicas": [
+    "WHERE y HAVING no son lo mismo",
+    "LEFT JOIN no es solo coincidencias",
+    "POST no es para leer",
+    "PUT y PATCH se parecen pero PUT suele ser completo y PATCH parcial",
+    "PK identifica, FK relaciona"
+  ],
+  "como_estudiarlo": "Empieza por SQL y REST. Si sabes traducir cada palabra clave a una frase corta, tienes mucho ganado."
+}

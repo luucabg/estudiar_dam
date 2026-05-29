@@ -1,0 +1,561 @@
+{
+  "slug": "sostenibilidad_muy_probables_30",
+  "asignatura": "Sostenibilidad aplicada",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "5R, ODS, clima, economía circular, AROPE y OIT.",
+  "tips": [
+    "AROPE=pobreza/exclusión, OIT=trabajo digno, Back Market=reacondicionados."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "residuos",
+      "pregunta": "¿Qué representa Reducir en las 5R?",
+      "opciones": [
+        "Forma en que la empresa se dirige y controla éticamente",
+        "Usar de nuevo un producto",
+        "Reducir emisiones sustituyendo fósiles por renovables y eficiencia",
+        "Disminuir recursos consumidos y residuos generados en origen"
+      ],
+      "respuesta_correcta": "Disminuir recursos consumidos y residuos generados en origen",
+      "explicacion": "Disminuir recursos consumidos y residuos generados en origen"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "residuos",
+      "pregunta": "¿Cuáles son las 5R?",
+      "opciones": [
+        "Compromiso empresarial social, ambiental y ético",
+        "Arreglar un producto para seguir usándolo",
+        "Rechazar, reducir, reutilizar, reparar y reciclar",
+        "Emisiones humanas de gases de efecto invernadero"
+      ],
+      "respuesta_correcta": "Rechazar, reducir, reutilizar, reparar y reciclar",
+      "explicacion": "Rechazar, reducir, reutilizar, reparar y reciclar"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "circular",
+      "pregunta": "¿Qué hace Back Market?",
+      "opciones": [
+        "Extraer, fabricar, usar y desechar",
+        "Reacondiciona y vende dispositivos electrónicos usados",
+        "Acciones que compensan emisiones, como reforestación",
+        "GEI asociados a una actividad"
+      ],
+      "respuesta_correcta": "Reacondiciona y vende dispositivos electrónicos usados",
+      "explicacion": "Reacondiciona y vende dispositivos electrónicos usados"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "social",
+      "pregunta": "¿Qué mide AROPE?",
+      "opciones": [
+        "Riesgo de pobreza o exclusión social",
+        "Aumentan en frecuencia e intensidad",
+        "Comunicar desempeño ambiental, social y de gobernanza",
+        "Reducir emisiones sustituyendo fósiles por renovables y eficiencia"
+      ],
+      "respuesta_correcta": "Riesgo de pobreza o exclusión social",
+      "explicacion": "Riesgo de pobreza o exclusión social"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "clima",
+      "pregunta": "¿Causa principal del cambio climático actual?",
+      "opciones": [
+        "Balance entre emisiones y reducciones o compensaciones",
+        "Acciones que compensan emisiones, como reforestación",
+        "Fecha en que consumimos lo que el planeta regenera en un año",
+        "Emisiones humanas de gases de efecto invernadero"
+      ],
+      "respuesta_correcta": "Emisiones humanas de gases de efecto invernadero",
+      "explicacion": "Emisiones humanas de gases de efecto invernadero"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "clima",
+      "pregunta": "¿Qué es neutralidad climática?",
+      "opciones": [
+        "Bienestar, equidad e inclusión",
+        "Arreglar un producto para seguir usándolo",
+        "Balance entre emisiones y reducciones o compensaciones",
+        "Usar de nuevo un producto"
+      ],
+      "respuesta_correcta": "Balance entre emisiones y reducciones o compensaciones",
+      "explicacion": "Balance entre emisiones y reducciones o compensaciones"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "social",
+      "pregunta": "¿Qué organización promueve trabajo digno?",
+      "opciones": [
+        "Agenda 2030",
+        "OIT",
+        "CO2, CH4 y otros GEI",
+        "Balance entre emisiones y reducciones o compensaciones"
+      ],
+      "respuesta_correcta": "OIT",
+      "explicacion": "OIT"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "clima",
+      "pregunta": "¿Cómo cambian eventos extremos por calentamiento?",
+      "opciones": [
+        "Aumentan en frecuencia e intensidad",
+        "Balance entre emisiones y reducciones o compensaciones",
+        "Compromiso empresarial social, ambiental y ético",
+        "GEI asociados a una actividad"
+      ],
+      "respuesta_correcta": "Aumentan en frecuencia e intensidad",
+      "explicacion": "Aumentan en frecuencia e intensidad"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "biodiversidad",
+      "pregunta": "¿Objetivo Kunming-Montreal?",
+      "opciones": [
+        "Riesgo de pobreza o exclusión social",
+        "Energía de fuentes que se regeneran naturalmente",
+        "Reducir",
+        "Proteger al menos el 30% del territorio planetario"
+      ],
+      "respuesta_correcta": "Proteger al menos el 30% del territorio planetario",
+      "explicacion": "Proteger al menos el 30% del territorio planetario"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "biodiversidad",
+      "pregunta": "¿Qué es biodiversidad?",
+      "opciones": [
+        "Universales, integrados y aplicables a todos los países",
+        "Forma en que la empresa se dirige y controla éticamente",
+        "Variedad de genes, especies y ecosistemas",
+        "Extraer, fabricar, usar y desechar"
+      ],
+      "respuesta_correcta": "Variedad de genes, especies y ecosistemas",
+      "explicacion": "Variedad de genes, especies y ecosistemas"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "economia",
+      "pregunta": "¿Qué es economía lineal?",
+      "opciones": [
+        "Priorizar transporte público, bicicleta y menos motorizados",
+        "Extraer, fabricar, usar y desechar",
+        "Forma en que la empresa se dirige y controla éticamente",
+        "Variedad de genes, especies y ecosistemas"
+      ],
+      "respuesta_correcta": "Extraer, fabricar, usar y desechar",
+      "explicacion": "Extraer, fabricar, usar y desechar"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ods",
+      "pregunta": "¿Qué naturaleza tienen los ODS?",
+      "opciones": [
+        "Universales, integrados y aplicables a todos los países",
+        "OIT",
+        "Riesgo de pobreza o exclusión social",
+        "Beneficios que la naturaleza aporta a las personas"
+      ],
+      "respuesta_correcta": "Universales, integrados y aplicables a todos los países",
+      "explicacion": "Universales, integrados y aplicables a todos los países"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "industria",
+      "pregunta": "¿Qué es descarbonización industrial?",
+      "opciones": [
+        "Bienestar, equidad e inclusión",
+        "Riesgo de pobreza o exclusión social",
+        "Transformar residuos en materiales aprovechables",
+        "Reducir emisiones sustituyendo fósiles por renovables y eficiencia"
+      ],
+      "respuesta_correcta": "Reducir emisiones sustituyendo fósiles por renovables y eficiencia",
+      "explicacion": "Reducir emisiones sustituyendo fósiles por renovables y eficiencia"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "movilidad",
+      "pregunta": "¿Qué caracteriza transporte sostenible?",
+      "opciones": [
+        "Acciones que compensan emisiones, como reforestación",
+        "Disminuir recursos consumidos y residuos generados en origen",
+        "Priorizar transporte público, bicicleta y menos motorizados",
+        "Agenda 2030"
+      ],
+      "respuesta_correcta": "Priorizar transporte público, bicicleta y menos motorizados",
+      "explicacion": "Priorizar transporte público, bicicleta y menos motorizados"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "huella",
+      "pregunta": "¿Qué marca Día de Sobrecapacidad?",
+      "opciones": [
+        "GEI asociados a una actividad",
+        "Fecha en que consumimos lo que el planeta regenera en un año",
+        "Comunicar desempeño ambiental, social y de gobernanza",
+        "Proteger al menos el 30% del territorio planetario"
+      ],
+      "respuesta_correcta": "Fecha en que consumimos lo que el planeta regenera en un año",
+      "explicacion": "Fecha en que consumimos lo que el planeta regenera en un año"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reporting",
+      "pregunta": "¿Qué es reporting no financiero?",
+      "opciones": [
+        "Comunicar desempeño ambiental, social y de gobernanza",
+        "Reducir emisiones sustituyendo fósiles por renovables y eficiencia",
+        "Riesgo de pobreza o exclusión social",
+        "Arreglar un producto para seguir usándolo"
+      ],
+      "respuesta_correcta": "Comunicar desempeño ambiental, social y de gobernanza",
+      "explicacion": "Comunicar desempeño ambiental, social y de gobernanza"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "circular",
+      "pregunta": "¿Qué busca economía circular?",
+      "opciones": [
+        "CO2, CH4 y otros GEI",
+        "GEI asociados a una actividad",
+        "Bienestar, equidad e inclusión",
+        "Mantener productos y materiales en uso el mayor tiempo posible"
+      ],
+      "respuesta_correcta": "Mantener productos y materiales en uso el mayor tiempo posible",
+      "explicacion": "Mantener productos y materiales en uso el mayor tiempo posible"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "residuos",
+      "pregunta": "¿Qué significa reutilizar?",
+      "opciones": [
+        "Reducir emisiones sustituyendo fósiles por renovables y eficiencia",
+        "Disminuir recursos consumidos y residuos generados en origen",
+        "Usar de nuevo un producto",
+        "Agenda 2030"
+      ],
+      "respuesta_correcta": "Usar de nuevo un producto",
+      "explicacion": "Usar de nuevo un producto"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "residuos",
+      "pregunta": "¿Qué significa reparar?",
+      "opciones": [
+        "Comunicar desempeño ambiental, social y de gobernanza",
+        "Arreglar un producto para seguir usándolo",
+        "Transformar residuos en materiales aprovechables",
+        "Reacondiciona y vende dispositivos electrónicos usados"
+      ],
+      "respuesta_correcta": "Arreglar un producto para seguir usándolo",
+      "explicacion": "Arreglar un producto para seguir usándolo"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "residuos",
+      "pregunta": "¿Qué significa reciclar?",
+      "opciones": [
+        "Transformar residuos en materiales aprovechables",
+        "Mantener productos y materiales en uso el mayor tiempo posible",
+        "Bienestar, equidad e inclusión",
+        "Arreglar un producto para seguir usándolo"
+      ],
+      "respuesta_correcta": "Transformar residuos en materiales aprovechables",
+      "explicacion": "Transformar residuos en materiales aprovechables"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "social",
+      "pregunta": "¿Qué es sostenibilidad social?",
+      "opciones": [
+        "Riesgo de pobreza o exclusión social",
+        "Energía de fuentes que se regeneran naturalmente",
+        "Emisiones humanas de gases de efecto invernadero",
+        "Bienestar, equidad e inclusión"
+      ],
+      "respuesta_correcta": "Bienestar, equidad e inclusión",
+      "explicacion": "Bienestar, equidad e inclusión"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "empresa",
+      "pregunta": "¿Qué es RSC?",
+      "opciones": [
+        "Priorizar transporte público, bicicleta y menos motorizados",
+        "Usar de nuevo un producto",
+        "Compromiso empresarial social, ambiental y ético",
+        "Comunicar desempeño ambiental, social y de gobernanza"
+      ],
+      "respuesta_correcta": "Compromiso empresarial social, ambiental y ético",
+      "explicacion": "Compromiso empresarial social, ambiental y ético"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "clima",
+      "pregunta": "¿Qué es huella de carbono?",
+      "opciones": [
+        "Acciones que compensan emisiones, como reforestación",
+        "GEI asociados a una actividad",
+        "Usar de nuevo un producto",
+        "Extraer, fabricar, usar y desechar"
+      ],
+      "respuesta_correcta": "GEI asociados a una actividad",
+      "explicacion": "GEI asociados a una actividad"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "biodiversidad",
+      "pregunta": "¿Qué son servicios ecosistémicos?",
+      "opciones": [
+        "Beneficios que la naturaleza aporta a las personas",
+        "Acciones que compensan emisiones, como reforestación",
+        "Usar de nuevo un producto",
+        "Reducir"
+      ],
+      "respuesta_correcta": "Beneficios que la naturaleza aporta a las personas",
+      "explicacion": "Beneficios que la naturaleza aporta a las personas"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ods",
+      "pregunta": "¿Qué agenda se asocia a los ODS?",
+      "opciones": [
+        "Acciones que compensan emisiones, como reforestación",
+        "Aumentan en frecuencia e intensidad",
+        "Universales, integrados y aplicables a todos los países",
+        "Agenda 2030"
+      ],
+      "respuesta_correcta": "Agenda 2030",
+      "explicacion": "Agenda 2030"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "energia",
+      "pregunta": "¿Qué es energía renovable?",
+      "opciones": [
+        "Aumentan en frecuencia e intensidad",
+        "GEI asociados a una actividad",
+        "Energía de fuentes que se regeneran naturalmente",
+        "Variedad de genes, especies y ecosistemas"
+      ],
+      "respuesta_correcta": "Energía de fuentes que se regeneran naturalmente",
+      "explicacion": "Energía de fuentes que se regeneran naturalmente"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "clima",
+      "pregunta": "¿Qué son compensaciones de carbono?",
+      "opciones": [
+        "Transformar residuos en materiales aprovechables",
+        "Acciones que compensan emisiones, como reforestación",
+        "Fecha en que consumimos lo que el planeta regenera en un año",
+        "Emisiones humanas de gases de efecto invernadero"
+      ],
+      "respuesta_correcta": "Acciones que compensan emisiones, como reforestación",
+      "explicacion": "Acciones que compensan emisiones, como reforestación"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "empresa",
+      "pregunta": "¿Qué es gobernanza en ESG?",
+      "opciones": [
+        "Forma en que la empresa se dirige y controla éticamente",
+        "Reducir emisiones sustituyendo fósiles por renovables y eficiencia",
+        "Comunicar desempeño ambiental, social y de gobernanza",
+        "Compromiso empresarial social, ambiental y ético"
+      ],
+      "respuesta_correcta": "Forma en que la empresa se dirige y controla éticamente",
+      "explicacion": "Forma en que la empresa se dirige y controla éticamente"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "residuos",
+      "pregunta": "¿Qué R suele ser preferible antes que reciclar?",
+      "opciones": [
+        "GEI asociados a una actividad",
+        "CO2, CH4 y otros GEI",
+        "Proteger al menos el 30% del territorio planetario",
+        "Reducir"
+      ],
+      "respuesta_correcta": "Reducir",
+      "explicacion": "Reducir"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "clima",
+      "pregunta": "¿Qué gases intensifican el efecto invernadero?",
+      "opciones": [
+        "Universales, integrados y aplicables a todos los países",
+        "Acciones que compensan emisiones, como reforestación",
+        "CO2, CH4 y otros GEI",
+        "Mantener productos y materiales en uso el mayor tiempo posible"
+      ],
+      "respuesta_correcta": "CO2, CH4 y otros GEI",
+      "explicacion": "CO2, CH4 y otros GEI"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "Sostenibilidad es de las más memorizables. Lo más probable sale de definiciones directas: 5R, economía lineal/circular, cambio climático, AROPE, OIT, ODS, neutralidad climática, biodiversidad y reporting no financiero.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "5R y residuos",
+        "que_saber": "Rechazar, reducir, reutilizar, reparar, reciclar. Reducir es mejor porque evita residuo desde origen."
+      },
+      {
+        "bloque": "Economía circular",
+        "que_saber": "Mantener productos en uso. Back Market = reacondicionamiento y segunda mano."
+      },
+      {
+        "bloque": "Cambio climático",
+        "que_saber": "Causa principal: emisiones humanas de GEI. Neutralidad climática = balance neto."
+      },
+      {
+        "bloque": "Sostenibilidad social",
+        "que_saber": "AROPE = riesgo de pobreza/exclusión. OIT = trabajo digno."
+      },
+      {
+        "bloque": "Biodiversidad",
+        "que_saber": "Genes, especies y ecosistemas. Kunming-Montreal protege 30%."
+      },
+      {
+        "bloque": "ODS/ESG",
+        "que_saber": "ODS universales e integrados. Reporting no financiero = ambiental, social y gobernanza."
+      }
+    ],
+    "conceptos_literal": [
+      "5R = rechazar, reducir, reutilizar, reparar, reciclar",
+      "Economía lineal = extraer, fabricar, usar, tirar",
+      "Back Market = reacondicionados",
+      "AROPE = pobreza/exclusión",
+      "OIT = trabajo digno",
+      "Neutralidad climática = balance emisiones",
+      "ODS = universales e integrados"
+    ],
+    "trampas_tipicas": [
+      "Neutralidad climática no significa cero absoluto de emisiones",
+      "Reducir va antes que reciclar",
+      "Economía circular no es usar y tirar",
+      "AROPE no mide CO2",
+      "OIT no es una herramienta tecnológica"
+    ],
+    "como_estudiarlo": "Memoriza definiciones literales. Es ideal para tarjetas rápidas."
+  },
+  "resumen_explicativo_ampliado": "Sostenibilidad es de las más memorizables. Lo más probable sale de definiciones directas: 5R, economía lineal/circular, cambio climático, AROPE, OIT, ODS, neutralidad climática, biodiversidad y reporting no financiero.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "5R y residuos",
+      "que_saber": "Rechazar, reducir, reutilizar, reparar, reciclar. Reducir es mejor porque evita residuo desde origen."
+    },
+    {
+      "bloque": "Economía circular",
+      "que_saber": "Mantener productos en uso. Back Market = reacondicionamiento y segunda mano."
+    },
+    {
+      "bloque": "Cambio climático",
+      "que_saber": "Causa principal: emisiones humanas de GEI. Neutralidad climática = balance neto."
+    },
+    {
+      "bloque": "Sostenibilidad social",
+      "que_saber": "AROPE = riesgo de pobreza/exclusión. OIT = trabajo digno."
+    },
+    {
+      "bloque": "Biodiversidad",
+      "que_saber": "Genes, especies y ecosistemas. Kunming-Montreal protege 30%."
+    },
+    {
+      "bloque": "ODS/ESG",
+      "que_saber": "ODS universales e integrados. Reporting no financiero = ambiental, social y gobernanza."
+    }
+  ],
+  "conceptos_literal": [
+    "5R = rechazar, reducir, reutilizar, reparar, reciclar",
+    "Economía lineal = extraer, fabricar, usar, tirar",
+    "Back Market = reacondicionados",
+    "AROPE = pobreza/exclusión",
+    "OIT = trabajo digno",
+    "Neutralidad climática = balance emisiones",
+    "ODS = universales e integrados"
+  ],
+  "trampas_tipicas": [
+    "Neutralidad climática no significa cero absoluto de emisiones",
+    "Reducir va antes que reciclar",
+    "Economía circular no es usar y tirar",
+    "AROPE no mide CO2",
+    "OIT no es una herramienta tecnológica"
+  ],
+  "como_estudiarlo": "Memoriza definiciones literales. Es ideal para tarjetas rápidas."
+}

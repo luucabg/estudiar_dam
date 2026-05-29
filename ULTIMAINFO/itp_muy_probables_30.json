@@ -1,0 +1,551 @@
+{
+  "slug": "itp_muy_probables_30",
+  "asignatura": "Itinerario personal para la empleabilidad 2",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "Contratos, SEPE, entrevistas, LinkedIn y empleabilidad.",
+  "tips": [
+    "10 días=SEPE, fijo-discontinuo=indefinido, antigüedad NO esencial."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué contrato combina empleo y formación?",
+      "opciones": [
+        "Sustituye al contrato en prácticas",
+        "Tiempo inicial para comprobar idoneidad",
+        "Copia básica del contrato",
+        "Contrato formativo"
+      ],
+      "respuesta_correcta": "Contrato formativo",
+      "explicacion": "Contrato formativo"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué contrato se usa en campañas agrícolas?",
+      "opciones": [
+        "Personalizada para cada empresa",
+        "LinkedIn",
+        "Fijo-discontinuo",
+        "Antigüedad"
+      ],
+      "respuesta_correcta": "Fijo-discontinuo",
+      "explicacion": "Fijo-discontinuo"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Duración general del contrato por circunstancias de producción?",
+      "opciones": [
+        "Sustituir trabajador con derecho a reserva",
+        "6 meses ampliables a 12 por convenio",
+        "Indefinido",
+        "Personalizada para cada empresa"
+      ],
+      "respuesta_correcta": "6 meses ampliables a 12 por convenio",
+      "explicacion": "6 meses ampliables a 12 por convenio"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué contrato favorece estabilidad?",
+      "opciones": [
+        "Indefinido",
+        "El contrato se presume indefinido",
+        "Compatibilizar trabajo y formación",
+        "Copia básica del contrato"
+      ],
+      "respuesta_correcta": "Indefinido",
+      "explicacion": "Indefinido"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué NO es elemento esencial del contrato?",
+      "opciones": [
+        "Aumenta la objetividad",
+        "Indefinido",
+        "Estatuto de los Trabajadores",
+        "Antigüedad"
+      ],
+      "respuesta_correcta": "Antigüedad",
+      "explicacion": "Antigüedad"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seleccion",
+      "pregunta": "¿Ventaja entrevista estructurada?",
+      "opciones": [
+        "Situaciones pasadas y conductas reales",
+        "LinkedIn",
+        "Aumenta la objetividad",
+        "Tiempo inicial para comprobar idoneidad"
+      ],
+      "respuesta_correcta": "Aumenta la objetividad",
+      "explicacion": "Aumenta la objetividad"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué contrato es formativo?",
+      "opciones": [
+        "Publicar contenido relevante y participar en grupos",
+        "Contrato de formación en alternancia",
+        "Imagen profesional que proyectas",
+        "Aumenta la objetividad"
+      ],
+      "respuesta_correcta": "Contrato de formación en alternancia",
+      "explicacion": "Contrato de formación en alternancia"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad_social",
+      "pregunta": "¿Qué pasa si no hay alta en Seguridad Social?",
+      "opciones": [
+        "El contrato se presume indefinido",
+        "Aumenta la objetividad",
+        "Fijo-discontinuo",
+        "Personalizada para cada empresa"
+      ],
+      "respuesta_correcta": "El contrato se presume indefinido",
+      "explicacion": "El contrato se presume indefinido"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "empleabilidad",
+      "pregunta": "¿Qué es networking?",
+      "opciones": [
+        "Indefinido",
+        "Coordinación y control de tareas",
+        "Resolver problemas centrados en el usuario",
+        "Crear relaciones profesionales"
+      ],
+      "respuesta_correcta": "Crear relaciones profesionales",
+      "explicacion": "Crear relaciones profesionales"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seleccion",
+      "pregunta": "¿Qué es prueba psicométrica?",
+      "opciones": [
+        "Contrato por circunstancias de la producción",
+        "Sustituye al contrato en prácticas",
+        "Mide inteligencia, personalidad o capacidad emocional",
+        "Sustituir trabajador con derecho a reserva"
+      ],
+      "respuesta_correcta": "Mide inteligencia, personalidad o capacidad emocional",
+      "explicacion": "Mide inteligencia, personalidad o capacidad emocional"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Para qué sirve contrato de sustitución?",
+      "opciones": [
+        "Cualquiera de las partes",
+        "Sustituir trabajador con derecho a reserva",
+        "Sustituye al contrato en prácticas",
+        "Mide inteligencia, personalidad o capacidad emocional"
+      ],
+      "respuesta_correcta": "Sustituir trabajador con derecho a reserva",
+      "explicacion": "Sustituir trabajador con derecho a reserva"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué sustituye al antiguo obra o servicio?",
+      "opciones": [
+        "Contrato por circunstancias de la producción",
+        "Contrato de formación en alternancia",
+        "Indefinido",
+        "10 días"
+      ],
+      "respuesta_correcta": "Contrato por circunstancias de la producción",
+      "explicacion": "Contrato por circunstancias de la producción"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué documento se entrega junto al contrato?",
+      "opciones": [
+        "Situaciones pasadas y conductas reales",
+        "Indefinido",
+        "Escrita o verbal, salvo excepciones",
+        "Copia básica del contrato"
+      ],
+      "respuesta_correcta": "Copia básica del contrato",
+      "explicacion": "Copia básica del contrato"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "Durante periodo de prueba, ¿quién puede extinguir?",
+      "opciones": [
+        "Indefinido",
+        "Contrato formativo",
+        "Cualquiera de las partes",
+        "Publicar contenido relevante y participar en grupos"
+      ],
+      "respuesta_correcta": "Cualquiera de las partes",
+      "explicacion": "Cualquiera de las partes"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Dónde se regulan modalidades de contratación?",
+      "opciones": [
+        "Personalizada para cada empresa",
+        "Estatuto de los Trabajadores",
+        "Compatibilizar trabajo y formación",
+        "Crear relaciones profesionales"
+      ],
+      "respuesta_correcta": "Estatuto de los Trabajadores",
+      "explicacion": "Estatuto de los Trabajadores"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "Finalidad formación en alternancia:",
+      "opciones": [
+        "Compatibilizar trabajo y formación",
+        "Copia básica del contrato",
+        "Indefinido",
+        "LinkedIn"
+      ],
+      "respuesta_correcta": "Compatibilizar trabajo y formación",
+      "explicacion": "Compatibilizar trabajo y formación"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sepe",
+      "pregunta": "¿Quién comunica contrato al SEPE?",
+      "opciones": [
+        "Imagen profesional que proyectas",
+        "Personalizada para cada empresa",
+        "Situaciones pasadas y conductas reales",
+        "El empresario"
+      ],
+      "respuesta_correcta": "El empresario",
+      "explicacion": "El empresario"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué es periodo de prueba?",
+      "opciones": [
+        "Copia básica del contrato",
+        "Contrato formativo",
+        "Tiempo inicial para comprobar idoneidad",
+        "Publicar contenido relevante y participar en grupos"
+      ],
+      "respuesta_correcta": "Tiempo inicial para comprobar idoneidad",
+      "explicacion": "Tiempo inicial para comprobar idoneidad"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "empleabilidad",
+      "pregunta": "¿Qué plataforma filtra ofertas por sector o ubicación?",
+      "opciones": [
+        "Compatibilizar trabajo y formación",
+        "LinkedIn",
+        "Escrita o verbal, salvo excepciones",
+        "6 meses ampliables a 12 por convenio"
+      ],
+      "respuesta_correcta": "LinkedIn",
+      "explicacion": "LinkedIn"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Forma habitual del contrato?",
+      "opciones": [
+        "Escrita o verbal, salvo excepciones",
+        "El empresario",
+        "Situaciones pasadas y conductas reales",
+        "LinkedIn"
+      ],
+      "respuesta_correcta": "Escrita o verbal, salvo excepciones",
+      "explicacion": "Escrita o verbal, salvo excepciones"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seleccion",
+      "pregunta": "¿Qué pide entrevista por competencias?",
+      "opciones": [
+        "Indefinido",
+        "Coordinación y control de tareas",
+        "Antigüedad",
+        "Situaciones pasadas y conductas reales"
+      ],
+      "respuesta_correcta": "Situaciones pasadas y conductas reales",
+      "explicacion": "Situaciones pasadas y conductas reales"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Cuál es contrato indefinido?",
+      "opciones": [
+        "Estatuto de los Trabajadores",
+        "LinkedIn",
+        "Fijo-discontinuo",
+        "El empresario"
+      ],
+      "respuesta_correcta": "Fijo-discontinuo",
+      "explicacion": "Fijo-discontinuo"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "empleabilidad",
+      "pregunta": "¿Qué caracteriza carta de presentación efectiva?",
+      "opciones": [
+        "Indefinido",
+        "Personalizada para cada empresa",
+        "Tiempo inicial para comprobar idoneidad",
+        "Sustituir trabajador con derecho a reserva"
+      ],
+      "respuesta_correcta": "Personalizada para cada empresa",
+      "explicacion": "Personalizada para cada empresa"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "sepe",
+      "pregunta": "¿Plazo para comunicar contrato al SEPE?",
+      "opciones": [
+        "10 días",
+        "Indefinido",
+        "Tiempo inicial para comprobar idoneidad",
+        "Resolver problemas centrados en el usuario"
+      ],
+      "respuesta_correcta": "10 días",
+      "explicacion": "10 días"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "linkedin",
+      "pregunta": "¿Qué mejora perfil LinkedIn?",
+      "opciones": [
+        "Indefinido",
+        "El contrato se presume indefinido",
+        "Contrato por circunstancias de la producción",
+        "Publicar contenido relevante y participar en grupos"
+      ],
+      "respuesta_correcta": "Publicar contenido relevante y participar en grupos",
+      "explicacion": "Publicar contenido relevante y participar en grupos"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "herramientas",
+      "pregunta": "¿Ventaja de Trello/Asana?",
+      "opciones": [
+        "El contrato se presume indefinido",
+        "Personalizada para cada empresa",
+        "Coordinación y control de tareas",
+        "Mide inteligencia, personalidad o capacidad emocional"
+      ],
+      "respuesta_correcta": "Coordinación y control de tareas",
+      "explicacion": "Coordinación y control de tareas"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "¿Qué contrato no tiene límite de duración?",
+      "opciones": [
+        "Resolver problemas centrados en el usuario",
+        "Indefinido",
+        "Publicar contenido relevante y participar en grupos",
+        "Tiempo inicial para comprobar idoneidad"
+      ],
+      "respuesta_correcta": "Indefinido",
+      "explicacion": "Indefinido"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contratos",
+      "pregunta": "Contrato para obtención de práctica profesional:",
+      "opciones": [
+        "Sustituye al contrato en prácticas",
+        "Copia básica del contrato",
+        "Compatibilizar trabajo y formación",
+        "Fijo-discontinuo"
+      ],
+      "respuesta_correcta": "Sustituye al contrato en prácticas",
+      "explicacion": "Sustituye al contrato en prácticas"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "emprendimiento",
+      "pregunta": "¿Qué busca Design Thinking?",
+      "opciones": [
+        "Personalizada para cada empresa",
+        "Imagen profesional que proyectas",
+        "Crear relaciones profesionales",
+        "Resolver problemas centrados en el usuario"
+      ],
+      "respuesta_correcta": "Resolver problemas centrados en el usuario",
+      "explicacion": "Resolver problemas centrados en el usuario"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "empleabilidad",
+      "pregunta": "¿Qué es marca personal?",
+      "opciones": [
+        "Contrato por circunstancias de la producción",
+        "Indefinido",
+        "Imagen profesional que proyectas",
+        "El empresario"
+      ],
+      "respuesta_correcta": "Imagen profesional que proyectas",
+      "explicacion": "Imagen profesional que proyectas"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "ITP es muy de memoria legal y empleabilidad. Lo más probable son contratos, plazos, periodo de prueba, SEPE, Seguridad Social, entrevistas, LinkedIn y carta de presentación. Hay que memorizar números y palabras exactas.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "Contratos",
+        "que_saber": "Indefinido, fijo-discontinuo, formativo, formación en alternancia, sustitución, circunstancias de producción."
+      },
+      {
+        "bloque": "Plazos y obligaciones",
+        "que_saber": "El empresario comunica al SEPE en 10 días. Sin alta en Seguridad Social se presume indefinido."
+      },
+      {
+        "bloque": "Periodo de prueba",
+        "que_saber": "Tiempo inicial para comprobar idoneidad. Puede extinguir cualquiera de las partes."
+      },
+      {
+        "bloque": "Selección",
+        "que_saber": "Entrevista estructurada aumenta objetividad. Por competencias pide situaciones pasadas y conductas reales."
+      },
+      {
+        "bloque": "Empleabilidad",
+        "que_saber": "Networking = relaciones profesionales. LinkedIn mejora con contenido relevante y grupos. Carta personalizada."
+      }
+    ],
+    "conceptos_literal": [
+      "Fijo-discontinuo = indefinido estacional",
+      "Circunstancias producción = 6 meses ampliables a 12",
+      "SEPE = empresario comunica en 10 días",
+      "Antigüedad no es elemento esencial",
+      "Periodo de prueba = comprobar idoneidad",
+      "Networking = relaciones profesionales"
+    ],
+    "trampas_tipicas": [
+      "Fijo-discontinuo también es indefinido",
+      "Antigüedad no es elemento esencial",
+      "Periodo de prueba puede extinguirlo cualquiera",
+      "Entrevista estructurada no es improvisada",
+      "Contrato en prácticas fue sustituido por práctica profesional"
+    ],
+    "como_estudiarlo": "Memoriza contrato -> definición -> plazo. Luego entrevistas y LinkedIn."
+  },
+  "resumen_explicativo_ampliado": "ITP es muy de memoria legal y empleabilidad. Lo más probable son contratos, plazos, periodo de prueba, SEPE, Seguridad Social, entrevistas, LinkedIn y carta de presentación. Hay que memorizar números y palabras exactas.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "Contratos",
+      "que_saber": "Indefinido, fijo-discontinuo, formativo, formación en alternancia, sustitución, circunstancias de producción."
+    },
+    {
+      "bloque": "Plazos y obligaciones",
+      "que_saber": "El empresario comunica al SEPE en 10 días. Sin alta en Seguridad Social se presume indefinido."
+    },
+    {
+      "bloque": "Periodo de prueba",
+      "que_saber": "Tiempo inicial para comprobar idoneidad. Puede extinguir cualquiera de las partes."
+    },
+    {
+      "bloque": "Selección",
+      "que_saber": "Entrevista estructurada aumenta objetividad. Por competencias pide situaciones pasadas y conductas reales."
+    },
+    {
+      "bloque": "Empleabilidad",
+      "que_saber": "Networking = relaciones profesionales. LinkedIn mejora con contenido relevante y grupos. Carta personalizada."
+    }
+  ],
+  "conceptos_literal": [
+    "Fijo-discontinuo = indefinido estacional",
+    "Circunstancias producción = 6 meses ampliables a 12",
+    "SEPE = empresario comunica en 10 días",
+    "Antigüedad no es elemento esencial",
+    "Periodo de prueba = comprobar idoneidad",
+    "Networking = relaciones profesionales"
+  ],
+  "trampas_tipicas": [
+    "Fijo-discontinuo también es indefinido",
+    "Antigüedad no es elemento esencial",
+    "Periodo de prueba puede extinguirlo cualquiera",
+    "Entrevista estructurada no es improvisada",
+    "Contrato en prácticas fue sustituido por práctica profesional"
+  ],
+  "como_estudiarlo": "Memoriza contrato -> definición -> plazo. Luego entrevistas y LinkedIn."
+}

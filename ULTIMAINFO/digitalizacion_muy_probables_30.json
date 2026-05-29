@@ -1,0 +1,563 @@
+{
+  "slug": "digitalizacion_muy_probables_30",
+  "asignatura": "Digitalización aplicada",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "IA, cloud, datos, blockchain, ciberseguridad e Industria 5.0.",
+  "tips": [
+    "IaaS=infraestructura, SaaS=app, Blockchain=inmutable, Kanban=tablero."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ciberseguridad",
+      "pregunta": "¿Qué significa CIA?",
+      "opciones": [
+        "Tareas por estado: pendiente, en progreso, hecho",
+        "Repositorio flexible para datos brutos o variados",
+        "Factor humano como eje central junto a tecnología",
+        "Confidencialidad, Integridad y Disponibilidad"
+      ],
+      "respuesta_correcta": "Confidencialidad, Integridad y Disponibilidad",
+      "explicacion": "Confidencialidad, Integridad y Disponibilidad"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "cloud",
+      "pregunta": "¿Responsabilidad compartida cloud?",
+      "opciones": [
+        "Datos no alterados indebidamente",
+        "Almacén estructurado para análisis y BI",
+        "Proveedor infraestructura; cliente datos, apps y accesos",
+        "Aplicación como servicio lista por internet"
+      ],
+      "respuesta_correcta": "Proveedor infraestructura; cliente datos, apps y accesos",
+      "explicacion": "Proveedor infraestructura; cliente datos, apps y accesos"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "cloud",
+      "pregunta": "¿Qué es IaaS?",
+      "opciones": [
+        "Inmutabilidad y trazabilidad",
+        "Infraestructura como servicio",
+        "Código que ejecuta acuerdos automáticamente",
+        "Sistemas accesibles cuando se necesitan"
+      ],
+      "respuesta_correcta": "Infraestructura como servicio",
+      "explicacion": "Infraestructura como servicio"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "cloud",
+      "pregunta": "¿Qué modelo permite instalar tu propio SO?",
+      "opciones": [
+        "IaaS",
+        "Redes con múltiples capas de procesamiento",
+        "S3 como Data Lake y Redshift como Data Warehouse",
+        "Factor humano como eje central junto a tecnología"
+      ],
+      "respuesta_correcta": "IaaS",
+      "explicacion": "IaaS"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "cloud",
+      "pregunta": "¿Qué es SaaS?",
+      "opciones": [
+        "Plataforma para desarrollar sin gestionar toda infraestructura",
+        "Código que ejecuta acuerdos automáticamente",
+        "Minimiza residuos añadiendo material capa a capa",
+        "Aplicación como servicio lista por internet"
+      ],
+      "respuesta_correcta": "Aplicación como servicio lista por internet",
+      "explicacion": "Aplicación como servicio lista por internet"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "cloud",
+      "pregunta": "¿Qué es PaaS?",
+      "opciones": [
+        "Solo acceden usuarios autorizados",
+        "Almacén estructurado para análisis y BI",
+        "Plataforma para desarrollar sin gestionar toda infraestructura",
+        "Repositorio flexible para datos brutos o variados"
+      ],
+      "respuesta_correcta": "Plataforma para desarrollar sin gestionar toda infraestructura",
+      "explicacion": "Plataforma para desarrollar sin gestionar toda infraestructura"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ia",
+      "pregunta": "¿Relación entre ML y Deep Learning?",
+      "opciones": [
+        "Reducir tareas manuales y mejorar eficiencia",
+        "Deep Learning es subcampo de Machine Learning",
+        "Uso de sistemas inteligentes para mejorar decisiones o procesos",
+        "Plataforma para desarrollar sin gestionar toda infraestructura"
+      ],
+      "respuesta_correcta": "Deep Learning es subcampo de Machine Learning",
+      "explicacion": "Deep Learning es subcampo de Machine Learning"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ia",
+      "pregunta": "¿Qué son redes neuronales profundas?",
+      "opciones": [
+        "Redes con múltiples capas de procesamiento",
+        "Plataforma para desarrollar sin gestionar toda infraestructura",
+        "Datos no alterados indebidamente",
+        "Sistemas accesibles cuando se necesitan"
+      ],
+      "respuesta_correcta": "Redes con múltiples capas de procesamiento",
+      "explicacion": "Redes con múltiples capas de procesamiento"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ia",
+      "pregunta": "¿Qué herramienta permite entrenar modelos sin código?",
+      "opciones": [
+        "IaaS",
+        "Ajustar recursos según demanda",
+        "Facilitar creación e integración de aplicaciones propias",
+        "Teachable Machine"
+      ],
+      "respuesta_correcta": "Teachable Machine",
+      "explicacion": "Teachable Machine"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "blockchain",
+      "pregunta": "¿Qué es Blockchain?",
+      "opciones": [
+        "Réplica virtual dinámica sincronizada con sensores",
+        "Tareas por estado: pendiente, en progreso, hecho",
+        "Registro distribuido e inmutable",
+        "Inmutabilidad y trazabilidad"
+      ],
+      "respuesta_correcta": "Registro distribuido e inmutable",
+      "explicacion": "Registro distribuido e inmutable"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "blockchain",
+      "pregunta": "¿Ventaja de Blockchain?",
+      "opciones": [
+        "Kanban",
+        "Inmutabilidad y trazabilidad",
+        "Tareas por estado: pendiente, en progreso, hecho",
+        "Registro distribuido e inmutable"
+      ],
+      "respuesta_correcta": "Inmutabilidad y trazabilidad",
+      "explicacion": "Inmutabilidad y trazabilidad"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "industria",
+      "pregunta": "¿Qué es gemelo digital?",
+      "opciones": [
+        "Réplica virtual dinámica sincronizada con sensores",
+        "Deep Learning es subcampo de Machine Learning",
+        "IaaS",
+        "Objetos conectados que recopilan e intercambian datos"
+      ],
+      "respuesta_correcta": "Réplica virtual dinámica sincronizada con sensores",
+      "explicacion": "Réplica virtual dinámica sincronizada con sensores"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "industria",
+      "pregunta": "¿Qué diferencia Industria 5.0?",
+      "opciones": [
+        "Solo acceden usuarios autorizados",
+        "IaaS",
+        "MFA, IAM y control estricto de accesos",
+        "Factor humano como eje central junto a tecnología"
+      ],
+      "respuesta_correcta": "Factor humano como eje central junto a tecnología",
+      "explicacion": "Factor humano como eje central junto a tecnología"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "agile",
+      "pregunta": "¿Qué metodología usa tableros visuales con columnas?",
+      "opciones": [
+        "Código que ejecuta acuerdos automáticamente",
+        "Confidencialidad, Integridad y Disponibilidad",
+        "Kanban",
+        "Reducir tareas manuales y mejorar eficiencia"
+      ],
+      "respuesta_correcta": "Kanban",
+      "explicacion": "Kanban"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "fabricacion",
+      "pregunta": "¿Ventaja ambiental fabricación aditiva?",
+      "opciones": [
+        "Sistemas accesibles cuando se necesitan",
+        "Minimiza residuos añadiendo material capa a capa",
+        "S3 como Data Lake y Redshift como Data Warehouse",
+        "Teachable Machine"
+      ],
+      "respuesta_correcta": "Minimiza residuos añadiendo material capa a capa",
+      "explicacion": "Minimiza residuos añadiendo material capa a capa"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "datos",
+      "pregunta": "¿Diferencia entre S3 y Redshift?",
+      "opciones": [
+        "S3 como Data Lake y Redshift como Data Warehouse",
+        "Factor humano como eje central junto a tecnología",
+        "IaaS",
+        "Almacén estructurado para análisis y BI"
+      ],
+      "respuesta_correcta": "S3 como Data Lake y Redshift como Data Warehouse",
+      "explicacion": "S3 como Data Lake y Redshift como Data Warehouse"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "datos",
+      "pregunta": "¿Ciclo de vida del dato batch?",
+      "opciones": [
+        "Uso de sistemas inteligentes para mejorar decisiones o procesos",
+        "Sistemas accesibles cuando se necesitan",
+        "Solo acceden usuarios autorizados",
+        "Captura, almacenamiento, procesamiento, análisis y archivo/destrucción"
+      ],
+      "respuesta_correcta": "Captura, almacenamiento, procesamiento, análisis y archivo/destrucción",
+      "explicacion": "Captura, almacenamiento, procesamiento, análisis y archivo/destrucción"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "datos",
+      "pregunta": "¿Qué es Data Lake?",
+      "opciones": [
+        "Factor humano como eje central junto a tecnología",
+        "Confidencialidad, Integridad y Disponibilidad",
+        "Repositorio flexible para datos brutos o variados",
+        "Reducir tareas manuales y mejorar eficiencia"
+      ],
+      "respuesta_correcta": "Repositorio flexible para datos brutos o variados",
+      "explicacion": "Repositorio flexible para datos brutos o variados"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "datos",
+      "pregunta": "¿Qué es Data Warehouse?",
+      "opciones": [
+        "S3 como Data Lake y Redshift como Data Warehouse",
+        "Almacén estructurado para análisis y BI",
+        "MFA, IAM y control estricto de accesos",
+        "Infraestructura como servicio"
+      ],
+      "respuesta_correcta": "Almacén estructurado para análisis y BI",
+      "explicacion": "Almacén estructurado para análisis y BI"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "cloud",
+      "pregunta": "¿Qué reduce brechas por accesos cloud?",
+      "opciones": [
+        "MFA, IAM y control estricto de accesos",
+        "Captura, almacenamiento, procesamiento, análisis y archivo/destrucción",
+        "Solo acceden usuarios autorizados",
+        "Almacén estructurado para análisis y BI"
+      ],
+      "respuesta_correcta": "MFA, IAM y control estricto de accesos",
+      "explicacion": "MFA, IAM y control estricto de accesos"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad",
+      "pregunta": "¿Qué es confidencialidad?",
+      "opciones": [
+        "IaaS",
+        "Ajustar recursos según demanda",
+        "Aplicación como servicio lista por internet",
+        "Solo acceden usuarios autorizados"
+      ],
+      "respuesta_correcta": "Solo acceden usuarios autorizados",
+      "explicacion": "Solo acceden usuarios autorizados"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad",
+      "pregunta": "¿Qué es integridad?",
+      "opciones": [
+        "Kanban",
+        "Repositorio flexible para datos brutos o variados",
+        "Datos no alterados indebidamente",
+        "S3 como Data Lake y Redshift como Data Warehouse"
+      ],
+      "respuesta_correcta": "Datos no alterados indebidamente",
+      "explicacion": "Datos no alterados indebidamente"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad",
+      "pregunta": "¿Qué es disponibilidad?",
+      "opciones": [
+        "Código que ejecuta acuerdos automáticamente",
+        "Sistemas accesibles cuando se necesitan",
+        "Repositorio flexible para datos brutos o variados",
+        "Inmutabilidad y trazabilidad"
+      ],
+      "respuesta_correcta": "Sistemas accesibles cuando se necesitan",
+      "explicacion": "Sistemas accesibles cuando se necesitan"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "iot",
+      "pregunta": "¿Qué es IoT?",
+      "opciones": [
+        "Objetos conectados que recopilan e intercambian datos",
+        "Código que ejecuta acuerdos automáticamente",
+        "Repositorio flexible para datos brutos o variados",
+        "Facilitar creación e integración de aplicaciones propias"
+      ],
+      "respuesta_correcta": "Objetos conectados que recopilan e intercambian datos",
+      "explicacion": "Objetos conectados que recopilan e intercambian datos"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "automatizacion",
+      "pregunta": "¿Qué busca automatización empresarial?",
+      "opciones": [
+        "Código que ejecuta acuerdos automáticamente",
+        "Redes con múltiples capas de procesamiento",
+        "Réplica virtual dinámica sincronizada con sensores",
+        "Reducir tareas manuales y mejorar eficiencia"
+      ],
+      "respuesta_correcta": "Reducir tareas manuales y mejorar eficiencia",
+      "explicacion": "Reducir tareas manuales y mejorar eficiencia"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "cloud",
+      "pregunta": "¿Qué es elasticidad cloud?",
+      "opciones": [
+        "Redes con múltiples capas de procesamiento",
+        "Sistemas accesibles cuando se necesitan",
+        "Ajustar recursos según demanda",
+        "Registro distribuido e inmutable"
+      ],
+      "respuesta_correcta": "Ajustar recursos según demanda",
+      "explicacion": "Ajustar recursos según demanda"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "blockchain",
+      "pregunta": "¿Qué es contrato inteligente?",
+      "opciones": [
+        "MFA, IAM y control estricto de accesos",
+        "Código que ejecuta acuerdos automáticamente",
+        "Minimiza residuos añadiendo material capa a capa",
+        "Aplicación como servicio lista por internet"
+      ],
+      "respuesta_correcta": "Código que ejecuta acuerdos automáticamente",
+      "explicacion": "Código que ejecuta acuerdos automáticamente"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "agile",
+      "pregunta": "¿Qué muestra Kanban?",
+      "opciones": [
+        "Tareas por estado: pendiente, en progreso, hecho",
+        "Factor humano como eje central junto a tecnología",
+        "S3 como Data Lake y Redshift como Data Warehouse",
+        "Datos no alterados indebidamente"
+      ],
+      "respuesta_correcta": "Tareas por estado: pendiente, en progreso, hecho",
+      "explicacion": "Tareas por estado: pendiente, en progreso, hecho"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "plataformas",
+      "pregunta": "¿Para qué sirve Gravity?",
+      "opciones": [
+        "Sistemas accesibles cuando se necesitan",
+        "Uso de sistemas inteligentes para mejorar decisiones o procesos",
+        "Teachable Machine",
+        "Facilitar creación e integración de aplicaciones propias"
+      ],
+      "respuesta_correcta": "Facilitar creación e integración de aplicaciones propias",
+      "explicacion": "Facilitar creación e integración de aplicaciones propias"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ia",
+      "pregunta": "¿Qué es IA aplicada en empresa?",
+      "opciones": [
+        "Réplica virtual dinámica sincronizada con sensores",
+        "Código que ejecuta acuerdos automáticamente",
+        "Uso de sistemas inteligentes para mejorar decisiones o procesos",
+        "Captura, almacenamiento, procesamiento, análisis y archivo/destrucción"
+      ],
+      "respuesta_correcta": "Uso de sistemas inteligentes para mejorar decisiones o procesos",
+      "explicacion": "Uso de sistemas inteligentes para mejorar decisiones o procesos"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "Digitalización es conceptual: IA, cloud, datos, blockchain, ciberseguridad e Industria 5.0. Lo importante no es programar, sino reconocer definiciones y diferencias. IaaS/PaaS/SaaS, ML/Deep Learning, Data Lake/Warehouse, Blockchain, Gemelo Digital y CIA son claves.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "Ciberseguridad",
+        "que_saber": "CIA = Confidencialidad, Integridad, Disponibilidad. MFA/IAM/control de accesos para cloud."
+      },
+      {
+        "bloque": "Cloud",
+        "que_saber": "IaaS infraestructura, PaaS plataforma, SaaS aplicación. Responsabilidad compartida."
+      },
+      {
+        "bloque": "IA",
+        "que_saber": "Machine Learning aprende de datos. Deep Learning es subcampo con redes neuronales profundas. Teachable Machine entrena sin código."
+      },
+      {
+        "bloque": "Datos",
+        "que_saber": "Ciclo batch: captura, almacenamiento, procesamiento, análisis, archivo/destrucción. Data Lake datos brutos, Warehouse estructurados."
+      },
+      {
+        "bloque": "Blockchain",
+        "que_saber": "Registro distribuido e inmutable para trazabilidad, identidad y contratos inteligentes."
+      },
+      {
+        "bloque": "Industria",
+        "que_saber": "Gemelo digital es réplica virtual dinámica. Industria 5.0 añade factor humano."
+      }
+    ],
+    "conceptos_literal": [
+      "CIA = confidencialidad, integridad, disponibilidad",
+      "IaaS = infraestructura",
+      "PaaS = plataforma",
+      "SaaS = aplicación",
+      "Deep Learning dentro de ML",
+      "Blockchain = distribuido e inmutable",
+      "Gemelo digital = réplica virtual con sensores",
+      "Kanban = tablero visual"
+    ],
+    "trampas_tipicas": [
+      "IaaS no es app final, eso es SaaS",
+      "Deep Learning no es más amplio que ML",
+      "Data Lake y Data Warehouse no son lo mismo",
+      "Industria 5.0 no elimina la tecnología, añade humano/sostenibilidad",
+      "Blockchain no es solo criptomonedas"
+    ],
+    "como_estudiarlo": "Estudia diferencias: IaaS/PaaS/SaaS, ML/DL, Data Lake/Warehouse, Industria 4.0/5.0."
+  },
+  "resumen_explicativo_ampliado": "Digitalización es conceptual: IA, cloud, datos, blockchain, ciberseguridad e Industria 5.0. Lo importante no es programar, sino reconocer definiciones y diferencias. IaaS/PaaS/SaaS, ML/Deep Learning, Data Lake/Warehouse, Blockchain, Gemelo Digital y CIA son claves.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "Ciberseguridad",
+      "que_saber": "CIA = Confidencialidad, Integridad, Disponibilidad. MFA/IAM/control de accesos para cloud."
+    },
+    {
+      "bloque": "Cloud",
+      "que_saber": "IaaS infraestructura, PaaS plataforma, SaaS aplicación. Responsabilidad compartida."
+    },
+    {
+      "bloque": "IA",
+      "que_saber": "Machine Learning aprende de datos. Deep Learning es subcampo con redes neuronales profundas. Teachable Machine entrena sin código."
+    },
+    {
+      "bloque": "Datos",
+      "que_saber": "Ciclo batch: captura, almacenamiento, procesamiento, análisis, archivo/destrucción. Data Lake datos brutos, Warehouse estructurados."
+    },
+    {
+      "bloque": "Blockchain",
+      "que_saber": "Registro distribuido e inmutable para trazabilidad, identidad y contratos inteligentes."
+    },
+    {
+      "bloque": "Industria",
+      "que_saber": "Gemelo digital es réplica virtual dinámica. Industria 5.0 añade factor humano."
+    }
+  ],
+  "conceptos_literal": [
+    "CIA = confidencialidad, integridad, disponibilidad",
+    "IaaS = infraestructura",
+    "PaaS = plataforma",
+    "SaaS = aplicación",
+    "Deep Learning dentro de ML",
+    "Blockchain = distribuido e inmutable",
+    "Gemelo digital = réplica virtual con sensores",
+    "Kanban = tablero visual"
+  ],
+  "trampas_tipicas": [
+    "IaaS no es app final, eso es SaaS",
+    "Deep Learning no es más amplio que ML",
+    "Data Lake y Data Warehouse no son lo mismo",
+    "Industria 5.0 no elimina la tecnología, añade humano/sostenibilidad",
+    "Blockchain no es solo criptomonedas"
+  ],
+  "como_estudiarlo": "Estudia diferencias: IaaS/PaaS/SaaS, ML/DL, Data Lake/Warehouse, Industria 4.0/5.0."
+}

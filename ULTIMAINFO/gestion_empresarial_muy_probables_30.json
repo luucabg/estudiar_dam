@@ -1,0 +1,563 @@
+{
+  "slug": "gestion_empresarial_muy_probables_30",
+  "asignatura": "Sistemas de gestión empresarial",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "ERP, CRM, Odoo, PostgreSQL, ORM, parametrización e implantación.",
+  "tips": [
+    "CRM=clientes, ERP=departamentos, Odoo=PostgreSQL, modelo=Python."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "crm",
+      "pregunta": "¿Objetivo principal de CRM?",
+      "opciones": [
+        "Interoperabilidad y flexibilidad",
+        "Contabilidad",
+        "Registrar interacciones y preferencias de clientes",
+        "Gestionar relación con clientes"
+      ],
+      "respuesta_correcta": "Gestionar relación con clientes",
+      "explicacion": "Gestionar relación con clientes"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Qué es un ERP?",
+      "opciones": [
+        "Datos correctos, coherentes y completos",
+        "Desarrollo con poco código usando herramientas visuales",
+        "Sistema que integra procesos empresariales",
+        "Mapeo entre objetos/modelos y tablas de BD"
+      ],
+      "respuesta_correcta": "Sistema que integra procesos empresariales",
+      "explicacion": "Sistema que integra procesos empresariales"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Qué base de datos usa Odoo?",
+      "opciones": [
+        "Arquitectura basada en servicios independientes",
+        "PostgreSQL",
+        "Conectar el ERP con otros sistemas",
+        "Python"
+      ],
+      "respuesta_correcta": "PostgreSQL",
+      "explicacion": "PostgreSQL"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Qué es un modelo en Odoo?",
+      "opciones": [
+        "Clase Python que define un objeto de negocio",
+        "Pérdida o degradación de calidad de datos",
+        "Customer Relationship Management",
+        "Registrar interacciones y preferencias de clientes"
+      ],
+      "respuesta_correcta": "Clase Python que define un objeto de negocio",
+      "explicacion": "Clase Python que define un objeto de negocio"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Qué es ORM?",
+      "opciones": [
+        "Configurar sin modificar código fuente",
+        "Conectar el ERP con otros sistemas",
+        "Reduce errores manuales y acelera operaciones",
+        "Mapeo entre objetos/modelos y tablas de BD"
+      ],
+      "respuesta_correcta": "Mapeo entre objetos/modelos y tablas de BD",
+      "explicacion": "Mapeo entre objetos/modelos y tablas de BD"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Qué significa parametrizar un ERP?",
+      "opciones": [
+        "Para detectar errores antes de producción",
+        "Desarrollo con poco código usando herramientas visuales",
+        "Configurar sin modificar código fuente",
+        "Contabilidad"
+      ],
+      "respuesta_correcta": "Configurar sin modificar código fuente",
+      "explicacion": "Configurar sin modificar código fuente"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "implantacion",
+      "pregunta": "¿Primera fase crítica de implantación ERP?",
+      "opciones": [
+        "Ampliar funcionalidad programando",
+        "Análisis de requisitos y planificación",
+        "Odoo es un ERP modular",
+        "Configurar sin modificar código fuente"
+      ],
+      "respuesta_correcta": "Análisis de requisitos y planificación",
+      "explicacion": "Análisis de requisitos y planificación"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "datos",
+      "pregunta": "¿Riesgo de migración de datos?",
+      "opciones": [
+        "Pérdida o degradación de calidad de datos",
+        "Configurar sin modificar código fuente",
+        "Datos correctos, coherentes y completos",
+        "Python"
+      ],
+      "respuesta_correcta": "Pérdida o degradación de calidad de datos",
+      "explicacion": "Pérdida o degradación de calidad de datos"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Ventaja de modularidad ERP?",
+      "opciones": [
+        "Clase Python que define un objeto de negocio",
+        "Reduce errores y mejora adopción",
+        "Aumentan riesgos de sobrecostes, retrasos y fallos",
+        "Instalar solo módulos necesarios y ampliar después"
+      ],
+      "respuesta_correcta": "Instalar solo módulos necesarios y ampliar después",
+      "explicacion": "Instalar solo módulos necesarios y ampliar después"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Qué permite Odoo Studio?",
+      "opciones": [
+        "Servidor de aplicaciones o backend",
+        "Interoperabilidad y flexibilidad",
+        "Personalizar con herramienta visual low-code",
+        "Arquitectura basada en servicios independientes"
+      ],
+      "respuesta_correcta": "Personalizar con herramienta visual low-code",
+      "explicacion": "Personalizar con herramienta visual low-code"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "arquitectura",
+      "pregunta": "¿Qué es SOA?",
+      "opciones": [
+        "Integración en tiempo real entre departamentos",
+        "Arquitectura basada en servicios independientes",
+        "Interoperabilidad y flexibilidad",
+        "Personalizar con herramienta visual low-code"
+      ],
+      "respuesta_correcta": "Arquitectura basada en servicios independientes",
+      "explicacion": "Arquitectura basada en servicios independientes"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Qué ejecuta lógica de negocio en Odoo?",
+      "opciones": [
+        "Servidor de aplicaciones o backend",
+        "Análisis de requisitos y planificación",
+        "Clase Python que define un objeto de negocio",
+        "Dato o atributo del objeto de negocio"
+      ],
+      "respuesta_correcta": "Servidor de aplicaciones o backend",
+      "explicacion": "Servidor de aplicaciones o backend"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "crm",
+      "pregunta": "¿Actividad propia de CRM?",
+      "opciones": [
+        "Para detectar errores antes de producción",
+        "Clase Python que define un objeto de negocio",
+        "Crear soluciones sin escribir código",
+        "Registrar interacciones y preferencias de clientes"
+      ],
+      "respuesta_correcta": "Registrar interacciones y preferencias de clientes",
+      "explicacion": "Registrar interacciones y preferencias de clientes"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Qué diferencia ERP moderno de sistemas heredados?",
+      "opciones": [
+        "Conectar el ERP con otros sistemas",
+        "Gestionar relación con clientes",
+        "Integración en tiempo real entre departamentos",
+        "Ampliar funcionalidad programando"
+      ],
+      "respuesta_correcta": "Integración en tiempo real entre departamentos",
+      "explicacion": "Integración en tiempo real entre departamentos"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "contabilidad",
+      "pregunta": "¿Impacto de automatizar contabilidad?",
+      "opciones": [
+        "Python",
+        "Reduce errores manuales y acelera operaciones",
+        "Customer Relationship Management",
+        "Instalar solo módulos necesarios y ampliar después"
+      ],
+      "respuesta_correcta": "Reduce errores manuales y acelera operaciones",
+      "explicacion": "Reduce errores manuales y acelera operaciones"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "crm",
+      "pregunta": "¿Qué significa CRM?",
+      "opciones": [
+        "Customer Relationship Management",
+        "Registrar interacciones y preferencias de clientes",
+        "Clase Python que define un objeto de negocio",
+        "Desarrollo con poco código usando herramientas visuales"
+      ],
+      "respuesta_correcta": "Customer Relationship Management",
+      "explicacion": "Customer Relationship Management"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Qué módulo gestiona stock?",
+      "opciones": [
+        "Odoo es un ERP modular",
+        "Python",
+        "Para detectar errores antes de producción",
+        "Inventario"
+      ],
+      "respuesta_correcta": "Inventario",
+      "explicacion": "Inventario"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Qué módulo gestiona facturas?",
+      "opciones": [
+        "Registrar interacciones y preferencias de clientes",
+        "Gestionar relación con clientes",
+        "Contabilidad",
+        "Ampliar funcionalidad programando"
+      ],
+      "respuesta_correcta": "Contabilidad",
+      "explicacion": "Contabilidad"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "lowcode",
+      "pregunta": "¿Qué es low-code?",
+      "opciones": [
+        "Customer Relationship Management",
+        "Desarrollo con poco código usando herramientas visuales",
+        "Crear soluciones sin escribir código",
+        "PostgreSQL"
+      ],
+      "respuesta_correcta": "Desarrollo con poco código usando herramientas visuales",
+      "explicacion": "Desarrollo con poco código usando herramientas visuales"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "nocode",
+      "pregunta": "¿Qué es no-code?",
+      "opciones": [
+        "Crear soluciones sin escribir código",
+        "Inventario",
+        "Para detectar errores antes de producción",
+        "Desarrollo con poco código usando herramientas visuales"
+      ],
+      "respuesta_correcta": "Crear soluciones sin escribir código",
+      "explicacion": "Crear soluciones sin escribir código"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "implantacion",
+      "pregunta": "¿Por qué probar antes de activar ERP?",
+      "opciones": [
+        "Clase Python que define un objeto de negocio",
+        "Reduce errores y mejora adopción",
+        "Mapeo entre objetos/modelos y tablas de BD",
+        "Para detectar errores antes de producción"
+      ],
+      "respuesta_correcta": "Para detectar errores antes de producción",
+      "explicacion": "Para detectar errores antes de producción"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "datos",
+      "pregunta": "¿Qué es integridad de datos?",
+      "opciones": [
+        "Integración en tiempo real entre departamentos",
+        "Contabilidad",
+        "Datos correctos, coherentes y completos",
+        "Customer Relationship Management"
+      ],
+      "respuesta_correcta": "Datos correctos, coherentes y completos",
+      "explicacion": "Datos correctos, coherentes y completos"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Lenguaje principal de modelos Odoo?",
+      "opciones": [
+        "Conectar el ERP con otros sistemas",
+        "Python",
+        "Contabilidad",
+        "Arquitectura basada en servicios independientes"
+      ],
+      "respuesta_correcta": "Python",
+      "explicacion": "Python"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Qué define un campo en Odoo?",
+      "opciones": [
+        "Dato o atributo del objeto de negocio",
+        "Conectar el ERP con otros sistemas",
+        "Contabilidad",
+        "Aumentan riesgos de sobrecostes, retrasos y fallos"
+      ],
+      "respuesta_correcta": "Dato o atributo del objeto de negocio",
+      "explicacion": "Dato o atributo del objeto de negocio"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Qué es personalizar mediante código?",
+      "opciones": [
+        "Conectar el ERP con otros sistemas",
+        "Pérdida o degradación de calidad de datos",
+        "Servidor de aplicaciones o backend",
+        "Ampliar funcionalidad programando"
+      ],
+      "respuesta_correcta": "Ampliar funcionalidad programando",
+      "explicacion": "Ampliar funcionalidad programando"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Por qué formar usuarios?",
+      "opciones": [
+        "Pérdida o degradación de calidad de datos",
+        "Python",
+        "Reduce errores y mejora adopción",
+        "Personalizar con herramienta visual low-code"
+      ],
+      "respuesta_correcta": "Reduce errores y mejora adopción",
+      "explicacion": "Reduce errores y mejora adopción"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "integracion",
+      "pregunta": "¿Qué facilita una API en ERP?",
+      "opciones": [
+        "Crear soluciones sin escribir código",
+        "Conectar el ERP con otros sistemas",
+        "Reduce errores manuales y acelera operaciones",
+        "Mapeo entre objetos/modelos y tablas de BD"
+      ],
+      "respuesta_correcta": "Conectar el ERP con otros sistemas",
+      "explicacion": "Conectar el ERP con otros sistemas"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "soa",
+      "pregunta": "¿Ventaja de SOA?",
+      "opciones": [
+        "Interoperabilidad y flexibilidad",
+        "Registrar interacciones y preferencias de clientes",
+        "Customer Relationship Management",
+        "Datos correctos, coherentes y completos"
+      ],
+      "respuesta_correcta": "Interoperabilidad y flexibilidad",
+      "explicacion": "Interoperabilidad y flexibilidad"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "erp",
+      "pregunta": "¿Qué pasa con ERP sin análisis previo?",
+      "opciones": [
+        "Python",
+        "Odoo es un ERP modular",
+        "Instalar solo módulos necesarios y ampliar después",
+        "Aumentan riesgos de sobrecostes, retrasos y fallos"
+      ],
+      "respuesta_correcta": "Aumentan riesgos de sobrecostes, retrasos y fallos",
+      "explicacion": "Aumentan riesgos de sobrecostes, retrasos y fallos"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "odoo",
+      "pregunta": "¿Qué relación tiene Odoo con ERP?",
+      "opciones": [
+        "Servidor de aplicaciones o backend",
+        "Conectar el ERP con otros sistemas",
+        "Odoo es un ERP modular",
+        "Inventario"
+      ],
+      "respuesta_correcta": "Odoo es un ERP modular",
+      "explicacion": "Odoo es un ERP modular"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "Sistemas de Gestión Empresarial gira alrededor de ERP, CRM y Odoo. Es muy de definiciones. Lo más probable: CRM clientes, ERP departamentos, Odoo ERP modular, PostgreSQL, modelos Python, ORM, parametrización, modularidad, implantación y migración de datos.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "ERP",
+        "que_saber": "Sistema que integra procesos empresariales: ventas, compras, inventario, contabilidad, RRHH."
+      },
+      {
+        "bloque": "CRM",
+        "que_saber": "Gestiona relación con clientes: interacciones, oportunidades, seguimiento, retención."
+      },
+      {
+        "bloque": "Odoo",
+        "que_saber": "ERP modular. Usa PostgreSQL. Modelos son clases Python. ORM conecta modelos con tablas."
+      },
+      {
+        "bloque": "Implantación ERP",
+        "que_saber": "Primero análisis y planificación. Migración de datos tiene riesgo. Formación de usuarios es importante."
+      },
+      {
+        "bloque": "Personalización",
+        "que_saber": "Parametrizar es configurar sin tocar código. Odoo Studio es low-code."
+      },
+      {
+        "bloque": "Arquitectura",
+        "que_saber": "SOA = servicios independientes que se comunican."
+      }
+    ],
+    "conceptos_literal": [
+      "CRM = clientes",
+      "ERP = integrar departamentos",
+      "Odoo = ERP modular",
+      "Odoo usa PostgreSQL",
+      "Modelo Odoo = clase Python",
+      "ORM = objetos-tablas",
+      "Parametrizar = configurar sin código",
+      "SOA = servicios independientes"
+    ],
+    "trampas_tipicas": [
+      "CRM no es lo mismo que ERP",
+      "Parametrizar no es programar desde cero",
+      "Modelo en Odoo no es una imagen, es clase Python",
+      "Odoo no usa MongoDB como base principal",
+      "Migrar datos no es automático sin riesgo"
+    ],
+    "como_estudiarlo": "Aprende pares palabra-respuesta. Ejemplo: clientes = CRM, departamentos = ERP, Odoo = PostgreSQL."
+  },
+  "resumen_explicativo_ampliado": "Sistemas de Gestión Empresarial gira alrededor de ERP, CRM y Odoo. Es muy de definiciones. Lo más probable: CRM clientes, ERP departamentos, Odoo ERP modular, PostgreSQL, modelos Python, ORM, parametrización, modularidad, implantación y migración de datos.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "ERP",
+      "que_saber": "Sistema que integra procesos empresariales: ventas, compras, inventario, contabilidad, RRHH."
+    },
+    {
+      "bloque": "CRM",
+      "que_saber": "Gestiona relación con clientes: interacciones, oportunidades, seguimiento, retención."
+    },
+    {
+      "bloque": "Odoo",
+      "que_saber": "ERP modular. Usa PostgreSQL. Modelos son clases Python. ORM conecta modelos con tablas."
+    },
+    {
+      "bloque": "Implantación ERP",
+      "que_saber": "Primero análisis y planificación. Migración de datos tiene riesgo. Formación de usuarios es importante."
+    },
+    {
+      "bloque": "Personalización",
+      "que_saber": "Parametrizar es configurar sin tocar código. Odoo Studio es low-code."
+    },
+    {
+      "bloque": "Arquitectura",
+      "que_saber": "SOA = servicios independientes que se comunican."
+    }
+  ],
+  "conceptos_literal": [
+    "CRM = clientes",
+    "ERP = integrar departamentos",
+    "Odoo = ERP modular",
+    "Odoo usa PostgreSQL",
+    "Modelo Odoo = clase Python",
+    "ORM = objetos-tablas",
+    "Parametrizar = configurar sin código",
+    "SOA = servicios independientes"
+  ],
+  "trampas_tipicas": [
+    "CRM no es lo mismo que ERP",
+    "Parametrizar no es programar desde cero",
+    "Modelo en Odoo no es una imagen, es clase Python",
+    "Odoo no usa MongoDB como base principal",
+    "Migrar datos no es automático sin riesgo"
+  ],
+  "como_estudiarlo": "Aprende pares palabra-respuesta. Ejemplo: clientes = CRM, departamentos = ERP, Odoo = PostgreSQL."
+}

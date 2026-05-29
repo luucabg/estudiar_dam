@@ -1,0 +1,551 @@
+{
+  "slug": "ingles_muy_probables_30",
+  "asignatura": "Inglés",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "Vocabulario profesional, llamadas, emails y reuniones.",
+  "tips": [
+    "job=puesto, work=trabajo general, I agree correcto."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does job usually mean?",
+      "opciones": [
+        "Cierre formal cuando no conoces el nombre",
+        "To sum up...",
+        "Espero recibir noticias suyas",
+        "A specific position or employment"
+      ],
+      "respuesta_correcta": "A specific position or employment",
+      "explicacion": "A specific position or employment"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does work usually mean?",
+      "opciones": [
+        "I'll put you through",
+        "Solicitar un empleo",
+        "Work in general or the place where you work",
+        "I agree"
+      ],
+      "respuesta_correcta": "Work in general or the place where you work",
+      "explicacion": "Work in general or the place where you work"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "telefono",
+      "pregunta": "Which expression asks for someone on the phone?",
+      "opciones": [
+        "Dear Sir or Madam",
+        "Could I speak to Marta, please?",
+        "In my opinion...",
+        "I would like to..."
+      ],
+      "respuesta_correcta": "Could I speak to Marta, please?",
+      "explicacion": "Could I speak to Marta, please?"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "telefono",
+      "pregunta": "What does Can I take a message? mean?",
+      "opciones": [
+        "¿Puedo tomar un mensaje?",
+        "Adjunto...",
+        "Salario",
+        "Espero recibir noticias suyas"
+      ],
+      "respuesta_correcta": "¿Puedo tomar un mensaje?",
+      "explicacion": "¿Puedo tomar un mensaje?"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "gramatica",
+      "pregunta": "Which sentence is correct?",
+      "opciones": [
+        "Could you clarify that?",
+        "In my opinion...",
+        "Empleador o empresa que contrata",
+        "I agree"
+      ],
+      "respuesta_correcta": "I agree",
+      "explicacion": "I agree"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reuniones",
+      "pregunta": "Which asks for clarification?",
+      "opciones": [
+        "Orden del día",
+        "Solicitar un empleo",
+        "Could you clarify that?",
+        "To sum up..."
+      ],
+      "respuesta_correcta": "Could you clarify that?",
+      "explicacion": "Could you clarify that?"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "email",
+      "pregunta": "Which is a formal email closing?",
+      "opciones": [
+        "Compañero de trabajo",
+        "Best regards",
+        "Entrevista",
+        "Could you clarify that?"
+      ],
+      "respuesta_correcta": "Best regards",
+      "explicacion": "Best regards"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "email",
+      "pregunta": "What does Please find attached mean?",
+      "opciones": [
+        "Adjunto...",
+        "Could you clarify that?",
+        "I'll put you through",
+        "I would like to..."
+      ],
+      "respuesta_correcta": "Adjunto...",
+      "explicacion": "Adjunto..."
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "telefono",
+      "pregunta": "What does I'm calling about mean?",
+      "opciones": [
+        "¿Puedo tomar un mensaje?",
+        "Trabajo a jornada completa",
+        "La línea está ocupada",
+        "Llamo por..."
+      ],
+      "respuesta_correcta": "Llamo por...",
+      "explicacion": "Llamo por..."
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reuniones",
+      "pregunta": "Which expression shows disagreement?",
+      "opciones": [
+        "Espere, por favor",
+        "Cierre formal cuando no conoces el nombre",
+        "I disagree",
+        "Dear Sir or Madam"
+      ],
+      "respuesta_correcta": "I disagree",
+      "explicacion": "I disagree"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "email",
+      "pregunta": "How can you start a formal email if you do not know the name?",
+      "opciones": [
+        "Empleado",
+        "Dear Sir or Madam",
+        "Cierre formal cuando no conoces el nombre",
+        "I disagree"
+      ],
+      "respuesta_correcta": "Dear Sir or Madam",
+      "explicacion": "Dear Sir or Madam"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "telefono",
+      "pregunta": "What does Hold on, please mean?",
+      "opciones": [
+        "Espere, por favor",
+        "Best regards",
+        "¿Puedo tomar un mensaje?",
+        "¿Podrías repetir eso?"
+      ],
+      "respuesta_correcta": "Espere, por favor",
+      "explicacion": "Espere, por favor"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "email",
+      "pregunta": "What does I look forward to hearing from you mean?",
+      "opciones": [
+        "Orden del día",
+        "¿Puedo tomar un mensaje?",
+        "Currículum",
+        "Espero recibir noticias suyas"
+      ],
+      "respuesta_correcta": "Espero recibir noticias suyas",
+      "explicacion": "Espero recibir noticias suyas"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does employee mean?",
+      "opciones": [
+        "In my opinion...",
+        "A specific position or employment",
+        "Empleado",
+        "Compañero de trabajo"
+      ],
+      "respuesta_correcta": "Empleado",
+      "explicacion": "Empleado"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does employer mean?",
+      "opciones": [
+        "I would like to...",
+        "Empleador o empresa que contrata",
+        "Salario",
+        "Llamo por..."
+      ],
+      "respuesta_correcta": "Empleador o empresa que contrata",
+      "explicacion": "Empleador o empresa que contrata"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does salary mean?",
+      "opciones": [
+        "Salario",
+        "Espero recibir noticias suyas",
+        "¿Puedo tomar un mensaje?",
+        "Solicitar un empleo"
+      ],
+      "respuesta_correcta": "Salario",
+      "explicacion": "Salario"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does deadline mean?",
+      "opciones": [
+        "Entrevista",
+        "I would like to...",
+        "Orden del día",
+        "Fecha límite"
+      ],
+      "respuesta_correcta": "Fecha límite",
+      "explicacion": "Fecha límite"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reuniones",
+      "pregunta": "Which expression introduces a summary?",
+      "opciones": [
+        "Espero recibir noticias suyas",
+        "A specific position or employment",
+        "To sum up...",
+        "Compañero de trabajo"
+      ],
+      "respuesta_correcta": "To sum up...",
+      "explicacion": "To sum up..."
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does apply for a job mean?",
+      "opciones": [
+        "Salario",
+        "Solicitar un empleo",
+        "Currículum",
+        "Could I speak to Marta, please?"
+      ],
+      "respuesta_correcta": "Solicitar un empleo",
+      "explicacion": "Solicitar un empleo"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does CV or resume mean?",
+      "opciones": [
+        "Currículum",
+        "Fecha límite",
+        "Orden del día",
+        "Solicitar un empleo"
+      ],
+      "respuesta_correcta": "Currículum",
+      "explicacion": "Currículum"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reuniones",
+      "pregunta": "What does agenda mean in a meeting?",
+      "opciones": [
+        "¿Puedo tomar un mensaje?",
+        "Trabajo a jornada completa",
+        "I agree",
+        "Orden del día"
+      ],
+      "respuesta_correcta": "Orden del día",
+      "explicacion": "Orden del día"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "telefono",
+      "pregunta": "Which phrase means pasar una llamada?",
+      "opciones": [
+        "Empleado",
+        "To sum up...",
+        "I'll put you through",
+        "Salario"
+      ],
+      "respuesta_correcta": "I'll put you through",
+      "explicacion": "I'll put you through"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "email",
+      "pregunta": "Which is more formal?",
+      "opciones": [
+        "In my opinion...",
+        "I would like to...",
+        "To sum up...",
+        "Dear Sir or Madam"
+      ],
+      "respuesta_correcta": "I would like to...",
+      "explicacion": "I would like to..."
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reuniones",
+      "pregunta": "What does Could you repeat that? mean?",
+      "opciones": [
+        "¿Podrías repetir eso?",
+        "In my opinion...",
+        "To sum up...",
+        "La línea está ocupada"
+      ],
+      "respuesta_correcta": "¿Podrías repetir eso?",
+      "explicacion": "¿Podrías repetir eso?"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does colleague mean?",
+      "opciones": [
+        "In my opinion...",
+        "Adjunto...",
+        "Espere, por favor",
+        "Compañero de trabajo"
+      ],
+      "respuesta_correcta": "Compañero de trabajo",
+      "explicacion": "Compañero de trabajo"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "vocabulario",
+      "pregunta": "What does full-time job mean?",
+      "opciones": [
+        "Adjunto...",
+        "I would like to...",
+        "Trabajo a jornada completa",
+        "I disagree"
+      ],
+      "respuesta_correcta": "Trabajo a jornada completa",
+      "explicacion": "Trabajo a jornada completa"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reuniones",
+      "pregunta": "Which expression gives an opinion?",
+      "opciones": [
+        "Currículum",
+        "In my opinion...",
+        "Empleador o empresa que contrata",
+        "I agree"
+      ],
+      "respuesta_correcta": "In my opinion...",
+      "explicacion": "In my opinion..."
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "email",
+      "pregunta": "What does Yours faithfully mean?",
+      "opciones": [
+        "Cierre formal cuando no conoces el nombre",
+        "Espero recibir noticias suyas",
+        "Salario",
+        "I'll put you through"
+      ],
+      "respuesta_correcta": "Cierre formal cuando no conoces el nombre",
+      "explicacion": "Cierre formal cuando no conoces el nombre"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "telefono",
+      "pregunta": "What does The line is busy mean?",
+      "opciones": [
+        "I would like to...",
+        "Entrevista",
+        "Llamo por...",
+        "La línea está ocupada"
+      ],
+      "respuesta_correcta": "La línea está ocupada",
+      "explicacion": "La línea está ocupada"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "trabajo",
+      "pregunta": "What does interview mean?",
+      "opciones": [
+        "Espere, por favor",
+        "In my opinion...",
+        "Entrevista",
+        "Fecha límite"
+      ],
+      "respuesta_correcta": "Entrevista",
+      "explicacion": "Entrevista"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "Inglés parece centrarse en vocabulario profesional, llamadas, emails y reuniones. Lo más probable: job/work, frases de teléfono, pedir aclaración, dar opinión, estar de acuerdo/desacuerdo y cierres de email.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "Work and jobs",
+        "que_saber": "job = puesto concreto, work = trabajo general o lugar de trabajo."
+      },
+      {
+        "bloque": "Telephoning",
+        "que_saber": "Could I speak to...?, Can I take a message?, Hold on please, I'll put you through."
+      },
+      {
+        "bloque": "Emails",
+        "que_saber": "Dear Sir or Madam, Please find attached, Best regards, I look forward to hearing from you."
+      },
+      {
+        "bloque": "Meetings",
+        "que_saber": "In my opinion, I agree, I disagree, Could you clarify that?, Could you repeat that?"
+      },
+      {
+        "bloque": "Vocabulario profesional",
+        "que_saber": "employee, employer, salary, deadline, colleague, full-time job, apply for a job."
+      }
+    ],
+    "conceptos_literal": [
+      "job = puesto concreto",
+      "work = trabajo general",
+      "I agree, no I am agree",
+      "Can I take a message? = puedo tomar mensaje",
+      "Best regards = cierre formal",
+      "Please find attached = adjunto"
+    ],
+    "trampas_tipicas": [
+      "No se dice I am agree",
+      "job y work no son lo mismo",
+      "Best regards no es saludo inicial",
+      "Can I take a message no significa puedo enviar un mensaje",
+      "agenda en reunión = orden del día"
+    ],
+    "como_estudiarlo": "Memoriza frases hechas. En inglés suelen preguntar traducción o elegir la frase correcta."
+  },
+  "resumen_explicativo_ampliado": "Inglés parece centrarse en vocabulario profesional, llamadas, emails y reuniones. Lo más probable: job/work, frases de teléfono, pedir aclaración, dar opinión, estar de acuerdo/desacuerdo y cierres de email.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "Work and jobs",
+      "que_saber": "job = puesto concreto, work = trabajo general o lugar de trabajo."
+    },
+    {
+      "bloque": "Telephoning",
+      "que_saber": "Could I speak to...?, Can I take a message?, Hold on please, I'll put you through."
+    },
+    {
+      "bloque": "Emails",
+      "que_saber": "Dear Sir or Madam, Please find attached, Best regards, I look forward to hearing from you."
+    },
+    {
+      "bloque": "Meetings",
+      "que_saber": "In my opinion, I agree, I disagree, Could you clarify that?, Could you repeat that?"
+    },
+    {
+      "bloque": "Vocabulario profesional",
+      "que_saber": "employee, employer, salary, deadline, colleague, full-time job, apply for a job."
+    }
+  ],
+  "conceptos_literal": [
+    "job = puesto concreto",
+    "work = trabajo general",
+    "I agree, no I am agree",
+    "Can I take a message? = puedo tomar mensaje",
+    "Best regards = cierre formal",
+    "Please find attached = adjunto"
+  ],
+  "trampas_tipicas": [
+    "No se dice I am agree",
+    "job y work no son lo mismo",
+    "Best regards no es saludo inicial",
+    "Can I take a message no significa puedo enviar un mensaje",
+    "agenda en reunión = orden del día"
+  ],
+  "como_estudiarlo": "Memoriza frases hechas. En inglés suelen preguntar traducción o elegir la frase correcta."
+}

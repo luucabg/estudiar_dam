@@ -1,0 +1,561 @@
+{
+  "slug": "multimedia_muy_probables_30",
+  "asignatura": "Programación multimedia y dispositivos móviles",
+  "configuracion_examen": {
+    "tipo": "test",
+    "preguntas_por_asignatura": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "criterio": "Preguntas filtradas a lo más probable/obvio de examen según tests, repasos y conceptos centrales."
+  },
+  "resumen": "Android, React Native, Unity, hooks, patrones y arquitectura móvil.",
+  "tips": [
+    "FlatList=listas largas, Transform=posición/rotación/escala, useEffect=efectos secundarios."
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Qué es un Fragment?",
+      "opciones": [
+        "Porque los recursos son más limitados",
+        "Material",
+        "Desacopla componentes y facilita pruebas",
+        "Componente UI modular y reutilizable dentro de una Activity"
+      ],
+      "respuesta_correcta": "Componente UI modular y reutilizable dentro de una Activity",
+      "explicacion": "Componente UI modular y reutilizable dentro de una Activity"
+    },
+    {
+      "id": 2,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Qué es una Activity?",
+      "opciones": [
+        "Organizar elementos para guiar la atención",
+        "Dart",
+        "Componente que representa una pantalla o punto de interacción",
+        "Componente eficiente para mostrar listas"
+      ],
+      "respuesta_correcta": "Componente que representa una pantalla o punto de interacción",
+      "explicacion": "Componente que representa una pantalla o punto de interacción"
+    },
+    {
+      "id": 3,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Diferencia entre onCreate() y onStart()?",
+      "opciones": [
+        "Se suscribe a cambios y reacciona cuando ocurren",
+        "onCreate() se ejecuta al crear; onStart() cuando se vuelve visible",
+        "Compartir parte del código entre plataformas",
+        "Interpolación automática y mejor optimización"
+      ],
+      "respuesta_correcta": "onCreate() se ejecuta al crear; onStart() cuando se vuelve visible",
+      "explicacion": "onCreate() se ejecuta al crear; onStart() cuando se vuelve visible"
+    },
+    {
+      "id": 4,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Qué método se ejecuta cuando el usuario sale o pierde foco?",
+      "opciones": [
+        "onPause()",
+        "Ejecutar efectos secundarios según dependencias",
+        "Transform",
+        "Desacopla componentes y facilita pruebas"
+      ],
+      "respuesta_correcta": "onPause()",
+      "explicacion": "onPause()"
+    },
+    {
+      "id": 5,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Qué es RecyclerView?",
+      "opciones": [
+        "Conecta datos con elementos visuales de una lista",
+        "Compartir parte del código entre plataformas",
+        "Guardar claves o datos sensibles de forma segura",
+        "Componente eficiente para mostrar listas"
+      ],
+      "respuesta_correcta": "Componente eficiente para mostrar listas",
+      "explicacion": "Componente eficiente para mostrar listas"
+    },
+    {
+      "id": 6,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Qué hace un Adapter?",
+      "opciones": [
+        "El usuario no identifica la información prioritaria",
+        "Dart",
+        "Conecta datos con elementos visuales de una lista",
+        "Material"
+      ],
+      "respuesta_correcta": "Conecta datos con elementos visuales de una lista",
+      "explicacion": "Conecta datos con elementos visuales de una lista"
+    },
+    {
+      "id": 7,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "react_native",
+      "pregunta": "¿Por qué FlatList es mejor que ScrollView en listas largas?",
+      "opciones": [
+        "Se ejecuta tras cada renderizado",
+        "Renderiza principalmente elementos visibles",
+        "Desarrollar aplicaciones Android",
+        "Conecta datos con elementos visuales de una lista"
+      ],
+      "respuesta_correcta": "Renderiza principalmente elementos visibles",
+      "explicacion": "Renderiza principalmente elementos visibles"
+    },
+    {
+      "id": 8,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "react",
+      "pregunta": "¿Para qué sirve useEffect?",
+      "opciones": [
+        "Ejecutar efectos secundarios según dependencias",
+        "Conecta datos con elementos visuales de una lista",
+        "Organizar elementos para guiar la atención",
+        "Interpolación automática y mejor optimización"
+      ],
+      "respuesta_correcta": "Ejecutar efectos secundarios según dependencias",
+      "explicacion": "Ejecutar efectos secundarios según dependencias"
+    },
+    {
+      "id": 9,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "react",
+      "pregunta": "¿Qué hace useState?",
+      "opciones": [
+        "onPause()",
+        "En XML dentro de res/layout",
+        "Cambios distintos sobre los mismos datos",
+        "Gestiona estado en componentes funcionales"
+      ],
+      "respuesta_correcta": "Gestiona estado en componentes funcionales",
+      "explicacion": "Gestiona estado en componentes funcionales"
+    },
+    {
+      "id": 10,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "arquitectura",
+      "pregunta": "¿Qué hace Repository?",
+      "opciones": [
+        "Una única instancia accesible globalmente",
+        "Porque los recursos son más limitados",
+        "Centraliza y abstrae el acceso a datos",
+        "Se suscribe a cambios y reacciona cuando ocurren"
+      ],
+      "respuesta_correcta": "Centraliza y abstrae el acceso a datos",
+      "explicacion": "Centraliza y abstrae el acceso a datos"
+    },
+    {
+      "id": 11,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "reactive",
+      "pregunta": "¿Qué hace un Observer?",
+      "opciones": [
+        "Guardar datos localmente y sincronizar después",
+        "Se suscribe a cambios y reacciona cuando ocurren",
+        "Porque los recursos son más limitados",
+        "Centraliza y abstrae el acceso a datos"
+      ],
+      "respuesta_correcta": "Se suscribe a cambios y reacciona cuando ocurren",
+      "explicacion": "Se suscribe a cambios y reacciona cuando ocurren"
+    },
+    {
+      "id": 12,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "patrones",
+      "pregunta": "¿Qué garantiza Singleton?",
+      "opciones": [
+        "Una única instancia accesible globalmente",
+        "Renderiza principalmente elementos visibles",
+        "onPause()",
+        "Mantenimiento y testabilidad"
+      ],
+      "respuesta_correcta": "Una única instancia accesible globalmente",
+      "explicacion": "Una única instancia accesible globalmente"
+    },
+    {
+      "id": 13,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "arquitectura",
+      "pregunta": "¿Qué resuelve la inyección de dependencias?",
+      "opciones": [
+        "El usuario no identifica la información prioritaria",
+        "onPause()",
+        "Motor gráfico propio y consistencia visual",
+        "Desacopla componentes y facilita pruebas"
+      ],
+      "respuesta_correcta": "Desacopla componentes y facilita pruebas",
+      "explicacion": "Desacopla componentes y facilita pruebas"
+    },
+    {
+      "id": 14,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "offline",
+      "pregunta": "¿Qué debe hacer una app offline?",
+      "opciones": [
+        "Compartir parte del código entre plataformas",
+        "Componente UI modular y reutilizable dentro de una Activity",
+        "Guardar datos localmente y sincronizar después",
+        "Se ejecuta tras cada renderizado"
+      ],
+      "respuesta_correcta": "Guardar datos localmente y sincronizar después",
+      "explicacion": "Guardar datos localmente y sincronizar después"
+    },
+    {
+      "id": 15,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "seguridad",
+      "pregunta": "¿Para qué sirve Keystore?",
+      "opciones": [
+        "Interpolación automática y mejor optimización",
+        "Guardar claves o datos sensibles de forma segura",
+        "Transform",
+        "Gestiona estado en componentes funcionales"
+      ],
+      "respuesta_correcta": "Guardar claves o datos sensibles de forma segura",
+      "explicacion": "Guardar claves o datos sensibles de forma segura"
+    },
+    {
+      "id": 16,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "unity",
+      "pregunta": "¿Qué componente define posición, rotación y escala?",
+      "opciones": [
+        "Transform",
+        "Desacopla componentes y facilita pruebas",
+        "onPause()",
+        "Dart"
+      ],
+      "respuesta_correcta": "Transform",
+      "explicacion": "Transform"
+    },
+    {
+      "id": 17,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "unity",
+      "pregunta": "¿Qué componente se relaciona con colisiones?",
+      "opciones": [
+        "Desarrollar aplicaciones Android",
+        "Interpolación automática y mejor optimización",
+        "El usuario no identifica la información prioritaria",
+        "Collider"
+      ],
+      "respuesta_correcta": "Collider",
+      "explicacion": "Collider"
+    },
+    {
+      "id": 18,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "unity",
+      "pregunta": "¿Qué define la apariencia superficial de un objeto?",
+      "opciones": [
+        "Desacopla componentes y facilita pruebas",
+        "Componente UI modular y reutilizable dentro de una Activity",
+        "Material",
+        "Se ejecuta tras cada renderizado"
+      ],
+      "respuesta_correcta": "Material",
+      "explicacion": "Material"
+    },
+    {
+      "id": 19,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "flutter",
+      "pregunta": "¿Qué lenguaje usa Flutter?",
+      "opciones": [
+        "Transform",
+        "Dart",
+        "Motor gráfico propio y consistencia visual",
+        "onCreate() se ejecuta al crear; onStart() cuando se vuelve visible"
+      ],
+      "respuesta_correcta": "Dart",
+      "explicacion": "Dart"
+    },
+    {
+      "id": 20,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "flutter",
+      "pregunta": "¿Ventaja principal de Flutter?",
+      "opciones": [
+        "Motor gráfico propio y consistencia visual",
+        "Collider",
+        "El usuario no identifica la información prioritaria",
+        "Dart"
+      ],
+      "respuesta_correcta": "Motor gráfico propio y consistencia visual",
+      "explicacion": "Motor gráfico propio y consistencia visual"
+    },
+    {
+      "id": 21,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ui",
+      "pregunta": "¿Qué consecuencia tiene mala jerarquía visual?",
+      "opciones": [
+        "onPause()",
+        "En XML dentro de res/layout",
+        "Componente eficiente para mostrar listas",
+        "El usuario no identifica la información prioritaria"
+      ],
+      "respuesta_correcta": "El usuario no identifica la información prioritaria",
+      "explicacion": "El usuario no identifica la información prioritaria"
+    },
+    {
+      "id": 22,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "ui",
+      "pregunta": "¿Qué es jerarquía visual?",
+      "opciones": [
+        "Guardar datos localmente y sincronizar después",
+        "Material",
+        "Organizar elementos para guiar la atención",
+        "Transform"
+      ],
+      "respuesta_correcta": "Organizar elementos para guiar la atención",
+      "explicacion": "Organizar elementos para guiar la atención"
+    },
+    {
+      "id": 23,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "animaciones",
+      "pregunta": "¿Ventaja de animaciones basadas en propiedades?",
+      "opciones": [
+        "Compartir parte del código entre plataformas",
+        "Interpolación automática y mejor optimización",
+        "Material",
+        "Se suscribe a cambios y reacciona cuando ocurren"
+      ],
+      "respuesta_correcta": "Interpolación automática y mejor optimización",
+      "explicacion": "Interpolación automática y mejor optimización"
+    },
+    {
+      "id": 24,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "arquitectura",
+      "pregunta": "¿Qué mejora la separación por capas?",
+      "opciones": [
+        "Mantenimiento y testabilidad",
+        "Compartir parte del código entre plataformas",
+        "Material",
+        "Cambios distintos sobre los mismos datos"
+      ],
+      "respuesta_correcta": "Mantenimiento y testabilidad",
+      "explicacion": "Mantenimiento y testabilidad"
+    },
+    {
+      "id": 25,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "react",
+      "pregunta": "¿Qué pasa con useEffect sin array de dependencias?",
+      "opciones": [
+        "Compartir parte del código entre plataformas",
+        "Ejecutar efectos secundarios según dependencias",
+        "Una única instancia accesible globalmente",
+        "Se ejecuta tras cada renderizado"
+      ],
+      "respuesta_correcta": "Se ejecuta tras cada renderizado",
+      "explicacion": "Se ejecuta tras cada renderizado"
+    },
+    {
+      "id": 26,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Dónde se definen normalmente layouts Android?",
+      "opciones": [
+        "Ejecutar efectos secundarios según dependencias",
+        "Interpolación automática y mejor optimización",
+        "En XML dentro de res/layout",
+        "Centraliza y abstrae el acceso a datos"
+      ],
+      "respuesta_correcta": "En XML dentro de res/layout",
+      "explicacion": "En XML dentro de res/layout"
+    },
+    {
+      "id": 27,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "multiplataforma",
+      "pregunta": "¿Qué busca el desarrollo multiplataforma?",
+      "opciones": [
+        "Motor gráfico propio y consistencia visual",
+        "Compartir parte del código entre plataformas",
+        "Guardar claves o datos sensibles de forma segura",
+        "Componente eficiente para mostrar listas"
+      ],
+      "respuesta_correcta": "Compartir parte del código entre plataformas",
+      "explicacion": "Compartir parte del código entre plataformas"
+    },
+    {
+      "id": 28,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "movil",
+      "pregunta": "¿Por qué es importante optimizar memoria en móvil?",
+      "opciones": [
+        "Porque los recursos son más limitados",
+        "Desacopla componentes y facilita pruebas",
+        "Transform",
+        "Organizar elementos para guiar la atención"
+      ],
+      "respuesta_correcta": "Porque los recursos son más limitados",
+      "explicacion": "Porque los recursos son más limitados"
+    },
+    {
+      "id": 29,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "offline",
+      "pregunta": "¿Qué conflicto puede aparecer al sincronizar offline?",
+      "opciones": [
+        "Interpolación automática y mejor optimización",
+        "Desarrollar aplicaciones Android",
+        "Gestiona estado en componentes funcionales",
+        "Cambios distintos sobre los mismos datos"
+      ],
+      "respuesta_correcta": "Cambios distintos sobre los mismos datos",
+      "explicacion": "Cambios distintos sobre los mismos datos"
+    },
+    {
+      "id": 30,
+      "probabilidad": "muy_probable",
+      "dificultad": "media_alta",
+      "tema": "android",
+      "pregunta": "¿Para qué sirve Android Studio?",
+      "opciones": [
+        "Una única instancia accesible globalmente",
+        "Compartir parte del código entre plataformas",
+        "Desarrollar aplicaciones Android",
+        "Collider"
+      ],
+      "respuesta_correcta": "Desarrollar aplicaciones Android",
+      "explicacion": "Desarrollar aplicaciones Android"
+    }
+  ],
+  "info_extra_para_estudiar": {
+    "resumen_explicativo": "Esta asignatura mezcla Android, React Native, Unity y arquitectura móvil. No parece tanto de programar código largo como de saber para qué sirve cada componente. Lo más fuerte: Activity/Fragment, ciclo de vida, RecyclerView/Adapter, FlatList, useEffect, Repository, Observer, Singleton, offline y Transform en Unity.",
+    "bloques_que_creo_que_salen_seguro": [
+      {
+        "bloque": "Android",
+        "que_saber": "Activity es pantalla, Fragment es componente dentro de Activity. onCreate crea, onStart visible, onPause pierde foco."
+      },
+      {
+        "bloque": "Listas Android",
+        "que_saber": "RecyclerView muestra listas eficientemente. Adapter conecta datos con vistas."
+      },
+      {
+        "bloque": "React Native",
+        "que_saber": "FlatList para listas largas porque renderiza visibles. useEffect ejecuta efectos secundarios."
+      },
+      {
+        "bloque": "Arquitectura móvil",
+        "que_saber": "Repository centraliza datos. Observer reacciona a cambios. Singleton una instancia. DI desacopla."
+      },
+      {
+        "bloque": "Offline y seguridad",
+        "que_saber": "Offline = guardar local y sincronizar. Keystore = guardar claves o datos sensibles."
+      },
+      {
+        "bloque": "Unity",
+        "que_saber": "Transform define posición, rotación y escala. Collider colisiones. Material apariencia."
+      }
+    ],
+    "conceptos_literal": [
+      "Fragment = UI modular dentro de Activity",
+      "FlatList = mejor para listas largas",
+      "useEffect = efectos secundarios",
+      "Repository = acceso a datos",
+      "Transform = posición, rotación, escala",
+      "Keystore = datos sensibles",
+      "onPause = pierde foco"
+    ],
+    "trampas_tipicas": [
+      "ScrollView no es ideal para listas largas",
+      "Fragment no es una Activity completa",
+      "onCreate y onStart no son iguales",
+      "Repository no pinta la interfaz, gestiona acceso a datos",
+      "Transform no es Renderer ni Material"
+    ],
+    "como_estudiarlo": "Haz columnas por tecnología: Android, React Native, Unity y patrones. Aprende una frase por componente."
+  },
+  "resumen_explicativo_ampliado": "Esta asignatura mezcla Android, React Native, Unity y arquitectura móvil. No parece tanto de programar código largo como de saber para qué sirve cada componente. Lo más fuerte: Activity/Fragment, ciclo de vida, RecyclerView/Adapter, FlatList, useEffect, Repository, Observer, Singleton, offline y Transform en Unity.",
+  "bloques_que_creo_que_salen_seguro": [
+    {
+      "bloque": "Android",
+      "que_saber": "Activity es pantalla, Fragment es componente dentro de Activity. onCreate crea, onStart visible, onPause pierde foco."
+    },
+    {
+      "bloque": "Listas Android",
+      "que_saber": "RecyclerView muestra listas eficientemente. Adapter conecta datos con vistas."
+    },
+    {
+      "bloque": "React Native",
+      "que_saber": "FlatList para listas largas porque renderiza visibles. useEffect ejecuta efectos secundarios."
+    },
+    {
+      "bloque": "Arquitectura móvil",
+      "que_saber": "Repository centraliza datos. Observer reacciona a cambios. Singleton una instancia. DI desacopla."
+    },
+    {
+      "bloque": "Offline y seguridad",
+      "que_saber": "Offline = guardar local y sincronizar. Keystore = guardar claves o datos sensibles."
+    },
+    {
+      "bloque": "Unity",
+      "que_saber": "Transform define posición, rotación y escala. Collider colisiones. Material apariencia."
+    }
+  ],
+  "conceptos_literal": [
+    "Fragment = UI modular dentro de Activity",
+    "FlatList = mejor para listas largas",
+    "useEffect = efectos secundarios",
+    "Repository = acceso a datos",
+    "Transform = posición, rotación, escala",
+    "Keystore = datos sensibles",
+    "onPause = pierde foco"
+  ],
+  "trampas_tipicas": [
+    "ScrollView no es ideal para listas largas",
+    "Fragment no es una Activity completa",
+    "onCreate y onStart no son iguales",
+    "Repository no pinta la interfaz, gestiona acceso a datos",
+    "Transform no es Renderer ni Material"
+  ],
+  "como_estudiarlo": "Haz columnas por tecnología: Android, React Native, Unity y patrones. Aprende una frase por componente."
+}

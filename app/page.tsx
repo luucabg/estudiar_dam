@@ -16,8 +16,16 @@ import {
   Target,
   X,
 } from "lucide-react"
-import studyInfo from "@/info.json"
-import probableQuestionsPack from "@/p/preguntas_mas_probables_dam.json"
+import accesoDatosUltima from "@/ULTIMAINFO/acceso_datos_muy_probables_30.json"
+import digitalizacionUltima from "@/ULTIMAINFO/digitalizacion_muy_probables_30.json"
+import gestionEmpresarialUltima from "@/ULTIMAINFO/gestion_empresarial_muy_probables_30.json"
+import ultimaInfoPack from "@/ULTIMAINFO/index.json"
+import inglesUltima from "@/ULTIMAINFO/ingles_muy_probables_30.json"
+import interfacesUltima from "@/ULTIMAINFO/interfaces_muy_probables_30.json"
+import itpUltima from "@/ULTIMAINFO/itp_muy_probables_30.json"
+import multimediaUltima from "@/ULTIMAINFO/multimedia_muy_probables_30.json"
+import pspUltima from "@/ULTIMAINFO/psp_muy_probables_30.json"
+import sostenibilidadUltima from "@/ULTIMAINFO/sostenibilidad_muy_probables_30.json"
 
 export type Subject = {
   id: string
@@ -1751,7 +1759,7 @@ type CourseConfig = {
   subjects: Subject[]
   exam?: {
     format: string
-    questionCount: number
+    questionLabel: string
     penalty: string
     strategy: string[]
   }
@@ -1781,7 +1789,17 @@ const firstDamSubjects: Subject[] = subjects.map((subject, index) => ({
   })),
 }))
 
-const secondDamData = probableQuestionsPack.asignaturas
+const secondDamData = [
+  pspUltima,
+  accesoDatosUltima,
+  multimediaUltima,
+  interfacesUltima,
+  gestionEmpresarialUltima,
+  digitalizacionUltima,
+  sostenibilidadUltima,
+  itpUltima,
+  inglesUltima,
+]
 
 const invalidOptionLabels = [
   "respuesta parecida pero incorrecta",
@@ -1806,46 +1824,51 @@ function mapNewQuestions(subject: (typeof secondDamData)[number]): Question[] {
     }))
 }
 
-function mapOldQuestions(oldSubject: (typeof studyInfo.asignaturas)[number]): Question[] {
-  return oldSubject.preguntas_tipo_test.map((question, questionIndex) => ({
-    id: questionIndex + 1,
-    question: question.pregunta,
-    options: question.opciones,
-    correctAnswer: Math.max(question.opciones.indexOf(question.respuesta_correcta), 0),
-    explanation: question.explicacion,
-  }))
+function mapBlocks(blocks: Array<{ bloque: string; que_saber: string }>) {
+  return blocks.map((block) => `${block.bloque}: ${block.que_saber}`)
 }
 
 const secondDamSubjects: Subject[] = secondDamData.map((subject, index) => {
-  const oldSubject = studyInfo.asignaturas[index]
   const newQuestions = mapNewQuestions(subject)
 
   return {
     id: subject.slug,
-    name: subject.nombre,
-    icon: getInitials(subject.nombre),
+    name: subject.asignatura,
+    icon: getInitials(subject.asignatura),
     color: "",
     accent: secondDamAccents[index % secondDamAccents.length],
-    difficulty: oldSubject.dificultad,
-    priority: oldSubject.prioridad,
-    likely: oldSubject.lo_que_mas_probablemente_sale,
-    cheatSheet: oldSubject.chuleta,
-    probableQuestions: oldSubject.preguntas_muy_probables,
+    probableQuestionsTitle: "Bloques que salen seguro",
+    probableQuestions: subject.bloques_que_creo_que_salen_seguro.map((block) => ({
+      pregunta: block.bloque,
+      respuesta: block.que_saber,
+    })),
     theory: [
       {
-        title: "Temario super resumido",
-        content: oldSubject.temario_super_resumido,
+        title: "Resumen",
+        content: [subject.resumen, subject.resumen_explicativo_ampliado],
       },
       {
-        title: "Lo que más probablemente sale",
-        content: oldSubject.lo_que_mas_probablemente_sale,
+        title: "Bloques que salen seguro",
+        content: mapBlocks(subject.bloques_que_creo_que_salen_seguro),
       },
       {
-        title: "Chuleta",
-        content: oldSubject.chuleta,
+        title: "Conceptos literal",
+        content: subject.conceptos_literal,
+      },
+      {
+        title: "Trampas típicas",
+        content: subject.trampas_tipicas,
+      },
+      {
+        title: "Tips",
+        content: subject.tips,
+      },
+      {
+        title: "Cómo estudiarlo",
+        content: [subject.como_estudiarlo],
       },
     ],
-    questions: newQuestions.length > 0 ? newQuestions : mapOldQuestions(oldSubject),
+    questions: newQuestions,
   }
 })
 
@@ -1861,13 +1884,13 @@ const courses: Record<CourseId, CourseConfig> = {
     id: "2dam",
     title: "2 DAM",
     kicker: "Segundo curso",
-    description: probableQuestionsPack.descripcion,
+    description: ultimaInfoPack.descripcion,
     subjects: secondDamSubjects,
     exam: {
       format: "Tipo test",
-      questionCount: probableQuestionsPack.configuracion_examen.preguntas_examen,
-      penalty: formatPenalty(probableQuestionsPack.configuracion_examen.puntuacion.incorrecta),
-      strategy: probableQuestionsPack.configuracion_examen.estrategia,
+      questionLabel: "30 preguntas por asignatura",
+      penalty: formatPenalty(pspUltima.configuracion_examen.puntuacion.incorrecta),
+      strategy: ultimaInfoPack.modo_uso,
     },
   },
 }
@@ -2084,7 +2107,7 @@ function SubjectBrowser({
 
       {course.exam && (
         <div className="exam-strip">
-          <span>{course.exam.questionCount} preguntas</span>
+          <span>{course.exam.questionLabel}</span>
           <span>{course.exam.penalty}</span>
         </div>
       )}
