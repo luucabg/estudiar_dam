@@ -1,0 +1,1726 @@
+{
+"objetivo": "Base de estudio para montar una página web y preparar exámenes de 2º DAM con poco tiempo.",
+"contexto_examen": {
+"formato": "Tipo test",
+"preguntas_aproximadas": 30,
+"penalizacion": "1 fallo resta 1/3 de una correcta",
+"estrategia": [
+"Priorizar preguntas de los tests de la página porque pueden salir iguales o muy parecidas.",
+"Estudiar primero conceptos que se repiten en test, repasos y clases.",
+"No intentar estudiar todo perfecto. Memorizar definiciones cortas y diferencias típicas.",
+"Responder si puedes descartar al menos dos opciones o si dudas entre dos.",
+"Dejar en blanco si no te suena nada y no puedes eliminar opciones."
+]
+},
+"orden_recomendado_estudio": [
+{
+"orden": 1,
+"asignatura": "Programación de servicios y procesos",
+"motivo": "Es la más difícil si eres nuevo: hilos, concurrencia, sockets, TCP/UDP y seguridad."
+},
+{
+"orden": 2,
+"asignatura": "Acceso a datos",
+"motivo": "Tiene mucha pregunta técnica: SQL, joins, JDBC, APIs, MongoDB y Yii2."
+},
+{
+"orden": 3,
+"asignatura": "Programación multimedia y dispositivos móviles",
+"motivo": "Mezcla Android, React Native, Unity, patrones y arquitectura móvil."
+},
+{
+"orden": 4,
+"asignatura": "Desarrollo de interfaces",
+"motivo": "JavaFX, FXML, Scene Builder, Maven, JasperReports y usabilidad."
+},
+{
+"orden": 5,
+"asignatura": "Sistemas de gestión empresarial",
+"motivo": "Muy memorizable si entiendes ERP, CRM y Odoo."
+},
+{
+"orden": 6,
+"asignatura": "Digitalización aplicada",
+"motivo": "Conceptual: IA, cloud, blockchain, Big Data, ciberseguridad e Industria 4.0/5.0."
+},
+{
+"orden": 7,
+"asignatura": "Sostenibilidad aplicada",
+"motivo": "Muchas preguntas directas de memoria. En clase se remarca que los tests evaluables son importantes."
+},
+{
+"orden": 8,
+"asignatura": "Itinerario personal para la empleabilidad 2",
+"motivo": "Contratos, CV, entrevistas, LinkedIn y emprendimiento. Bastante directo."
+},
+{
+"orden": 9,
+"asignatura": "Inglés",
+"motivo": "Vocabulario profesional, llamadas, emails y reuniones."
+}
+],
+"asignaturas": [
+{
+"nombre": "Programación de servicios y procesos",
+"dificultad": "alta",
+"prioridad": "muy alta",
+"temario_super_resumido": [
+"Proceso: programa en ejecución.",
+"Hilo: unidad de ejecución dentro de un proceso.",
+"Los hilos comparten memoria dentro del mismo proceso.",
+"Thread y Runnable sirven para crear hilos en Java.",
+"start() inicia un hilo nuevo. run() solo ejecuta un método normal si lo llamas directamente.",
+"sleep() pausa temporalmente un hilo.",
+"join() espera a que otro hilo termine.",
+"synchronized evita que varios hilos entren a la vez en una sección crítica.",
+"wait() hace esperar a un hilo. notify() despierta uno. notifyAll() despierta todos.",
+"Race condition: varios hilos acceden mal a datos compartidos y el resultado depende del orden.",
+"Deadlock: bloqueo mutuo entre hilos.",
+"Starvation: un hilo nunca recibe recursos o CPU.",
+"Priority inversion: un hilo importante queda bloqueado por otro de menor prioridad.",
+"TCP es fiable, ordenado y orientado a conexión.",
+"UDP es rápido, sin conexión y no garantiza entrega ni orden.",
+"Socket y ServerSocket se usan en TCP.",
+"DatagramSocket y DatagramPacket se usan en UDP.",
+"TLS protege comunicaciones. Mínimo TLS 1.2 con validación de certificados.",
+"RBAC es control de acceso basado en roles.",
+"CIA significa confidencialidad, integridad y disponibilidad."
+],
+"lo_que_mas_probablemente_sale": [
+"Diferencia entre proceso e hilo.",
+"Diferencia entre start() y run().",
+"Por qué Runnable suele ser mejor que extender Thread.",
+"Qué hacen sleep(), join(), synchronized, wait(), notify() y notifyAll().",
+"Qué es una race condition.",
+"Qué es un deadlock.",
+"Qué es starvation.",
+"Qué solución se usó para priority inversion en Mars Pathfinder: herencia de prioridad.",
+"TCP vs UDP.",
+"Socket, ServerSocket, DatagramSocket y DatagramPacket.",
+"Qué es un daemon o servicio.",
+"Qué es una pipe.",
+"TLS 1.2 o superior.",
+"RBAC.",
+"Tríada CIA."
+],
+"chuleta": [
+"start() crea hilo nuevo; run() no.",
+"Runnable permite flexibilidad porque Java no permite herencia múltiple de clases.",
+"synchronized protege recursos compartidos.",
+"wait(), notify() y notifyAll() se usan dentro de synchronized.",
+"TCP = seguro/fiable. UDP = rápido/no fiable.",
+"Deadlock = bloqueo mutuo.",
+"Starvation = nunca recibe recursos.",
+"RBAC = permisos por roles.",
+"CIA = confidencialidad, integridad, disponibilidad."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué ocurre si se llama directamente a run() en vez de start()?",
+"opciones": [
+"Se crea un hilo nuevo",
+"Se ejecuta como un método normal",
+"El programa se cierra",
+"Se ejecuta por UDP"
+],
+"respuesta_correcta": "Se ejecuta como un método normal",
+"explicacion": "Para iniciar un hilo nuevo se usa start()."
+},
+{
+"pregunta": "¿Por qué se prefiere Runnable frente a extender Thread?",
+"opciones": [
+"Porque Java permite implementar varias interfaces pero no heredar varias clases",
+"Porque Runnable cifra el hilo",
+"Porque Thread no funciona",
+"Porque Runnable evita todos los errores"
+],
+"respuesta_correcta": "Porque Java permite implementar varias interfaces pero no heredar varias clases",
+"explicacion": "Runnable da más flexibilidad al diseño."
+},
+{
+"pregunta": "¿Qué hace synchronized?",
+"opciones": [
+"Ordena datos",
+"Protege el acceso exclusivo a un recurso compartido",
+"Crea una base de datos",
+"Abre un puerto UDP"
+],
+"respuesta_correcta": "Protege el acceso exclusivo a un recurso compartido",
+"explicacion": "Evita que varios hilos modifiquen lo mismo a la vez."
+},
+{
+"pregunta": "¿Qué es una race condition?",
+"opciones": [
+"Un error por acceso concurrente incorrecto a datos compartidos",
+"Un protocolo de correo",
+"Un certificado de seguridad",
+"Una clase de JavaFX"
+],
+"respuesta_correcta": "Un error por acceso concurrente incorrecto a datos compartidos",
+"explicacion": "El resultado depende del orden de ejecución de los hilos."
+},
+{
+"pregunta": "¿Qué es un deadlock?",
+"opciones": [
+"Un bloqueo mutuo entre hilos o procesos",
+"Una conexión TCP correcta",
+"Una llamada a sleep()",
+"Un tipo de contrato"
+],
+"respuesta_correcta": "Un bloqueo mutuo entre hilos o procesos",
+"explicacion": "Cada hilo espera un recurso que tiene otro."
+},
+{
+"pregunta": "¿Qué protocolo garantiza entrega y orden?",
+"opciones": [
+"UDP",
+"TCP",
+"DNS",
+"FTP"
+],
+"respuesta_correcta": "TCP",
+"explicacion": "TCP es fiable y orientado a conexión."
+},
+{
+"pregunta": "¿Qué característica define a UDP?",
+"opciones": [
+"No establece conexión previa ni garantiza entrega",
+"Garantiza siempre el orden",
+"Usa siempre HTTPS",
+"Solo sirve para bases de datos"
+],
+"respuesta_correcta": "No establece conexión previa ni garantiza entrega",
+"explicacion": "UDP prioriza velocidad y baja latencia."
+},
+{
+"pregunta": "¿Qué clase usa un servidor TCP en Java?",
+"opciones": [
+"ServerSocket",
+"DatagramPacket",
+"ArrayList",
+"FXMLLoader"
+],
+"respuesta_correcta": "ServerSocket",
+"explicacion": "ServerSocket escucha conexiones TCP entrantes."
+},
+{
+"pregunta": "¿Qué significa RBAC?",
+"opciones": [
+"Control de acceso basado en roles",
+"Registro básico de archivos cifrados",
+"Red bancaria de acceso común",
+"Renderizado básico de aplicaciones cliente"
+],
+"respuesta_correcta": "Control de acceso basado en roles",
+"explicacion": "Los permisos se asignan por roles como administrador, usuario o visitante."
+},
+{
+"pregunta": "¿Qué significa la tríada CIA?",
+"opciones": [
+"Confidencialidad, Integridad y Disponibilidad",
+"Control, Identidad y Acceso",
+"Cliente, Internet y Aplicación",
+"Código, Interfaz y Archivo"
+],
+"respuesta_correcta": "Confidencialidad, Integridad y Disponibilidad",
+"explicacion": "Son los tres principios básicos de la seguridad de la información."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Qué estado tiene un proceso listo para ejecutarse pero esperando CPU?",
+"respuesta": "Estado listo o preparado."
+},
+{
+"pregunta": "¿Qué hace join()?",
+"respuesta": "Hace que un hilo espere a que otro termine."
+},
+{
+"pregunta": "¿Qué solución se aplicó para la priority inversion en Mars Pathfinder?",
+"respuesta": "Herencia de prioridad."
+},
+{
+"pregunta": "¿Qué es un daemon?",
+"respuesta": "Un proceso en segundo plano, sin interfaz de usuario, que ofrece un servicio."
+},
+{
+"pregunta": "¿Qué configuración mínima se recomienda para comunicaciones seguras?",
+"respuesta": "TLSv1.2 o superior con validación de certificados."
+}
+]
+},
+{
+"nombre": "Acceso a datos",
+"dificultad": "alta",
+"prioridad": "muy alta",
+"temario_super_resumido": [
+"SQL permite consultar y modificar datos en bases de datos relacionales.",
+"SELECT obtiene datos.",
+"WHERE filtra filas.",
+"ORDER BY ordena resultados.",
+"DISTINCT elimina duplicados.",
+"GROUP BY agrupa registros.",
+"HAVING filtra grupos después de agrupar.",
+"INNER JOIN devuelve solo coincidencias entre tablas.",
+"LEFT JOIN devuelve todo lo de la tabla izquierda aunque no haya coincidencia en la derecha.",
+"PK o clave primaria identifica de forma única cada registro.",
+"FK o clave foránea referencia una clave primaria de otra tabla.",
+"CRUD significa crear, leer, actualizar y eliminar.",
+"JDBC permite conectar Java con bases de datos.",
+"PreparedStatement permite consultas parametrizadas y más seguras.",
+"API REST usa verbos HTTP: GET, POST, PUT, PATCH y DELETE.",
+"GET obtiene datos. POST crea. PUT actualiza completo. PATCH actualiza parcial. DELETE elimina.",
+"MongoDB es NoSQL documental.",
+"Colección en MongoDB: conjunto de documentos relacionados.",
+"Documento en MongoDB: estructura parecida a JSON/BSON.",
+"Yii2 Active Record permite trabajar con tablas como clases y objetos."
+],
+"lo_que_mas_probablemente_sale": [
+"DISTINCT, WHERE y ORDER BY.",
+"GROUP BY y HAVING.",
+"INNER JOIN vs LEFT JOIN.",
+"CRUD.",
+"Clave primaria y clave foránea.",
+"GET y POST en APIs REST.",
+"MongoDB: colección y documento.",
+"JDBC.",
+"PreparedStatement.",
+"Active Record."
+],
+"chuleta": [
+"DISTINCT = quitar duplicados.",
+"WHERE = filtrar filas.",
+"ORDER BY = ordenar.",
+"GROUP BY = agrupar.",
+"HAVING = filtrar grupos.",
+"INNER JOIN = solo coincidencias.",
+"LEFT JOIN = todo lo de la izquierda.",
+"PK = identifica único.",
+"FK = referencia otra tabla.",
+"GET = leer.",
+"POST = crear."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué hace DISTINCT?",
+"opciones": [
+"Elimina duplicados",
+"Ordena resultados",
+"Agrupa tablas",
+"Crea una base de datos"
+],
+"respuesta_correcta": "Elimina duplicados",
+"explicacion": "DISTINCT devuelve valores únicos."
+},
+{
+"pregunta": "¿Qué hace WHERE?",
+"opciones": [
+"Filtra filas",
+"Ordena resultados",
+"Agrupa resultados",
+"Crea una API"
+],
+"respuesta_correcta": "Filtra filas",
+"explicacion": "WHERE selecciona las filas que cumplen una condición."
+},
+{
+"pregunta": "¿Qué hace ORDER BY?",
+"opciones": [
+"Ordena resultados",
+"Elimina tablas",
+"Cifra datos",
+"Crea hilos"
+],
+"respuesta_correcta": "Ordena resultados",
+"explicacion": "Puede ordenar ascendente o descendente."
+},
+{
+"pregunta": "¿Qué devuelve INNER JOIN?",
+"opciones": [
+"Solo registros con coincidencia en ambas tablas",
+"Todas las filas de la izquierda",
+"Todos los registros duplicados",
+"Solo filas sin relación"
+],
+"respuesta_correcta": "Solo registros con coincidencia en ambas tablas",
+"explicacion": "INNER JOIN excluye los registros sin correspondencia."
+},
+{
+"pregunta": "¿Qué diferencia hay entre LEFT JOIN e INNER JOIN?",
+"opciones": [
+"LEFT JOIN incluye todas las filas de la tabla izquierda",
+"LEFT JOIN elimina duplicados",
+"INNER JOIN no usa condiciones",
+"Son exactamente lo mismo"
+],
+"respuesta_correcta": "LEFT JOIN incluye todas las filas de la tabla izquierda",
+"explicacion": "Si no hay coincidencia a la derecha, aparecen valores NULL."
+},
+{
+"pregunta": "¿Qué significa CRUD?",
+"opciones": [
+"Crear, leer, actualizar y eliminar",
+"Consultar, repetir, usar y descargar",
+"Código, recurso, usuario y dato",
+"Conectar, reiniciar, unir y depurar"
+],
+"respuesta_correcta": "Crear, leer, actualizar y eliminar",
+"explicacion": "Son las operaciones básicas sobre datos."
+},
+{
+"pregunta": "¿Qué es una clave primaria?",
+"opciones": [
+"Un campo que identifica de forma única cada registro",
+"Una contraseña de base de datos",
+"Un campo que siempre se repite",
+"Un tipo de JOIN"
+],
+"respuesta_correcta": "Un campo que identifica de forma única cada registro",
+"explicacion": "No debe repetirse ni ser nula."
+},
+{
+"pregunta": "¿Qué verbo HTTP se usa para obtener datos?",
+"opciones": [
+"GET",
+"POST",
+"PUT",
+"DELETE"
+],
+"respuesta_correcta": "GET",
+"explicacion": "GET recupera información sin modificarla."
+},
+{
+"pregunta": "¿Qué es una colección en MongoDB?",
+"opciones": [
+"Un conjunto de documentos relacionados",
+"Una clave primaria",
+"Una consulta SQL",
+"Un controlador JavaFX"
+],
+"respuesta_correcta": "Un conjunto de documentos relacionados",
+"explicacion": "Es parecido a una tabla, pero sin esquema fijo."
+},
+{
+"pregunta": "¿Para qué sirve PreparedStatement?",
+"opciones": [
+"Para ejecutar consultas parametrizadas de forma más segura",
+"Para crear interfaces gráficas",
+"Para abrir hilos",
+"Para instalar Odoo"
+],
+"respuesta_correcta": "Para ejecutar consultas parametrizadas de forma más segura",
+"explicacion": "Ayuda a evitar errores e inyección SQL."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Qué diferencia hay entre WHERE y HAVING?",
+"respuesta": "WHERE filtra filas antes de agrupar; HAVING filtra grupos después de GROUP BY."
+},
+{
+"pregunta": "¿Qué es JDBC?",
+"respuesta": "La API de Java para conectarse a bases de datos."
+},
+{
+"pregunta": "¿Qué es una clave foránea?",
+"respuesta": "Un campo que referencia la clave primaria de otra tabla."
+},
+{
+"pregunta": "¿Qué hace POST en REST?",
+"respuesta": "Crear o añadir nuevos recursos en el servidor."
+},
+{
+"pregunta": "¿Qué es Active Record?",
+"respuesta": "Un patrón donde una clase representa una tabla y sus objetos representan registros."
+}
+]
+},
+{
+"nombre": "Programación multimedia y dispositivos móviles",
+"dificultad": "alta",
+"prioridad": "alta",
+"temario_super_resumido": [
+"Activity: pantalla principal en Android.",
+"Fragment: componente de interfaz reutilizable dentro de una Activity.",
+"Ciclo de vida Android: onCreate(), onStart(), onResume(), onPause(), onStop(), onDestroy().",
+"onCreate() se ejecuta al crear. onStart() cuando la Activity se vuelve visible.",
+"RecyclerView muestra listas de forma eficiente.",
+"Adapter conecta datos con la vista en listas.",
+"Repository centraliza el acceso a datos.",
+"Observer se suscribe a cambios y reacciona.",
+"Singleton asegura una única instancia global.",
+"Inyección de dependencias desacopla componentes y facilita testing.",
+"React Native usa componentes y hooks.",
+"useEffect ejecuta efectos secundarios.",
+"FlatList es mejor que ScrollView para listas largas.",
+"Modo offline: guardar localmente y sincronizar al volver la conexión.",
+"Keystore protege datos sensibles.",
+"Unity usa GameObject, Transform, Collider, Rigidbody, Material y Scene.",
+"Transform define posición, rotación y escala.",
+"Flutter usa Dart y motor gráfico propio."
+],
+"lo_que_mas_probablemente_sale": [
+"Activity vs Fragment.",
+"onCreate() vs onStart().",
+"onPause().",
+"RecyclerView y Adapter.",
+"FlatList vs ScrollView.",
+"useEffect.",
+"Repository.",
+"Observer.",
+"Singleton.",
+"Inyección de dependencias.",
+"Modo offline.",
+"Keystore.",
+"Transform en Unity.",
+"Flutter y Dart."
+],
+"chuleta": [
+"Activity = pantalla.",
+"Fragment = parte reutilizable dentro de Activity.",
+"FlatList = listas largas.",
+"ScrollView = listas pequeñas o contenido limitado.",
+"useEffect = efectos secundarios.",
+"Repository = acceso a datos.",
+"Transform = posición, rotación, escala.",
+"Keystore = datos sensibles."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué define a un Fragment en Android?",
+"opciones": [
+"Un componente de UI modular dentro de una Activity",
+"Una base de datos local",
+"Un motor gráfico",
+"Un protocolo de red"
+],
+"respuesta_correcta": "Un componente de UI modular dentro de una Activity",
+"explicacion": "Se puede reutilizar en distintas pantallas."
+},
+{
+"pregunta": "¿Qué diferencia hay entre onCreate() y onStart()?",
+"opciones": [
+"onCreate() se ejecuta al crear; onStart() cuando la Activity se hace visible",
+"onStart() solo se ejecuta una vez al instalar",
+"onCreate() solo sirve para bases de datos",
+"No hay diferencia"
+],
+"respuesta_correcta": "onCreate() se ejecuta al crear; onStart() cuando la Activity se hace visible",
+"explicacion": "onStart() puede ejecutarse varias veces."
+},
+{
+"pregunta": "¿Qué ventaja tiene FlatList frente a ScrollView en listas largas?",
+"opciones": [
+"Renderiza solo elementos visibles",
+"Guarda contraseñas",
+"Crea APIs REST",
+"Solo funciona en Unity"
+],
+"respuesta_correcta": "Renderiza solo elementos visibles",
+"explicacion": "Mejora rendimiento y uso de memoria."
+},
+{
+"pregunta": "¿Para qué sirve useEffect en React?",
+"opciones": [
+"Para ejecutar efectos secundarios",
+"Para declarar una clase Java",
+"Para crear una clave primaria",
+"Para abrir un socket TCP"
+],
+"respuesta_correcta": "Para ejecutar efectos secundarios",
+"explicacion": "Sirve para llamadas API, suscripciones o lógica tras renderizar."
+},
+{
+"pregunta": "¿Qué hace el patrón Repository?",
+"opciones": [
+"Abstrae y centraliza el acceso a datos",
+"Dibuja botones",
+"Cifra imágenes",
+"Controla el teclado"
+],
+"respuesta_correcta": "Abstrae y centraliza el acceso a datos",
+"explicacion": "Oculta si los datos vienen de API, base local o caché."
+},
+{
+"pregunta": "¿Qué garantiza Singleton?",
+"opciones": [
+"Una única instancia accesible globalmente",
+"Una lista con muchos elementos",
+"Un protocolo fiable",
+"Una consulta SQL"
+],
+"respuesta_correcta": "Una única instancia accesible globalmente",
+"explicacion": "Útil para gestores compartidos, aunque no conviene abusar."
+},
+{
+"pregunta": "¿Qué componente de Unity define posición y rotación?",
+"opciones": [
+"Transform",
+"Renderer",
+"Material",
+"AudioSource"
+],
+"respuesta_correcta": "Transform",
+"explicacion": "Transform almacena posición, rotación y escala."
+},
+{
+"pregunta": "¿Qué debe hacer una app para funcionar offline?",
+"opciones": [
+"Guardar datos localmente y sincronizar después",
+"Bloquear toda la app",
+"Eliminar la caché siempre",
+"Usar solo streaming"
+],
+"respuesta_correcta": "Guardar datos localmente y sincronizar después",
+"explicacion": "Así puede seguir funcionando sin conexión."
+},
+{
+"pregunta": "¿Qué problema resuelve la inyección de dependencias?",
+"opciones": [
+"Desacoplar componentes y facilitar pruebas",
+"Aumentar el tamaño de la app",
+"Eliminar todos los fragments",
+"Sustituir TCP por UDP"
+],
+"respuesta_correcta": "Desacoplar componentes y facilitar pruebas",
+"explicacion": "Permite cambiar implementaciones y usar mocks."
+},
+{
+"pregunta": "¿Cuál es una ventaja principal de Flutter?",
+"opciones": [
+"Motor gráfico propio y consistencia visual",
+"Solo funciona en Android",
+"No necesita lenguaje",
+"Usa FXML"
+],
+"respuesta_correcta": "Motor gráfico propio y consistencia visual",
+"explicacion": "Flutter usa Dart y renderiza con su propio motor."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Qué hace un Observer?",
+"respuesta": "Se suscribe a cambios en un flujo de datos y reacciona cuando ocurren."
+},
+{
+"pregunta": "¿Qué método se ejecuta cuando el usuario sale de la Activity?",
+"respuesta": "onPause()."
+},
+{
+"pregunta": "¿Qué es RecyclerView?",
+"respuesta": "Un componente eficiente para mostrar listas."
+},
+{
+"pregunta": "¿Qué es un Adapter?",
+"respuesta": "El componente que conecta datos con la vista de una lista."
+},
+{
+"pregunta": "¿Qué consecuencia tiene una mala jerarquía visual?",
+"respuesta": "El usuario no identifica la información prioritaria."
+}
+]
+},
+{
+"nombre": "Desarrollo de interfaces",
+"dificultad": "media-alta",
+"prioridad": "alta",
+"temario_super_resumido": [
+"Usabilidad: facilidad con la que el usuario puede usar una aplicación.",
+"La estética y la usabilidad pueden trabajarse juntas.",
+"Separar presentación y lógica facilita mantenimiento.",
+"JavaFX es tecnología moderna para interfaces gráficas en Java.",
+"FXML permite definir interfaces JavaFX en XML.",
+"FXMLLoader lee archivos FXML y crea la interfaz.",
+"fx:id identifica componentes FXML para usarlos desde el controlador.",
+"Scene Builder es editor visual WYSIWYG para JavaFX.",
+"Maven gestiona dependencias y ciclo de vida del proyecto.",
+"JasperReports permite crear informes separando diseño visual y datos.",
+"Los layouts Android se guardan en res/layout.",
+"Reutilizar componentes ahorra trabajo y mejora consistencia.",
+"Jerarquía visual clara reduce carga cognitiva.",
+"Control y libertad del usuario permite deshacer o corregir acciones."
+],
+"lo_que_mas_probablemente_sale": [
+"Usabilidad.",
+"Separación presentación-lógica.",
+"JavaFX.",
+"Scene Builder.",
+"FXMLLoader.",
+"fx:id.",
+"Maven.",
+"JasperReports.",
+"res/layout.",
+"Jerarquía visual.",
+"Control y libertad del usuario.",
+"Reutilización de componentes."
+],
+"chuleta": [
+"Usabilidad = fácil de usar.",
+"JavaFX = interfaces Java.",
+"FXML = interfaz en XML.",
+"FXMLLoader = carga FXML.",
+"fx:id = conecta con controlador.",
+"Scene Builder = editor visual.",
+"Maven = dependencias.",
+"JasperReports = informes."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué es la usabilidad?",
+"opciones": [
+"Facilidad para usar una aplicación",
+"Velocidad del servidor",
+"Número de clases",
+"Tamaño del PDF"
+],
+"respuesta_correcta": "Facilidad para usar una aplicación",
+"explicacion": "Tiene que ver con efectividad, eficiencia y satisfacción."
+},
+{
+"pregunta": "¿Qué ventaja tiene separar presentación y lógica?",
+"opciones": [
+"Facilita mantenimiento y cambios visuales",
+"Elimina toda necesidad de pruebas",
+"Impide usar Java",
+"Hace que no haya errores nunca"
+],
+"respuesta_correcta": "Facilita mantenimiento y cambios visuales",
+"explicacion": "Puedes cambiar diseño sin tocar toda la lógica."
+},
+{
+"pregunta": "¿Qué tecnología se usa para interfaces gráficas modernas en Java?",
+"opciones": [
+"JavaFX",
+"SMTP",
+"MongoDB",
+"SSH"
+],
+"respuesta_correcta": "JavaFX",
+"explicacion": "JavaFX es la tecnología vista para interfaces de escritorio en Java."
+},
+{
+"pregunta": "¿Qué es Scene Builder?",
+"opciones": [
+"Un editor visual para JavaFX",
+"Un servidor TCP",
+"Una base de datos NoSQL",
+"Un contrato laboral"
+],
+"respuesta_correcta": "Un editor visual para JavaFX",
+"explicacion": "Permite diseñar interfaces arrastrando componentes."
+},
+{
+"pregunta": "¿Qué hace FXMLLoader?",
+"opciones": [
+"Lee FXML e instancia la interfaz",
+"Cifra datos",
+"Crea hilos",
+"Ordena tablas"
+],
+"respuesta_correcta": "Lee FXML e instancia la interfaz",
+"explicacion": "Convierte la definición XML en objetos JavaFX."
+},
+{
+"pregunta": "¿Qué atributo identifica un componente FXML para usarlo desde el controlador?",
+"opciones": [
+"fx:id",
+"href",
+"src",
+"alt"
+],
+"respuesta_correcta": "fx:id",
+"explicacion": "Se asocia con campos anotados con @FXML."
+},
+{
+"pregunta": "¿Qué hace Maven?",
+"opciones": [
+"Gestiona dependencias del proyecto",
+"Diseña pantallas",
+"Crea informes visuales",
+"Controla sockets"
+],
+"respuesta_correcta": "Gestiona dependencias del proyecto",
+"explicacion": "También ayuda con compile, test, package y deploy."
+},
+{
+"pregunta": "¿Dónde se guardan normalmente los layouts Android?",
+"opciones": [
+"res/layout",
+"src/main/java",
+"META-INF",
+"bin/debug"
+],
+"respuesta_correcta": "res/layout",
+"explicacion": "Es la carpeta estándar de layouts XML en Android."
+},
+{
+"pregunta": "¿Qué separa JasperReports?",
+"opciones": [
+"La plantilla visual del informe y los datos",
+"TCP y UDP",
+"Hilos y procesos",
+"Contratos y nóminas"
+],
+"respuesta_correcta": "La plantilla visual del informe y los datos",
+"explicacion": "La plantilla define el diseño y los datos vienen de una fuente externa."
+},
+{
+"pregunta": "¿Qué reduce la carga cognitiva en una interfaz?",
+"opciones": [
+"Jerarquía visual clara",
+"Mostrar todas las opciones a la vez",
+"Usar textos larguísimos",
+"Quitar botones importantes"
+],
+"respuesta_correcta": "Jerarquía visual clara",
+"explicacion": "Ayuda al usuario a saber qué mirar primero."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Cuál es la funcionalidad principal de los editores visuales?",
+"respuesta": "Construir interfaces arrastrando y soltando componentes."
+},
+{
+"pregunta": "¿Qué principio permite corregir acciones sin consecuencias permanentes?",
+"respuesta": "Control y libertad del usuario."
+},
+{
+"pregunta": "¿Qué framework usa Dart?",
+"respuesta": "Flutter."
+},
+{
+"pregunta": "¿Qué ventaja tiene reutilizar componentes?",
+"respuesta": "Aplicar soluciones en diferentes contextos y proyectos."
+},
+{
+"pregunta": "¿Qué afirmación correcta hay sobre estética y usabilidad?",
+"respuesta": "Pueden trabajarse conjuntamente."
+}
+]
+},
+{
+"nombre": "Sistemas de gestión empresarial",
+"dificultad": "media",
+"prioridad": "media-alta",
+"temario_super_resumido": [
+"ERP integra procesos empresariales: ventas, compras, inventario, contabilidad, RRHH.",
+"CRM gestiona la relación con clientes.",
+"Odoo es un ERP modular.",
+"Odoo usa PostgreSQL.",
+"Un modelo en Odoo es una clase Python que define un objeto de negocio.",
+"ORM permite trabajar con objetos sin escribir SQL directo.",
+"Parametrizar un ERP es configurarlo sin modificar código fuente.",
+"Odoo Studio permite personalizar sin saber programar mucho.",
+"La modularidad permite instalar solo módulos necesarios.",
+"La implantación ERP empieza con análisis y planificación.",
+"Migrar datos tiene riesgo de pérdida o degradación de calidad.",
+"SOA es arquitectura basada en servicios independientes.",
+"Automatizar procesos contables reduce errores manuales.",
+"Low-code y no-code permiten crear soluciones con poco o nada de código."
+],
+"lo_que_mas_probablemente_sale": [
+"Objetivo de ERP.",
+"Objetivo de CRM.",
+"Odoo usa PostgreSQL.",
+"Modelo de Odoo = clase Python.",
+"ORM.",
+"Parametrización.",
+"Odoo Studio.",
+"Modularidad ERP.",
+"Fase inicial de implantación: análisis y planificación.",
+"Migración de datos.",
+"SOA.",
+"Automatización contable."
+],
+"chuleta": [
+"ERP = integra departamentos.",
+"CRM = clientes.",
+"Odoo = ERP modular.",
+"PostgreSQL = base de datos de Odoo.",
+"Modelo Odoo = clase Python.",
+"ORM = objetos a tablas.",
+"Parametrizar = configurar sin tocar código.",
+"SOA = servicios independientes."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Cuál es el objetivo principal de un CRM?",
+"opciones": [
+"Gestionar la relación con clientes",
+"Crear interfaces JavaFX",
+"Ejecutar hilos",
+"Enviar paquetes UDP"
+],
+"respuesta_correcta": "Gestionar la relación con clientes",
+"explicacion": "El CRM ayuda en prospección, seguimiento y retención."
+},
+{
+"pregunta": "¿Qué base de datos usa Odoo?",
+"opciones": [
+"PostgreSQL",
+"MySQL siempre",
+"MongoDB",
+"Access"
+],
+"respuesta_correcta": "PostgreSQL",
+"explicacion": "Odoo usa PostgreSQL como almacenamiento principal."
+},
+{
+"pregunta": "¿Qué es un modelo en Odoo?",
+"opciones": [
+"Una clase Python que define un objeto de negocio",
+"Una imagen de la interfaz",
+"Un contrato laboral",
+"Un protocolo de red"
+],
+"respuesta_correcta": "Una clase Python que define un objeto de negocio",
+"explicacion": "Define campos, relaciones y comportamiento."
+},
+{
+"pregunta": "¿Qué significa parametrizar un ERP?",
+"opciones": [
+"Configurar el sistema sin modificar código fuente",
+"Borrar todos los módulos",
+"Programar el kernel",
+"Cambiar el hardware"
+],
+"respuesta_correcta": "Configurar el sistema sin modificar código fuente",
+"explicacion": "Es adaptar el ERP usando opciones disponibles."
+},
+{
+"pregunta": "¿Qué es ORM?",
+"opciones": [
+"Mapeo objeto-relacional",
+"Un tipo de correo",
+"Un motor gráfico",
+"Una prueba de entrevista"
+],
+"respuesta_correcta": "Mapeo objeto-relacional",
+"explicacion": "Relaciona objetos del programa con tablas de base de datos."
+},
+{
+"pregunta": "¿Cuál es la primera fase crítica de implantación ERP?",
+"opciones": [
+"Análisis de requisitos y planificación",
+"Activar todo sin probar",
+"Importar datos sin revisar",
+"Eliminar usuarios"
+],
+"respuesta_correcta": "Análisis de requisitos y planificación",
+"explicacion": "Define objetivos, alcance, recursos y riesgos."
+},
+{
+"pregunta": "¿Qué ventaja aporta la modularidad en un ERP?",
+"opciones": [
+"Instalar solo módulos necesarios y crecer poco a poco",
+"Eliminar la base de datos",
+"Evitar la formación",
+"Impedir integraciones"
+],
+"respuesta_correcta": "Instalar solo módulos necesarios y crecer poco a poco",
+"explicacion": "Reduce costes iniciales y permite adaptación."
+},
+{
+"pregunta": "¿Qué riesgo hay en la migración de datos?",
+"opciones": [
+"Pérdida o degradación de calidad de datos",
+"Mejora automática del diseño",
+"Aumento de colores",
+"Reducción de usuarios siempre"
+],
+"respuesta_correcta": "Pérdida o degradación de calidad de datos",
+"explicacion": "Hay que validar y comprobar integridad."
+},
+{
+"pregunta": "¿Qué es SOA?",
+"opciones": [
+"Arquitectura basada en servicios independientes",
+"Una hoja de cálculo",
+"Un tipo de contrato",
+"Un componente de Unity"
+],
+"respuesta_correcta": "Arquitectura basada en servicios independientes",
+"explicacion": "Los servicios se comunican mediante interfaces estándar."
+},
+{
+"pregunta": "¿Qué permite Odoo Studio?",
+"opciones": [
+"Personalizar procesos sin requerir mucha programación",
+"Crear videojuegos",
+"Hacer llamadas TCP",
+"Crear animaciones Unity"
+],
+"respuesta_correcta": "Personalizar procesos sin requerir mucha programación",
+"explicacion": "Es una herramienta visual low-code."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Qué diferencia a los ERP actuales de sistemas heredados?",
+"respuesta": "Integran procesos en tiempo real entre departamentos."
+},
+{
+"pregunta": "¿Qué impacto tiene automatizar procesos contables?",
+"respuesta": "Reduce errores manuales y acelera operaciones."
+},
+{
+"pregunta": "¿Qué actividad es propia de un CRM?",
+"respuesta": "Registrar interacciones, preferencias e historial de clientes."
+},
+{
+"pregunta": "¿Qué es low-code?",
+"respuesta": "Desarrollo rápido con poco código."
+},
+{
+"pregunta": "¿Qué es no-code?",
+"respuesta": "Crear soluciones sin escribir código, usando herramientas visuales."
+}
+]
+},
+{
+"nombre": "Digitalización aplicada a los sectores productivos",
+"dificultad": "media",
+"prioridad": "media",
+"temario_super_resumido": [
+"Transformación digital: usar tecnología para mejorar procesos, productos y servicios.",
+"Cloud computing ofrece recursos por internet.",
+"IaaS ofrece infraestructura. PaaS ofrece plataforma. SaaS ofrece aplicaciones listas.",
+"Responsabilidad compartida cloud: proveedor protege infraestructura; cliente protege datos, aplicaciones y accesos.",
+"IA es el campo general. Machine Learning aprende de datos. Deep Learning es parte de ML y usa redes neuronales profundas.",
+"Big Data trabaja con grandes volúmenes de datos.",
+"Ciclo de vida del dato: captura, almacenamiento, procesamiento, análisis y archivo/destrucción.",
+"Data Lake almacena datos brutos o flexibles.",
+"Data Warehouse almacena datos estructurados para análisis BI.",
+"Blockchain es registro distribuido, inmutable y trazable.",
+"Gemelo digital es réplica virtual dinámica conectada a sensores.",
+"Industria 4.0 se centra en automatización, IoT y datos.",
+"Industria 5.0 incorpora al humano, sostenibilidad y resiliencia.",
+"Kanban usa tableros visuales con columnas.",
+"Teachable Machine permite entrenar modelos sin código."
+],
+"lo_que_mas_probablemente_sale": [
+"Tríada CIA.",
+"Responsabilidad compartida cloud.",
+"IaaS, PaaS y SaaS.",
+"ML, Deep Learning y redes neuronales.",
+"Blockchain.",
+"Gemelo digital.",
+"Industria 5.0.",
+"Kanban.",
+"Teachable Machine.",
+"Data Lake vs Data Warehouse.",
+"S3 vs Redshift.",
+"MFA, IAM y control de accesos."
+],
+"chuleta": [
+"CIA = confidencialidad, integridad, disponibilidad.",
+"IaaS = infraestructura.",
+"PaaS = plataforma.",
+"SaaS = aplicación.",
+"Deep Learning está dentro de Machine Learning.",
+"Blockchain = registro distribuido e inmutable.",
+"Gemelo digital = copia virtual viva con datos de sensores.",
+"Industria 5.0 = humano en el centro.",
+"Kanban = tablero visual."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué significa la tríada CIA?",
+"opciones": [
+"Confidencialidad, Integridad y Disponibilidad",
+"Control, Internet y Aplicación",
+"Código, Interfaz y Archivo",
+"Cliente, Identidad y Acceso"
+],
+"respuesta_correcta": "Confidencialidad, Integridad y Disponibilidad",
+"explicacion": "Son principios básicos de ciberseguridad."
+},
+{
+"pregunta": "¿Qué gestiona normalmente el proveedor en cloud?",
+"opciones": [
+"Infraestructura y plataforma base",
+"Todas las contraseñas del cliente",
+"Todos los datos internos del cliente",
+"La estrategia legal del cliente"
+],
+"respuesta_correcta": "Infraestructura y plataforma base",
+"explicacion": "El cliente debe proteger sus datos, aplicaciones y accesos."
+},
+{
+"pregunta": "¿Qué modelo cloud permite instalar tu propio sistema operativo?",
+"opciones": [
+"IaaS",
+"SaaS",
+"CRM",
+"FTP"
+],
+"respuesta_correcta": "IaaS",
+"explicacion": "IaaS proporciona infraestructura virtualizada."
+},
+{
+"pregunta": "¿Qué relación hay entre Machine Learning y Deep Learning?",
+"opciones": [
+"Deep Learning es un subcampo de Machine Learning",
+"Machine Learning es parte de Deep Learning",
+"No tienen relación",
+"Son protocolos de red"
+],
+"respuesta_correcta": "Deep Learning es un subcampo de Machine Learning",
+"explicacion": "Deep Learning usa redes neuronales profundas."
+},
+{
+"pregunta": "¿Qué es Blockchain?",
+"opciones": [
+"Un registro distribuido e inmutable",
+"Un editor de interfaces",
+"Una base de datos local sin seguridad",
+"Un contrato de trabajo"
+],
+"respuesta_correcta": "Un registro distribuido e inmutable",
+"explicacion": "Sirve para trazabilidad, identidad digital y contratos inteligentes."
+},
+{
+"pregunta": "¿Qué es un gemelo digital?",
+"opciones": [
+"Una réplica virtual dinámica de un activo físico sincronizada con sensores",
+"Un PDF duplicado",
+"Una contraseña repetida",
+"Una animación en Unity"
+],
+"respuesta_correcta": "Una réplica virtual dinámica de un activo físico sincronizada con sensores",
+"explicacion": "Permite simular y optimizar sistemas reales."
+},
+{
+"pregunta": "¿Qué introduce Industria 5.0 respecto a Industria 4.0?",
+"opciones": [
+"El factor humano como eje central",
+"Eliminar trabajadores siempre",
+"Volver al papel",
+"Quitar sensores"
+],
+"respuesta_correcta": "El factor humano como eje central",
+"explicacion": "Añade sostenibilidad, resiliencia y bienestar."
+},
+{
+"pregunta": "¿Qué metodología usa tableros visuales con columnas?",
+"opciones": [
+"Kanban",
+"SQL",
+"TLS",
+"FXML"
+],
+"respuesta_correcta": "Kanban",
+"explicacion": "Visualiza el trabajo y detecta cuellos de botella."
+},
+{
+"pregunta": "¿Qué herramienta permite entrenar modelos sin código?",
+"opciones": [
+"Teachable Machine",
+"Redshift",
+"Scene Builder",
+"ServerSocket"
+],
+"respuesta_correcta": "Teachable Machine",
+"explicacion": "Es una herramienta visual de Google."
+},
+{
+"pregunta": "¿Qué diferencia hay entre S3 y Redshift?",
+"opciones": [
+"S3 funciona como Data Lake y Redshift como Data Warehouse",
+"S3 es CRM y Redshift ERP",
+"Ambos son contratos",
+"Ambos son frameworks móviles"
+],
+"respuesta_correcta": "S3 funciona como Data Lake y Redshift como Data Warehouse",
+"explicacion": "S3 guarda datos brutos; Redshift está optimizado para consultas BI."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Cuál es el ciclo de vida del dato en batch?",
+"respuesta": "Captura, almacenamiento, procesamiento, análisis y archivo o destrucción."
+},
+{
+"pregunta": "¿Qué medida reduce brechas en cloud?",
+"respuesta": "MFA, gestión de identidades y control de accesos estricto."
+},
+{
+"pregunta": "¿Qué ventaja ambiental tiene la fabricación aditiva?",
+"respuesta": "Construye capa a capa y minimiza residuos."
+},
+{
+"pregunta": "¿Para qué sirve Gravity en una entidad financiera?",
+"respuesta": "Facilitar creación, integración y despliegue de aplicaciones propias."
+},
+{
+"pregunta": "¿Qué es un Data Lake?",
+"respuesta": "Repositorio flexible para datos sin procesar o semiestructurados."
+}
+]
+},
+{
+"nombre": "Sostenibilidad aplicada al sistema productivo",
+"dificultad": "media-baja",
+"prioridad": "media",
+"temario_super_resumido": [
+"Sostenibilidad: equilibrio ambiental, social y económico.",
+"ODS: objetivos universales, integrados y aplicables a todos los países.",
+"Cambio climático actual: causado principalmente por emisiones humanas de gases de efecto invernadero.",
+"Economía lineal: extraer, fabricar, usar y tirar.",
+"Economía circular: mantener productos y materiales en uso.",
+"5R: rechazar, reducir, reutilizar, reparar y reciclar.",
+"Reducir es clave porque evita residuos desde el origen.",
+"Back Market: reacondicionamiento y venta de productos electrónicos usados.",
+"Biodiversidad: variedad de genes, especies y ecosistemas.",
+"Neutralidad climática: equilibrar emisiones con reducciones o compensaciones.",
+"AROPE: población en riesgo de pobreza o exclusión social.",
+"OIT: condiciones laborales y trabajo digno.",
+"Día de Sobrecapacidad de la Tierra: fecha en que la humanidad consume lo que el planeta regenera en un año.",
+"Kunming-Montreal: proteger al menos el 30% del territorio planetario.",
+"Reporting no financiero: comunicar impacto ambiental, social y de gobernanza."
+],
+"lo_que_mas_probablemente_sale": [
+"5R.",
+"Economía lineal vs economía circular.",
+"Back Market.",
+"AROPE.",
+"Causa del cambio climático.",
+"Neutralidad climática.",
+"Día de Sobrecapacidad.",
+"Biodiversidad.",
+"ODS.",
+"OIT.",
+"Kunming-Montreal.",
+"Reporting no financiero.",
+"Transporte sostenible.",
+"Descarbonización."
+],
+"chuleta": [
+"5R = rechazar, reducir, reutilizar, reparar, reciclar.",
+"Economía lineal = extraer, fabricar, usar, tirar.",
+"Economía circular = alargar vida útil y reducir residuos.",
+"AROPE = pobreza o exclusión social.",
+"OIT = trabajo digno.",
+"Neutralidad climática = balance neto cero.",
+"ODS = universales e integrados.",
+"Biodiversidad = genes, especies y ecosistemas."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué acción pertenece a las 5R?",
+"opciones": [
+"Reducir recursos consumidos y residuos generados en origen",
+"Aumentar consumo",
+"Tirar productos nuevos",
+"Usar solo vertederos"
+],
+"respuesta_correcta": "Reducir recursos consumidos y residuos generados en origen",
+"explicacion": "Reducir evita generar residuos desde el principio."
+},
+{
+"pregunta": "¿Qué hace Back Market?",
+"opciones": [
+"Reacondiciona y comercializa equipos usados",
+"Fabrica combustibles fósiles",
+"Gestiona nóminas",
+"Crea contratos laborales"
+],
+"respuesta_correcta": "Reacondiciona y comercializa equipos usados",
+"explicacion": "Alarga la vida útil de dispositivos electrónicos."
+},
+{
+"pregunta": "¿Qué mide AROPE?",
+"opciones": [
+"Población en riesgo de pobreza o exclusión social",
+"Emisiones de CO2",
+"Velocidad de internet",
+"Número de empresas"
+],
+"respuesta_correcta": "Población en riesgo de pobreza o exclusión social",
+"explicacion": "Es un indicador de sostenibilidad social."
+},
+{
+"pregunta": "¿Cuál es la causa principal del cambio climático actual?",
+"opciones": [
+"Emisión de gases de efecto invernadero por actividades humanas",
+"El reciclaje",
+"La rotación terrestre",
+"La economía circular"
+],
+"respuesta_correcta": "Emisión de gases de efecto invernadero por actividades humanas",
+"explicacion": "CO2, CH4 y otros gases intensifican el efecto invernadero."
+},
+{
+"pregunta": "¿Qué significa neutralidad climática?",
+"opciones": [
+"Equilibrar emisiones con reducciones o compensaciones",
+"No usar electricidad nunca",
+"Reciclar papel solamente",
+"Eliminar todas las empresas"
+],
+"respuesta_correcta": "Equilibrar emisiones con reducciones o compensaciones",
+"explicacion": "No significa emitir cero, sino balance neto cero."
+},
+{
+"pregunta": "¿Qué es biodiversidad?",
+"opciones": [
+"Variedad de genes, especies y ecosistemas",
+"Solo número de árboles",
+"Un tipo de energía",
+"Un sistema ERP"
+],
+"respuesta_correcta": "Variedad de genes, especies y ecosistemas",
+"explicacion": "Incluye diversidad genética, de especies y de ecosistemas."
+},
+{
+"pregunta": "¿Qué es economía lineal?",
+"opciones": [
+"Extraer, fabricar, usar y desechar",
+"Reparar siempre",
+"Compartir productos",
+"Diseñar sin residuos"
+],
+"respuesta_correcta": "Extraer, fabricar, usar y desechar",
+"explicacion": "También se resume como take-make-waste."
+},
+{
+"pregunta": "¿Qué naturaleza tienen los ODS?",
+"opciones": [
+"Universales, integrados y aplicables a todos los países",
+"Solo europeos",
+"Solo ambientales",
+"Solo para países pobres"
+],
+"respuesta_correcta": "Universales, integrados y aplicables a todos los países",
+"explicacion": "Son objetivos conectados entre sí."
+},
+{
+"pregunta": "¿Qué organización promueve el trabajo digno?",
+"opciones": [
+"OIT",
+"FIFA",
+"Scene Builder",
+"MongoDB"
+],
+"respuesta_correcta": "OIT",
+"explicacion": "La Organización Internacional del Trabajo trata condiciones laborales."
+},
+{
+"pregunta": "¿Qué marca el Día de la Sobrecapacidad de la Tierra?",
+"opciones": [
+"La fecha en que consumimos los recursos que el planeta puede regenerar en un año",
+"El día más frío del año",
+"El inicio de la Agenda 2030",
+"Una prueba de Java"
+],
+"respuesta_correcta": "La fecha en que consumimos los recursos que el planeta puede regenerar en un año",
+"explicacion": "Indica consumo por encima de la capacidad regenerativa."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Cuál es el objetivo de Kunming-Montreal?",
+"respuesta": "Proteger al menos el 30% del territorio planetario."
+},
+{
+"pregunta": "¿Qué es descarbonización industrial?",
+"respuesta": "Reducir emisiones sustituyendo combustibles fósiles por renovables y mejorando eficiencia."
+},
+{
+"pregunta": "¿Qué es reporting no financiero?",
+"respuesta": "Comunicar desempeño ambiental, social y de gobernanza."
+},
+{
+"pregunta": "¿Qué caracteriza al transporte sostenible?",
+"respuesta": "Priorizar transporte público, bicicleta y reducir desplazamientos motorizados."
+},
+{
+"pregunta": "¿Cómo afecta el cambio climático a eventos extremos?",
+"respuesta": "Aumenta su frecuencia e intensidad."
+}
+]
+},
+{
+"nombre": "Itinerario personal para la empleabilidad 2",
+"dificultad": "media-baja",
+"prioridad": "media",
+"temario_super_resumido": [
+"Contrato indefinido: no tiene fecha de fin y da estabilidad.",
+"Contrato fijo-discontinuo: contrato indefinido para trabajos periódicos o campañas.",
+"Contrato formativo: combina empleo y formación.",
+"Contrato de formación en alternancia: compatibiliza trabajo y formación.",
+"Contrato por circunstancias de producción: duración general de 6 meses, ampliable a 12 por convenio.",
+"Contrato de sustitución: sustituye a trabajador con derecho a reserva del puesto.",
+"Contrato para obtención de práctica profesional: sustituye al antiguo contrato en prácticas.",
+"Elementos esenciales del contrato: consentimiento, objeto y salario.",
+"Antigüedad no es elemento esencial.",
+"Periodo de prueba: tiempo inicial para comprobar idoneidad. Puede extinguir cualquiera de las partes.",
+"El empresario comunica el contrato al SEPE en 10 días.",
+"Si no se da de alta a un trabajador en Seguridad Social, el contrato se presume indefinido.",
+"Networking: crear relaciones profesionales.",
+"LinkedIn permite filtrar ofertas y mejorar visibilidad.",
+"Entrevista estructurada aumenta objetividad.",
+"Entrevista por competencias pregunta por situaciones pasadas reales.",
+"Pruebas psicométricas miden inteligencia, personalidad o capacidad emocional.",
+"Carta de presentación eficaz: personalizada para cada empresa.",
+"Trello o Asana ayudan a coordinar tareas.",
+"Design Thinking se centra en el usuario."
+],
+"lo_que_mas_probablemente_sale": [
+"Tipos de contrato.",
+"Fijo-discontinuo.",
+"Contrato formativo.",
+"Contrato de formación en alternancia.",
+"Circunstancias de producción: 6 meses ampliables a 12.",
+"Elementos esenciales del contrato.",
+"Periodo de prueba.",
+"SEPE: 10 días.",
+"Alta en Seguridad Social.",
+"Networking.",
+"LinkedIn.",
+"Entrevista estructurada.",
+"Entrevista por competencias.",
+"Carta de presentación.",
+"Pruebas psicométricas."
+],
+"chuleta": [
+"Indefinido = estabilidad.",
+"Fijo-discontinuo = indefinido pero no continuo.",
+"Formativo = empleo + formación.",
+"Circunstancias producción = 6 meses, ampliable a 12 por convenio.",
+"Antigüedad no es elemento esencial.",
+"SEPE = comunica empresario en 10 días.",
+"Networking = relaciones profesionales.",
+"Entrevista estructurada = más objetiva."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué contrato tiene como objetivo la inserción laboral con formación?",
+"opciones": [
+"Contrato formativo",
+"Contrato mercantil",
+"Contrato de alquiler",
+"Contrato civil"
+],
+"respuesta_correcta": "Contrato formativo",
+"explicacion": "Combina empleo y formación."
+},
+{
+"pregunta": "¿Qué contrato se usa habitualmente en campañas agrícolas?",
+"opciones": [
+"Fijo-discontinuo",
+"Contrato de prácticas siempre",
+"Contrato verbal obligatorio",
+"Contrato de obra antiguo"
+],
+"respuesta_correcta": "Fijo-discontinuo",
+"explicacion": "Es para trabajos periódicos o estacionales."
+},
+{
+"pregunta": "¿Cuál es la duración general del contrato por circunstancias de producción?",
+"opciones": [
+"6 meses ampliables a 12 por convenio",
+"3 años siempre",
+"1 día",
+"Indefinido obligatorio"
+],
+"respuesta_correcta": "6 meses ampliables a 12 por convenio",
+"explicacion": "Es una pregunta muy de memoria."
+},
+{
+"pregunta": "¿Qué contrato favorece la estabilidad?",
+"opciones": [
+"Indefinido",
+"Sustitución",
+"Temporal sin causa",
+"Periodo de prueba"
+],
+"respuesta_correcta": "Indefinido",
+"explicacion": "No tiene fecha de finalización establecida."
+},
+{
+"pregunta": "¿Qué elemento NO es esencial en un contrato?",
+"opciones": [
+"Antigüedad",
+"Consentimiento",
+"Objeto",
+"Salario"
+],
+"respuesta_correcta": "Antigüedad",
+"explicacion": "Los esenciales son consentimiento, objeto y salario."
+},
+{
+"pregunta": "¿Qué ventaja tiene la entrevista estructurada?",
+"opciones": [
+"Aumenta la objetividad",
+"Evita comparar candidatos",
+"No necesita preguntas",
+"Siempre es improvisada"
+],
+"respuesta_correcta": "Aumenta la objetividad",
+"explicacion": "Usa un guion común para todos."
+},
+{
+"pregunta": "¿Qué ocurre si no se da de alta a un trabajador en Seguridad Social?",
+"opciones": [
+"El contrato se presume indefinido",
+"No pasa nada",
+"Se vuelve autónomo automáticamente",
+"Se anula siempre"
+],
+"respuesta_correcta": "El contrato se presume indefinido",
+"explicacion": "Es una consecuencia legal importante."
+},
+{
+"pregunta": "¿Qué define networking?",
+"opciones": [
+"Crear relaciones profesionales",
+"Crear bases de datos",
+"Programar hilos",
+"Diseñar interfaces"
+],
+"respuesta_correcta": "Crear relaciones profesionales",
+"explicacion": "Sirve para generar oportunidades y contactos."
+},
+{
+"pregunta": "¿Qué pide una entrevista por competencias?",
+"opciones": [
+"Situaciones pasadas y conductas reales",
+"Solo edad y dirección",
+"Contraseña del correo",
+"Una prueba física siempre"
+],
+"respuesta_correcta": "Situaciones pasadas y conductas reales",
+"explicacion": "Busca evidencias reales de comportamiento."
+},
+{
+"pregunta": "¿En qué plazo debe comunicarse el contrato al SEPE?",
+"opciones": [
+"10 días",
+"1 año",
+"Nunca",
+"60 días"
+],
+"respuesta_correcta": "10 días",
+"explicacion": "Lo comunica el empresario."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "¿Qué contrato sustituye al antiguo contrato de obra o servicio?",
+"respuesta": "Contrato por circunstancias de la producción."
+},
+{
+"pregunta": "¿Qué contrato sustituye al contrato en prácticas?",
+"respuesta": "Contrato para la obtención de la práctica profesional."
+},
+{
+"pregunta": "¿Qué documento debe entregarse junto al contrato?",
+"respuesta": "La copia básica del contrato."
+},
+{
+"pregunta": "¿Qué caracteriza a una carta de presentación efectiva?",
+"respuesta": "Estar personalizada para cada empresa."
+},
+{
+"pregunta": "¿Qué hace más eficaz un perfil de LinkedIn?",
+"respuesta": "Publicar contenido relevante y participar en grupos."
+}
+]
+},
+{
+"nombre": "Inglés",
+"dificultad": "variable",
+"prioridad": "media",
+"temario_super_resumido": [
+"Work and jobs: vocabulario profesional.",
+"Job suele referirse a un puesto o empleo concreto.",
+"Work suele referirse al trabajo en general o al lugar de trabajo.",
+"Telephoning: contestar llamadas, pedir hablar con alguien, dejar mensajes.",
+"Emails: frases formales e informales.",
+"Meetings: participar en reuniones, opinar, estar de acuerdo, discrepar y pedir aclaraciones.",
+"Internal communication: comunicación dentro de una empresa.",
+"Se priorizan frases útiles más que gramática larga."
+],
+"lo_que_mas_probablemente_sale": [
+"Diferencia job/work.",
+"Frases para llamadas.",
+"Frases para emails.",
+"Frases para reuniones.",
+"Expresiones para pedir aclaración.",
+"Expresiones para opinar.",
+"Expresiones para estar de acuerdo o en desacuerdo.",
+"Vocabulario profesional básico."
+],
+"chuleta": [
+"job = puesto concreto.",
+"work = trabajo en general o lugar de trabajo.",
+"Could I speak to...? = ¿Podría hablar con...?",
+"Can I take a message? = ¿Puedo tomar un mensaje?",
+"I'm calling about... = llamo por...",
+"Could you clarify that? = ¿Podrías aclararlo?",
+"I agree = estoy de acuerdo.",
+"I disagree = no estoy de acuerdo.",
+"Best regards = saludo final formal."
+],
+"preguntas_tipo_test": [
+{
+"pregunta": "¿Qué significa job normalmente?",
+"opciones": [
+"Un puesto o empleo concreto",
+"Trabajo en general",
+"Una reunión",
+"Una llamada"
+],
+"respuesta_correcta": "Un puesto o empleo concreto",
+"explicacion": "Job es más específico que work."
+},
+{
+"pregunta": "¿Qué significa work normalmente?",
+"opciones": [
+"Trabajo en general o lugar de trabajo",
+"Solo una entrevista",
+"Un contrato fijo",
+"Un correo formal"
+],
+"respuesta_correcta": "Trabajo en general o lugar de trabajo",
+"explicacion": "Work es más general que job."
+},
+{
+"pregunta": "¿Qué frase usarías para pedir hablar con alguien por teléfono?",
+"opciones": [
+"Could I speak to...?",
+"I am agree",
+"Best wishes only",
+"I have job"
+],
+"respuesta_correcta": "Could I speak to...?",
+"explicacion": "Es una fórmula educada de teléfono."
+},
+{
+"pregunta": "¿Qué significa Can I take a message?",
+"opciones": [
+"¿Puedo tomar un mensaje?",
+"¿Puedo borrar el correo?",
+"¿Puedo salir?",
+"¿Puedo abrir Java?"
+],
+"respuesta_correcta": "¿Puedo tomar un mensaje?",
+"explicacion": "Se usa cuando la persona no está disponible."
+},
+{
+"pregunta": "¿Qué frase sirve para pedir aclaración en una reunión?",
+"opciones": [
+"Could you clarify that?",
+"I am calling from...",
+"Dear Sir or Madam",
+"Job is work"
+],
+"respuesta_correcta": "Could you clarify that?",
+"explicacion": "Pide que expliquen algo mejor."
+},
+{
+"pregunta": "¿Qué cierre es formal para un email?",
+"opciones": [
+"Best regards",
+"Bye bro",
+"See ya",
+"Ok lol"
+],
+"respuesta_correcta": "Best regards",
+"explicacion": "Es un cierre profesional habitual."
+},
+{
+"pregunta": "¿Qué frase sirve para dar opinión?",
+"opciones": [
+"In my opinion...",
+"Could I speak to...?",
+"Can I take a message?",
+"Yours faithfully"
+],
+"respuesta_correcta": "In my opinion...",
+"explicacion": "Introduce una opinión."
+},
+{
+"pregunta": "¿Qué frase expresa acuerdo correctamente?",
+"opciones": [
+"I agree",
+"I am agree",
+"I have agree",
+"I do agreement"
+],
+"respuesta_correcta": "I agree",
+"explicacion": "No se dice I am agree."
+},
+{
+"pregunta": "¿Qué tema corresponde a telephoning?",
+"opciones": [
+"Contestar llamadas y dejar mensajes",
+"Crear consultas SQL",
+"Programar hilos",
+"Instalar Odoo"
+],
+"respuesta_correcta": "Contestar llamadas y dejar mensajes",
+"explicacion": "Telephoning trabaja llamadas telefónicas."
+},
+{
+"pregunta": "¿Qué tema corresponde a meetings?",
+"opciones": [
+"Participar en reuniones",
+"Crear bases de datos",
+"Diseñar RecyclerView",
+"Configurar PostgreSQL"
+],
+"respuesta_correcta": "Participar en reuniones",
+"explicacion": "Meetings incluye opinar, aclarar y debatir."
+}
+],
+"preguntas_muy_probables": [
+{
+"pregunta": "Traduce: Could I speak to Marta, please?",
+"respuesta": "¿Podría hablar con Marta, por favor?"
+},
+{
+"pregunta": "Traduce: Can I take a message?",
+"respuesta": "¿Puedo tomar un mensaje?"
+},
+{
+"pregunta": "Corrige: I am agree.",
+"respuesta": "I agree."
+},
+{
+"pregunta": "Diferencia entre job y work.",
+"respuesta": "Job es un puesto concreto; work es trabajo en general o lugar de trabajo."
+},
+{
+"pregunta": "Frase formal para cerrar email.",
+"respuesta": "Best regards."
+}
+]
+}
+],
+"plan_48_horas": {
+"dia_1": [
+"PSP completo: chuleta, preguntas tipo test y fallos.",
+"Acceso a datos: SQL, joins, REST, MongoDB y JDBC.",
+"PMDM: Android, React Native, Unity y patrones.",
+"Interfaces: JavaFX, FXML, Scene Builder, Maven y usabilidad."
+],
+"dia_2": [
+"SGE: ERP, CRM y Odoo.",
+"Digitalización: IA, cloud, blockchain, Big Data y ciberseguridad.",
+"Sostenibilidad: ODS, economía circular, cambio climático y social.",
+"ITP: contratos, entrevistas, CV y LinkedIn.",
+"Repasar solo preguntas muy probables y fallos."
+]
+},
+"tips_finales": [
+"Crea tarjetas de estudio con pregunta delante y respuesta corta detrás.",
+"Haz primero los tests de la página, no los apuntes largos.",
+"Cada vez que falles una pregunta, pásala a una lista de fallos.",
+"La última noche estudia solo la lista de fallos y las preguntas muy probables.",
+"En el examen no respondas por orgullo. Si no puedes descartar nada, deja en blanco.",
+"Las palabras clave suelen darte la respuesta: roles = RBAC, lista larga = FlatList, coincidencias = INNER JOIN, izquierda = LEFT JOIN, clientes = CRM, departamentos = ERP."
+]
+}
