@@ -16,17 +16,8 @@ import {
   Target,
   X,
 } from "lucide-react"
-import accesoDatosData from "@/acceso_datos.json"
-import desarrolloInterfacesData from "@/desarrollo_interfaces.json"
-import digitalizacionData from "@/digitalizacion.json"
-import gestionEmpresarialData from "@/gestion_empresarial.json"
-import inglesData from "@/ingles.json"
 import studyInfo from "@/info.json"
-import studyPack from "@/index.json"
-import itpData from "@/itp.json"
-import multimediaData from "@/multimedia_dispositivos_moviles.json"
-import pspData from "@/psp.json"
-import sostenibilidadData from "@/sostenibilidad.json"
+import probableQuestionsPack from "@/p/preguntas_mas_probables_dam.json"
 
 export type Subject = {
   id: string
@@ -1790,17 +1781,7 @@ const firstDamSubjects: Subject[] = subjects.map((subject, index) => ({
   })),
 }))
 
-const secondDamData = [
-  pspData,
-  accesoDatosData,
-  multimediaData,
-  desarrolloInterfacesData,
-  gestionEmpresarialData,
-  digitalizacionData,
-  sostenibilidadData,
-  itpData,
-  inglesData,
-]
+const secondDamData = probableQuestionsPack.asignaturas
 
 const invalidOptionLabels = [
   "respuesta parecida pero incorrecta",
@@ -1841,12 +1822,12 @@ const secondDamSubjects: Subject[] = secondDamData.map((subject, index) => {
 
   return {
     id: subject.slug,
-    name: subject.asignatura,
-    icon: getInitials(subject.asignatura),
+    name: subject.nombre,
+    icon: getInitials(subject.nombre),
     color: "",
     accent: secondDamAccents[index % secondDamAccents.length],
-    difficulty: subject.dificultad,
-    priority: subject.prioridad,
+    difficulty: oldSubject.dificultad,
+    priority: oldSubject.prioridad,
     likely: oldSubject.lo_que_mas_probablemente_sale,
     cheatSheet: oldSubject.chuleta,
     probableQuestions: oldSubject.preguntas_muy_probables,
@@ -1880,13 +1861,13 @@ const courses: Record<CourseId, CourseConfig> = {
     id: "2dam",
     title: "2 DAM",
     kicker: "Segundo curso",
-    description: studyPack.descripcion,
+    description: probableQuestionsPack.descripcion,
     subjects: secondDamSubjects,
     exam: {
-      format: studyPack.pack.toLowerCase().includes("tipo test") ? "Tipo test" : "Test",
-      questionCount: studyPack.configuracion_examen_general.numero_preguntas,
-      penalty: formatPenalty(studyPack.configuracion_examen_general.puntuacion.incorrecta),
-      strategy: studyPack.configuracion_examen_general.estrategia,
+      format: "Tipo test",
+      questionCount: probableQuestionsPack.configuracion_examen.preguntas_examen,
+      penalty: formatPenalty(probableQuestionsPack.configuracion_examen.puntuacion.incorrecta),
+      strategy: probableQuestionsPack.configuracion_examen.estrategia,
     },
   },
 }

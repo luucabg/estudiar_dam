@@ -1,0 +1,8 @@
+{
+  "nombre_pack": "DAM_2_curso_preguntas_mas_probables",
+  "total_asignaturas": 9,
+  "total_preguntas": 100,
+  "archivos": [
+    "preguntas_mas_probables_dam.json"
+  ]
+}

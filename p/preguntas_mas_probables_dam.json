@@ -1,0 +1,1583 @@
+{
+  "nombre_pack": "DAM_2_curso_preguntas_mas_probables",
+  "descripcion": "Preguntas filtradas: solo las que tienen más pinta de salir por ser muy repetibles, centrales o parecidas a los tests de la página. Opciones algo más difíciles, con distractores parecidos.",
+  "configuracion_examen": {
+    "preguntas_examen": 30,
+    "opciones_por_pregunta": 4,
+    "puntuacion": {
+      "correcta": 1,
+      "incorrecta": -0.3333333333333333,
+      "blanco": 0
+    },
+    "estrategia": [
+      "No contestes si no puedes descartar ninguna opción.",
+      "Contesta si dudas entre dos.",
+      "Estas preguntas son solo lo más probable, no un examen completo."
+    ]
+  },
+  "asignaturas": [
+    {
+      "slug": "psp",
+      "nombre": "Programación de servicios y procesos",
+      "resumen_estudio": "Más probable: start/run, Runnable, synchronized, wait/notifyAll, deadlock, starvation, TCP/UDP, sockets y seguridad básica.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "hilos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "En Java, ¿qué diferencia real hay entre llamar a start() y llamar directamente a run()?",
+          "opciones": [
+            "run() crea un nuevo hilo y start() solo inicializa variables",
+            "Ambos crean un hilo nuevo, pero start() es más rápido",
+            "start() solo se usa en servidores TCP y run() en UDP",
+            "start() crea un nuevo hilo y run() llamado directamente se ejecuta en el hilo actual"
+          ],
+          "respuesta_correcta": "start() crea un nuevo hilo y run() llamado directamente se ejecuta en el hilo actual",
+          "explicacion": "Trampa clásica. Para crear un hilo nuevo se usa start()."
+        },
+        {
+          "id": 2,
+          "tema": "hilos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Por qué es habitual implementar Runnable en vez de extender Thread?",
+          "opciones": [
+            "Porque Thread solo funciona en programas gráficos",
+            "Porque Runnable ejecuta siempre en paralelo real",
+            "Porque permite separar la tarea del hilo y no bloquea la herencia de otra clase",
+            "Porque Runnable garantiza que no habrá deadlocks"
+          ],
+          "respuesta_correcta": "Porque permite separar la tarea del hilo y no bloquea la herencia de otra clase",
+          "explicacion": "Java no permite herencia múltiple de clases, pero sí implementar interfaces."
+        },
+        {
+          "id": 3,
+          "tema": "sincronizacion",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué garantiza un método synchronized sobre el mismo objeto?",
+          "opciones": [
+            "Que el hilo libere automáticamente todos los locks al entrar",
+            "Que solo un hilo pueda ejecutarlo a la vez para ese objeto",
+            "Que el método se ejecute siempre antes que los demás",
+            "Que todos los hilos se ejecuten en paralelo real"
+          ],
+          "respuesta_correcta": "Que solo un hilo pueda ejecutarlo a la vez para ese objeto",
+          "explicacion": "synchronized protege secciones críticas compartidas."
+        },
+        {
+          "id": 4,
+          "tema": "sincronizacion",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Por qué se recomienda comprobar condiciones con while antes de wait()?",
+          "opciones": [
+            "Porque al despertar hay que volver a comprobar si la condición sigue siendo válida",
+            "Porque wait() solo funciona si hay un bucle infinito",
+            "Porque notifyAll() elimina automáticamente la condición",
+            "Porque while evita que el hilo entre en estado NEW"
+          ],
+          "respuesta_correcta": "Porque al despertar hay que volver a comprobar si la condición sigue siendo válida",
+          "explicacion": "Un hilo puede despertar y aun así no poder continuar."
+        },
+        {
+          "id": 5,
+          "tema": "sincronizacion",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es la diferencia más correcta entre notify() y notifyAll()?",
+          "opciones": [
+            "notify() despierta hilos TCP y notifyAll() hilos UDP",
+            "notify() libera el lock y notifyAll() lo mantiene siempre",
+            "notifyAll() finaliza todos los hilos del programa",
+            "notify() despierta un hilo en espera y notifyAll() despierta todos los que esperan en ese monitor"
+          ],
+          "respuesta_correcta": "notify() despierta un hilo en espera y notifyAll() despierta todos los que esperan en ese monitor",
+          "explicacion": "notifyAll() es más seguro si hay varios tipos de hilos esperando."
+        },
+        {
+          "id": 6,
+          "tema": "concurrencia",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué situación describe mejor una condición de carrera?",
+          "opciones": [
+            "Un servidor TCP acepta conexiones en orden",
+            "Un hilo entra en TIMED_WAITING por sleep()",
+            "Varios hilos acceden a datos compartidos sin control y el resultado depende del orden de ejecución",
+            "Un hilo espera a otro mediante join() correctamente"
+          ],
+          "respuesta_correcta": "Varios hilos acceden a datos compartidos sin control y el resultado depende del orden de ejecución",
+          "explicacion": "Race condition = resultado impredecible por acceso concurrente incorrecto."
+        },
+        {
+          "id": 7,
+          "tema": "concurrencia",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es un deadlock?",
+          "opciones": [
+            "Reintento automático de conexión TCP",
+            "Bloqueo mutuo donde varios hilos o procesos se esperan entre sí y ninguno avanza",
+            "Espera temporal producida por Thread.sleep()",
+            "Ejecución simultánea correcta de varios hilos"
+          ],
+          "respuesta_correcta": "Bloqueo mutuo donde varios hilos o procesos se esperan entre sí y ninguno avanza",
+          "explicacion": "A espera a B y B espera a A."
+        },
+        {
+          "id": 8,
+          "tema": "concurrencia",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es starvation en concurrencia?",
+          "opciones": [
+            "Un hilo no consigue recursos o tiempo de CPU durante mucho tiempo o nunca",
+            "Dos hilos se bloquean mutuamente con dos locks",
+            "Un hilo termina correctamente antes que otro",
+            "Un servidor rechaza paquetes UDP por tamaño"
+          ],
+          "respuesta_correcta": "Un hilo no consigue recursos o tiempo de CPU durante mucho tiempo o nunca",
+          "explicacion": "Starvation = inanición."
+        },
+        {
+          "id": 9,
+          "tema": "concurrencia",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "En el caso Mars Pathfinder, ¿qué técnica solucionó la priority inversion?",
+          "opciones": [
+            "Uso de UDP en vez de TCP",
+            "Eliminación de todos los hilos",
+            "Cifrado con TLSv1.3",
+            "Herencia de prioridad"
+          ],
+          "respuesta_correcta": "Herencia de prioridad",
+          "explicacion": "El hilo de baja prioridad heredaba temporalmente la prioridad del hilo importante."
+        },
+        {
+          "id": 10,
+          "tema": "redes",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué diferencia esencial hay entre TCP y UDP?",
+          "opciones": [
+            "TCP solo sirve para videojuegos y UDP para bancos",
+            "Ambos son iguales salvo por el puerto",
+            "TCP garantiza conexión, orden y entrega; UDP envía datagramas sin garantizar entrega ni orden",
+            "UDP garantiza entrega y TCP no"
+          ],
+          "respuesta_correcta": "TCP garantiza conexión, orden y entrega; UDP envía datagramas sin garantizar entrega ni orden",
+          "explicacion": "TCP = fiable. UDP = rápido, pero no fiable."
+        },
+        {
+          "id": 11,
+          "tema": "redes",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué clases Java se asocian correctamente con TCP y UDP?",
+          "opciones": [
+            "Thread para TCP y Runnable para UDP",
+            "ServerSocket/Socket para TCP y DatagramSocket/DatagramPacket para UDP",
+            "DatagramSocket/Socket para TCP y ServerSocket para UDP",
+            "FXMLLoader para TCP y ResultSet para UDP"
+          ],
+          "respuesta_correcta": "ServerSocket/Socket para TCP y DatagramSocket/DatagramPacket para UDP",
+          "explicacion": "Combinación típica de examen."
+        },
+        {
+          "id": 12,
+          "tema": "seguridad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué configuración mínima se considera segura para comunicaciones modernas?",
+          "opciones": [
+            "TLSv1.2 o superior con validación de certificados",
+            "SSLv3 sin validación de certificados",
+            "HTTP plano si la contraseña es fuerte",
+            "Telnet con usuario administrador"
+          ],
+          "respuesta_correcta": "TLSv1.2 o superior con validación de certificados",
+          "explicacion": "La validación de certificados evita ataques de intermediario."
+        },
+        {
+          "id": 13,
+          "tema": "seguridad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es RBAC?",
+          "opciones": [
+            "Cifrado reversible basado en clave",
+            "Comunicación UDP entre procesos",
+            "Protocolo de correo seguro",
+            "Control de acceso basado en roles"
+          ],
+          "respuesta_correcta": "Control de acceso basado en roles",
+          "explicacion": "Roles típicos: administrador, usuario, invitado."
+        },
+        {
+          "id": 14,
+          "tema": "seguridad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué significa la tríada CIA?",
+          "opciones": [
+            "Cliente, Internet y Aplicación",
+            "Cifrado, Interfaz y Acceso",
+            "Confidencialidad, Integridad y Disponibilidad",
+            "Control, Identidad y Autenticación"
+          ],
+          "respuesta_correcta": "Confidencialidad, Integridad y Disponibilidad",
+          "explicacion": "Principios base de seguridad de la información."
+        },
+        {
+          "id": 15,
+          "tema": "servicios",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es un daemon o servicio?",
+          "opciones": [
+            "Clase Java usada para enviar datagramas",
+            "Proceso de larga duración en segundo plano sin interfaz de usuario",
+            "Hilo que siempre consume CPU al 100%",
+            "Programa que solo existe mientras hay ventana abierta"
+          ],
+          "respuesta_correcta": "Proceso de larga duración en segundo plano sin interfaz de usuario",
+          "explicacion": "Ejemplos: servidor web, SSH, base de datos."
+        }
+      ]
+    },
+    {
+      "slug": "acceso_datos",
+      "nombre": "Acceso a datos",
+      "resumen_estudio": "Más probable: WHERE/HAVING, JOINs, DISTINCT, PK/FK, CRUD, REST, PreparedStatement, ResultSet, MongoDB y Active Record.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "sql",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué diferencia hay entre WHERE y HAVING?",
+          "opciones": [
+            "WHERE filtra grupos y HAVING filas",
+            "WHERE solo funciona con JOIN y HAVING con MongoDB",
+            "No hay diferencia real",
+            "WHERE filtra filas antes de agrupar y HAVING filtra grupos después de agrupar"
+          ],
+          "respuesta_correcta": "WHERE filtra filas antes de agrupar y HAVING filtra grupos después de agrupar",
+          "explicacion": "WHERE va sobre filas; HAVING sobre grupos."
+        },
+        {
+          "id": 2,
+          "tema": "joins",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué devuelve un INNER JOIN?",
+          "opciones": [
+            "Todos los registros de ambas tablas",
+            "Solo registros sin relación",
+            "Solo registros que tienen coincidencia en ambas tablas",
+            "Todos los registros de la tabla izquierda aunque no coincidan"
+          ],
+          "respuesta_correcta": "Solo registros que tienen coincidencia en ambas tablas",
+          "explicacion": "INNER JOIN = solo coincidencias."
+        },
+        {
+          "id": 3,
+          "tema": "joins",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué devuelve un LEFT JOIN?",
+          "opciones": [
+            "Solo valores duplicados",
+            "Todas las filas de la tabla izquierda y las coincidencias de la derecha",
+            "Solo filas que coinciden en ambas tablas",
+            "Todas las filas de la derecha exclusivamente"
+          ],
+          "respuesta_correcta": "Todas las filas de la tabla izquierda y las coincidencias de la derecha",
+          "explicacion": "Si no hay coincidencia derecha, aparecen NULL."
+        },
+        {
+          "id": 4,
+          "tema": "sql",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Para qué sirve DISTINCT?",
+          "opciones": [
+            "Eliminar duplicados del resultado",
+            "Ordenar alfabéticamente",
+            "Filtrar por condición",
+            "Agrupar antes de contar"
+          ],
+          "respuesta_correcta": "Eliminar duplicados del resultado",
+          "explicacion": "DISTINCT devuelve valores únicos."
+        },
+        {
+          "id": 5,
+          "tema": "modelo_relacional",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es la función de una clave primaria?",
+          "opciones": [
+            "Relacionar siempre dos bases distintas",
+            "Permitir valores repetidos y nulos",
+            "Ordenar registros por fecha",
+            "Identificar de forma única cada registro de una tabla"
+          ],
+          "respuesta_correcta": "Identificar de forma única cada registro de una tabla",
+          "explicacion": "PK = identificador único."
+        },
+        {
+          "id": 6,
+          "tema": "modelo_relacional",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es la función de una clave foránea?",
+          "opciones": [
+            "Eliminar duplicados en una consulta",
+            "Convertir SQL en JSON",
+            "Referenciar la clave primaria de otra tabla para establecer relación",
+            "Identificar de forma única el registro actual"
+          ],
+          "respuesta_correcta": "Referenciar la clave primaria de otra tabla para establecer relación",
+          "explicacion": "FK crea relación entre tablas."
+        },
+        {
+          "id": 7,
+          "tema": "datos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué significa CRUD?",
+          "opciones": [
+            "Control, Register, Use y Debug",
+            "Create, Read, Update y Delete",
+            "Connect, Run, Upload y Download",
+            "Class, Route, User y Data"
+          ],
+          "respuesta_correcta": "Create, Read, Update y Delete",
+          "explicacion": "Operaciones básicas sobre datos."
+        },
+        {
+          "id": 8,
+          "tema": "rest",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué verbo HTTP se usa para obtener datos?",
+          "opciones": [
+            "GET",
+            "POST",
+            "PUT",
+            "DELETE"
+          ],
+          "respuesta_correcta": "GET",
+          "explicacion": "GET recupera información."
+        },
+        {
+          "id": 9,
+          "tema": "rest",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué verbo HTTP se usa normalmente para crear un recurso?",
+          "opciones": [
+            "GET",
+            "PATCH",
+            "DELETE",
+            "POST"
+          ],
+          "respuesta_correcta": "POST",
+          "explicacion": "POST suele crear."
+        },
+        {
+          "id": 10,
+          "tema": "rest",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué suele hacer PUT en REST?",
+          "opciones": [
+            "Actualizar siempre solo un campo",
+            "Eliminar un recurso",
+            "Actualizar completamente un recurso",
+            "Obtener datos sin modificarlos"
+          ],
+          "respuesta_correcta": "Actualizar completamente un recurso",
+          "explicacion": "PUT reemplaza o actualiza completo."
+        },
+        {
+          "id": 11,
+          "tema": "rest",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué suele hacer PATCH en REST?",
+          "opciones": [
+            "Eliminar tablas relacionadas",
+            "Actualizar parcialmente un recurso",
+            "Crear siempre una colección nueva",
+            "Obtener datos sin estado"
+          ],
+          "respuesta_correcta": "Actualizar parcialmente un recurso",
+          "explicacion": "PATCH modifica parte."
+        },
+        {
+          "id": 12,
+          "tema": "jdbc",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Para qué sirve PreparedStatement?",
+          "opciones": [
+            "Ejecutar consultas parametrizadas más seguras",
+            "Crear interfaces JavaFX",
+            "Recorrer archivos FXML",
+            "Enviar paquetes UDP"
+          ],
+          "respuesta_correcta": "Ejecutar consultas parametrizadas más seguras",
+          "explicacion": "Ayuda a evitar inyección SQL."
+        },
+        {
+          "id": 13,
+          "tema": "jdbc",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué objeto JDBC se usa para recorrer resultados?",
+          "opciones": [
+            "ConnectionPoolOnly",
+            "FXMLLoader",
+            "DatagramPacket",
+            "ResultSet"
+          ],
+          "respuesta_correcta": "ResultSet",
+          "explicacion": "ResultSet contiene filas de la consulta."
+        },
+        {
+          "id": 14,
+          "tema": "mongodb",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es una colección en MongoDB?",
+          "opciones": [
+            "Una tabla con esquema fijo estricto",
+            "Un índice único de SQL",
+            "Conjunto de documentos relacionados",
+            "Una clave primaria obligatoria"
+          ],
+          "respuesta_correcta": "Conjunto de documentos relacionados",
+          "explicacion": "Es parecido a tabla, pero documental."
+        },
+        {
+          "id": 15,
+          "tema": "yii2",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es Active Record en Yii2?",
+          "opciones": [
+            "Un tipo de hilo en Java",
+            "Un patrón donde una clase representa una tabla y sus objetos registros",
+            "Un protocolo de red para APIs REST",
+            "Una herramienta para diseñar FXML"
+          ],
+          "respuesta_correcta": "Un patrón donde una clase representa una tabla y sus objetos registros",
+          "explicacion": "Trabajar con datos mediante clases y objetos."
+        }
+      ]
+    },
+    {
+      "slug": "multimedia_dispositivos_moviles",
+      "nombre": "Programación multimedia y dispositivos móviles",
+      "resumen_estudio": "Más probable: Fragment, lifecycle, FlatList, useEffect, Repository, Observer, Singleton, DI, Transform y Keystore.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "android",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué diferencia a un Fragment de una Activity?",
+          "opciones": [
+            "Un Fragment siempre representa una app completa independiente",
+            "Una Activity solo puede existir dentro de un Fragment",
+            "Fragment y Activity son exactamente lo mismo",
+            "Un Fragment es un componente modular de UI que vive dentro de una Activity"
+          ],
+          "respuesta_correcta": "Un Fragment es un componente modular de UI que vive dentro de una Activity",
+          "explicacion": "Fragment = parte reutilizable dentro de Activity."
+        },
+        {
+          "id": 2,
+          "tema": "android",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué diferencia hay entre onCreate() y onStart()?",
+          "opciones": [
+            "onCreate() solo sirve para cerrar",
+            "No hay diferencia",
+            "onCreate() se ejecuta al crear la Activity y onStart() cuando se vuelve visible",
+            "onStart() se ejecuta solo una vez y onCreate() muchas veces"
+          ],
+          "respuesta_correcta": "onCreate() se ejecuta al crear la Activity y onStart() cuando se vuelve visible",
+          "explicacion": "onStart puede repetirse."
+        },
+        {
+          "id": 3,
+          "tema": "android",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué método suele ejecutarse cuando el usuario sale de la Activity?",
+          "opciones": [
+            "main()",
+            "onPause()",
+            "onCreate()",
+            "onDestroy() siempre"
+          ],
+          "respuesta_correcta": "onPause()",
+          "explicacion": "onPause() al perder foco."
+        },
+        {
+          "id": 4,
+          "tema": "react_native",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Por qué FlatList es mejor que ScrollView para listas largas?",
+          "opciones": [
+            "Porque renderiza principalmente los elementos visibles y mejora memoria/rendimiento",
+            "Porque renderiza todos los elementos al iniciar",
+            "Porque solo funciona sin datos",
+            "Porque sustituye al sistema operativo"
+          ],
+          "respuesta_correcta": "Porque renderiza principalmente los elementos visibles y mejora memoria/rendimiento",
+          "explicacion": "FlatList virtualiza listas."
+        },
+        {
+          "id": 5,
+          "tema": "react",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Para qué sirve useEffect?",
+          "opciones": [
+            "Crear claves primarias",
+            "Definir layouts XML",
+            "Abrir sockets UDP",
+            "Ejecutar efectos secundarios según dependencias"
+          ],
+          "respuesta_correcta": "Ejecutar efectos secundarios según dependencias",
+          "explicacion": "Ejemplos: llamadas API, suscripciones."
+        },
+        {
+          "id": 6,
+          "tema": "arquitectura",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es la responsabilidad del patrón Repository?",
+          "opciones": [
+            "Gestionar únicamente animaciones",
+            "Sustituir ciclo de vida Android",
+            "Abstraer y centralizar el acceso a fuentes de datos",
+            "Dibujar directamente botones"
+          ],
+          "respuesta_correcta": "Abstraer y centralizar el acceso a fuentes de datos",
+          "explicacion": "Oculta API, BD local o caché."
+        },
+        {
+          "id": 7,
+          "tema": "reactive",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué hace un Observer?",
+          "opciones": [
+            "Define posición de objetos 3D",
+            "Se suscribe a cambios y reacciona cuando se producen",
+            "Guarda contraseñas en Keystore",
+            "Renderiza listas largas automáticamente"
+          ],
+          "respuesta_correcta": "Se suscribe a cambios y reacciona cuando se producen",
+          "explicacion": "Observer recibe notificaciones."
+        },
+        {
+          "id": 8,
+          "tema": "patrones",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué garantiza Singleton?",
+          "opciones": [
+            "Que una clase tenga una única instancia accesible globalmente",
+            "Que una lista renderice elementos visibles",
+            "Que una Activity nunca se destruya",
+            "Que una app funcione offline"
+          ],
+          "respuesta_correcta": "Que una clase tenga una única instancia accesible globalmente",
+          "explicacion": "Única instancia global."
+        },
+        {
+          "id": 9,
+          "tema": "arquitectura",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué problema resuelve la inyección de dependencias?",
+          "opciones": [
+            "Hace todos los componentes estáticos",
+            "Evita usar arquitectura",
+            "Convierte Android en web",
+            "Reduce acoplamiento y facilita pruebas sustituyendo dependencias"
+          ],
+          "respuesta_correcta": "Reduce acoplamiento y facilita pruebas sustituyendo dependencias",
+          "explicacion": "Permite mocks y cambiar implementaciones."
+        },
+        {
+          "id": 10,
+          "tema": "unity",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué componente de Unity define posición, rotación y escala?",
+          "opciones": [
+            "Material",
+            "Collider únicamente",
+            "Transform",
+            "Renderer"
+          ],
+          "respuesta_correcta": "Transform",
+          "explicacion": "Transform está en GameObjects."
+        },
+        {
+          "id": 11,
+          "tema": "offline",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué debe considerar una app offline?",
+          "opciones": [
+            "Usar solo streaming",
+            "Guardar datos localmente y sincronizar cuando vuelva la conexión",
+            "Bloquear toda la app sin conexión",
+            "Eliminar siempre datos locales"
+          ],
+          "respuesta_correcta": "Guardar datos localmente y sincronizar cuando vuelva la conexión",
+          "explicacion": "Offline = local + sincronización."
+        },
+        {
+          "id": 12,
+          "tema": "seguridad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Para qué sirve Keystore?",
+          "opciones": [
+            "Guardar claves o datos sensibles de forma protegida",
+            "Mostrar listas largas",
+            "Crear Fragments",
+            "Definir layouts XML"
+          ],
+          "respuesta_correcta": "Guardar claves o datos sensibles de forma protegida",
+          "explicacion": "No guardar secretos en texto plano."
+        }
+      ]
+    },
+    {
+      "slug": "desarrollo_interfaces",
+      "nombre": "Desarrollo de interfaces",
+      "resumen_estudio": "Más probable: JavaFX, FXML, fx:id, FXMLLoader, Scene Builder, Maven, JasperReports y usabilidad.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "arquitectura",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué ventaja aporta separar presentación visual y lógica funcional?",
+          "opciones": [
+            "Hace innecesario probar la aplicación",
+            "Impide reutilizar componentes",
+            "Obliga a escribir todo en una sola clase",
+            "Permite modificar diseño sin afectar tanto a la lógica y facilita mantenimiento"
+          ],
+          "respuesta_correcta": "Permite modificar diseño sin afectar tanto a la lógica y facilita mantenimiento",
+          "explicacion": "Separación de responsabilidades."
+        },
+        {
+          "id": 2,
+          "tema": "usabilidad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es la usabilidad?",
+          "opciones": [
+            "Número de clases de un proyecto",
+            "Cantidad de colores usados",
+            "Facilidad con la que un usuario puede usar una aplicación para lograr sus objetivos",
+            "Capacidad del servidor para procesar peticiones"
+          ],
+          "respuesta_correcta": "Facilidad con la que un usuario puede usar una aplicación para lograr sus objetivos",
+          "explicacion": "Usabilidad = fácil y eficaz."
+        },
+        {
+          "id": 3,
+          "tema": "javafx",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué hace FXMLLoader?",
+          "opciones": [
+            "Crea sockets TCP",
+            "Carga y parsea archivos FXML para crear la interfaz JavaFX",
+            "Gestiona dependencias Maven",
+            "Genera informes JasperReports"
+          ],
+          "respuesta_correcta": "Carga y parsea archivos FXML para crear la interfaz JavaFX",
+          "explicacion": "FXMLLoader convierte XML en objetos JavaFX."
+        },
+        {
+          "id": 4,
+          "tema": "fxml",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué atributo FXML permite acceder a un componente desde el controlador?",
+          "opciones": [
+            "fx:id",
+            "id-html",
+            "controller:id",
+            "src"
+          ],
+          "respuesta_correcta": "fx:id",
+          "explicacion": "fx:id se vincula con @FXML."
+        },
+        {
+          "id": 5,
+          "tema": "javafx",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es Scene Builder?",
+          "opciones": [
+            "Servidor para ejecutar aplicaciones Java",
+            "Sistema de bases de datos",
+            "Motor de informes financieros",
+            "Editor visual WYSIWYG para diseñar interfaces JavaFX"
+          ],
+          "respuesta_correcta": "Editor visual WYSIWYG para diseñar interfaces JavaFX",
+          "explicacion": "Arrastrar y soltar componentes."
+        },
+        {
+          "id": 6,
+          "tema": "maven",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué hace Maven?",
+          "opciones": [
+            "Ejecuta consultas SQL directamente",
+            "Cifra archivos FXML",
+            "Gestiona dependencias y fases del ciclo de vida del proyecto",
+            "Diseña interfaces automáticamente"
+          ],
+          "respuesta_correcta": "Gestiona dependencias y fases del ciclo de vida del proyecto",
+          "explicacion": "Maven usa pom.xml."
+        },
+        {
+          "id": 7,
+          "tema": "jasperreports",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué separa JasperReports?",
+          "opciones": [
+            "Android y React Native",
+            "El diseño visual del informe y las fuentes de datos",
+            "Los hilos y procesos",
+            "TCP y UDP"
+          ],
+          "respuesta_correcta": "El diseño visual del informe y las fuentes de datos",
+          "explicacion": "Plantilla por un lado, datos por otro."
+        },
+        {
+          "id": 8,
+          "tema": "android",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Dónde se almacenan normalmente los layouts XML en Android?",
+          "opciones": [
+            "res/layout",
+            "src/main/java",
+            "META-INF",
+            "bin/socket"
+          ],
+          "respuesta_correcta": "res/layout",
+          "explicacion": "Carpeta estándar de layouts."
+        },
+        {
+          "id": 9,
+          "tema": "usabilidad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué principio permite al usuario deshacer o corregir acciones?",
+          "opciones": [
+            "Sobrecarga cognitiva",
+            "Bloqueo permanente",
+            "Dependencia circular",
+            "Control y libertad del usuario"
+          ],
+          "respuesta_correcta": "Control y libertad del usuario",
+          "explicacion": "Debe poder recuperarse de errores."
+        },
+        {
+          "id": 10,
+          "tema": "usabilidad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué reduce la carga cognitiva de una interfaz?",
+          "opciones": [
+            "Usar textos largos sin organización",
+            "Cambiar patrones en cada pantalla",
+            "Jerarquía visual clara y agrupación lógica de elementos",
+            "Mostrar todas las opciones a la vez"
+          ],
+          "respuesta_correcta": "Jerarquía visual clara y agrupación lógica de elementos",
+          "explicacion": "Ayuda a saber qué mirar y qué hacer."
+        }
+      ]
+    },
+    {
+      "slug": "gestion_empresarial",
+      "nombre": "Sistemas de gestión empresarial",
+      "resumen_estudio": "Más probable: CRM, ERP, Odoo, PostgreSQL, modelos, ORM, parametrización, implantación, modularidad y SOA.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "crm",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es el objetivo principal de un CRM?",
+          "opciones": [
+            "Gestionar exclusivamente fabricación",
+            "Sustituir la base de datos ERP",
+            "Crear interfaces gráficas",
+            "Gestionar la relación con clientes durante su ciclo de vida"
+          ],
+          "respuesta_correcta": "Gestionar la relación con clientes durante su ciclo de vida",
+          "explicacion": "CRM = clientes."
+        },
+        {
+          "id": 2,
+          "tema": "odoo",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué sistema de base de datos usa Odoo principalmente?",
+          "opciones": [
+            "SQLite obligatorio",
+            "Access",
+            "PostgreSQL",
+            "MongoDB"
+          ],
+          "respuesta_correcta": "PostgreSQL",
+          "explicacion": "Pregunta muy directa."
+        },
+        {
+          "id": 3,
+          "tema": "odoo",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es un modelo en Odoo?",
+          "opciones": [
+            "Vista gráfica únicamente",
+            "Clase Python que define estructura y comportamiento de un objeto de negocio",
+            "Archivo PDF con informes",
+            "Tabla sin relación con código"
+          ],
+          "respuesta_correcta": "Clase Python que define estructura y comportamiento de un objeto de negocio",
+          "explicacion": "Modelos definen campos y métodos."
+        },
+        {
+          "id": 4,
+          "tema": "odoo",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es el ORM en Odoo?",
+          "opciones": [
+            "Capa que mapea modelos Python con tablas de base de datos",
+            "Protocolo de red para clientes",
+            "Herramienta de diseño visual",
+            "Sistema de contratación"
+          ],
+          "respuesta_correcta": "Capa que mapea modelos Python con tablas de base de datos",
+          "explicacion": "Permite operar con objetos."
+        },
+        {
+          "id": 5,
+          "tema": "erp",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué significa parametrizar un ERP?",
+          "opciones": [
+            "Reescribir el núcleo del ERP",
+            "Eliminar módulos programando",
+            "Cambiar el hardware",
+            "Configurar el sistema usando opciones disponibles sin modificar código fuente"
+          ],
+          "respuesta_correcta": "Configurar el sistema usando opciones disponibles sin modificar código fuente",
+          "explicacion": "Parametrizar no es programar desde cero."
+        },
+        {
+          "id": 6,
+          "tema": "implantacion",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es la primera fase crítica en una implantación ERP?",
+          "opciones": [
+            "Importar datos sin validar",
+            "Formar usuarios después de cerrar",
+            "Análisis de requisitos y planificación",
+            "Activar todos los módulos directamente"
+          ],
+          "respuesta_correcta": "Análisis de requisitos y planificación",
+          "explicacion": "Sin planificación hay fallos."
+        },
+        {
+          "id": 7,
+          "tema": "implantacion",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué riesgo importante existe al migrar datos?",
+          "opciones": [
+            "Que el ERP no necesite usuarios",
+            "Pérdida o degradación de calidad de datos",
+            "Que todos los datos mejoren automáticamente",
+            "Que desaparezca la necesidad de pruebas"
+          ],
+          "respuesta_correcta": "Pérdida o degradación de calidad de datos",
+          "explicacion": "Hay que validar integridad."
+        },
+        {
+          "id": 8,
+          "tema": "erp",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué ventaja aporta la modularidad de un ERP?",
+          "opciones": [
+            "Instalar solo módulos necesarios y ampliar según crecimiento",
+            "Obligar a instalar todo",
+            "Evitar integración entre departamentos",
+            "Eliminar base de datos"
+          ],
+          "respuesta_correcta": "Instalar solo módulos necesarios y ampliar según crecimiento",
+          "explicacion": "Reduce costes y adapta sistema."
+        },
+        {
+          "id": 9,
+          "tema": "arquitectura",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es SOA en sistemas empresariales?",
+          "opciones": [
+            "Sistema de hojas de cálculo",
+            "Método para eliminar usuarios",
+            "Tipo de contrato laboral",
+            "Arquitectura basada en servicios independientes que se comunican mediante interfaces"
+          ],
+          "respuesta_correcta": "Arquitectura basada en servicios independientes que se comunican mediante interfaces",
+          "explicacion": "SOA mejora integración."
+        },
+        {
+          "id": 10,
+          "tema": "odoo",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué permite Odoo Studio?",
+          "opciones": [
+            "Crear videojuegos 3D",
+            "Administrar sockets UDP",
+            "Personalizar procesos mediante herramienta visual con poco o ningún código",
+            "Programar drivers JDBC"
+          ],
+          "respuesta_correcta": "Personalizar procesos mediante herramienta visual con poco o ningún código",
+          "explicacion": "Odoo Studio es low-code."
+        }
+      ]
+    },
+    {
+      "slug": "digitalizacion",
+      "nombre": "Digitalización aplicada",
+      "resumen_estudio": "Más probable: CIA, cloud, IaaS, ML/DL, Blockchain, gemelo digital, Industria 5.0, Kanban y Data Lake/Warehouse.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "ciberseguridad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué significa la tríada CIA?",
+          "opciones": [
+            "Control, Identidad y Aplicación",
+            "Cliente, Internet y Acceso",
+            "Cifrado, Interfaz y Archivo",
+            "Confidencialidad, Integridad y Disponibilidad"
+          ],
+          "respuesta_correcta": "Confidencialidad, Integridad y Disponibilidad",
+          "explicacion": "Base de ciberseguridad."
+        },
+        {
+          "id": 2,
+          "tema": "cloud",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué describe mejor el modelo de responsabilidad compartida cloud?",
+          "opciones": [
+            "El cliente gestiona siempre el centro físico",
+            "No hay responsabilidades definidas",
+            "Proveedor protege infraestructura; cliente protege datos, aplicaciones y accesos",
+            "El proveedor protege absolutamente todo"
+          ],
+          "respuesta_correcta": "Proveedor protege infraestructura; cliente protege datos, aplicaciones y accesos",
+          "explicacion": "Muy típico en cloud."
+        },
+        {
+          "id": 3,
+          "tema": "cloud",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué modelo cloud permite instalar tu propio sistema operativo y aplicaciones?",
+          "opciones": [
+            "No-code",
+            "IaaS",
+            "SaaS",
+            "CRM"
+          ],
+          "respuesta_correcta": "IaaS",
+          "explicacion": "IaaS = infraestructura."
+        },
+        {
+          "id": 4,
+          "tema": "ia",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es la relación correcta entre Machine Learning y Deep Learning?",
+          "opciones": [
+            "Deep Learning es un subcampo de Machine Learning basado en redes neuronales profundas",
+            "Machine Learning es un subcampo de Deep Learning",
+            "Son tecnologías sin relación",
+            "Deep Learning solo significa usar bases de datos"
+          ],
+          "respuesta_correcta": "Deep Learning es un subcampo de Machine Learning basado en redes neuronales profundas",
+          "explicacion": "Todo Deep Learning es ML, no al revés."
+        },
+        {
+          "id": 5,
+          "tema": "blockchain",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es Blockchain en contexto empresarial?",
+          "opciones": [
+            "Editor visual de aplicaciones",
+            "Sistema de nóminas",
+            "Protocolo para llamadas telefónicas",
+            "Registro distribuido e inmutable útil para trazabilidad e identidad verificable"
+          ],
+          "respuesta_correcta": "Registro distribuido e inmutable útil para trazabilidad e identidad verificable",
+          "explicacion": "Clave: inmutabilidad y trazabilidad."
+        },
+        {
+          "id": 6,
+          "tema": "industria",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es un gemelo digital?",
+          "opciones": [
+            "Contraseña duplicada",
+            "Animación sin sensores",
+            "Réplica virtual dinámica de un activo físico sincronizada con datos reales",
+            "Copia estática de un documento"
+          ],
+          "respuesta_correcta": "Réplica virtual dinámica de un activo físico sincronizada con datos reales",
+          "explicacion": "Se actualiza con datos de sensores."
+        },
+        {
+          "id": 7,
+          "tema": "industria",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué diferencia introduce Industria 5.0?",
+          "opciones": [
+            "Vuelve a procesos sin datos",
+            "Coloca el factor humano, sostenibilidad y resiliencia como ejes importantes",
+            "Elimina completamente la tecnología",
+            "Solo busca fabricar más barato"
+          ],
+          "respuesta_correcta": "Coloca el factor humano, sostenibilidad y resiliencia como ejes importantes",
+          "explicacion": "Industria 5.0 no es solo automatización."
+        },
+        {
+          "id": 8,
+          "tema": "agile",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué metodología usa tableros visuales por columnas?",
+          "opciones": [
+            "Kanban",
+            "SOAP",
+            "SQL",
+            "TLS"
+          ],
+          "respuesta_correcta": "Kanban",
+          "explicacion": "Pendiente, en progreso, hecho."
+        },
+        {
+          "id": 9,
+          "tema": "ia",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué herramienta de Google permite entrenar modelos simples sin programar?",
+          "opciones": [
+            "Redshift",
+            "Scene Builder",
+            "ServerSocket",
+            "Teachable Machine"
+          ],
+          "respuesta_correcta": "Teachable Machine",
+          "explicacion": "Herramienta visual de IA."
+        },
+        {
+          "id": 10,
+          "tema": "datos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué diferencia hay entre Data Lake y Data Warehouse?",
+          "opciones": [
+            "Son exactamente lo mismo",
+            "Ambos son herramientas de entrevistas",
+            "Data Lake almacena datos brutos/flexibles y Data Warehouse datos estructurados para análisis",
+            "Data Warehouse guarda datos sin procesar y Data Lake solo facturas"
+          ],
+          "respuesta_correcta": "Data Lake almacena datos brutos/flexibles y Data Warehouse datos estructurados para análisis",
+          "explicacion": "Ejemplo típico: S3 y Redshift."
+        }
+      ]
+    },
+    {
+      "slug": "sostenibilidad",
+      "nombre": "Sostenibilidad aplicada",
+      "resumen_estudio": "Más probable: 5R, economía lineal/circular, Back Market, AROPE, OIT, cambio climático, neutralidad, biodiversidad y ODS.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "residuos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "Según las 5R, ¿por qué reducir es fundamental?",
+          "opciones": [
+            "Porque consiste en reciclar al final",
+            "Porque permite aumentar producción sin medir impactos",
+            "Porque sustituye todas las demás R",
+            "Porque evita consumir recursos y generar residuos desde el origen"
+          ],
+          "respuesta_correcta": "Porque evita consumir recursos y generar residuos desde el origen",
+          "explicacion": "Reducir actúa antes de que exista el residuo."
+        },
+        {
+          "id": 2,
+          "tema": "economia",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué modelo describe extraer, fabricar, usar y desechar?",
+          "opciones": [
+            "Neutralidad climática",
+            "Responsabilidad social",
+            "Economía lineal",
+            "Economía circular"
+          ],
+          "respuesta_correcta": "Economía lineal",
+          "explicacion": "Modelo take-make-waste."
+        },
+        {
+          "id": 3,
+          "tema": "economia_circular",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué actividad representa Back Market?",
+          "opciones": [
+            "Cálculo de salarios sociales",
+            "Reacondicionamiento y venta de productos electrónicos usados",
+            "Fabricación de dispositivos nuevos sin reparar",
+            "Gestión de nóminas sostenibles"
+          ],
+          "respuesta_correcta": "Reacondicionamiento y venta de productos electrónicos usados",
+          "explicacion": "Alarga la vida útil."
+        },
+        {
+          "id": 4,
+          "tema": "social",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué mide AROPE?",
+          "opciones": [
+            "Población en riesgo de pobreza o exclusión social",
+            "Emisiones industriales de CO2",
+            "Porcentaje de residuos reciclados",
+            "Consumo eléctrico empresarial"
+          ],
+          "respuesta_correcta": "Población en riesgo de pobreza o exclusión social",
+          "explicacion": "Indicador social."
+        },
+        {
+          "id": 5,
+          "tema": "clima",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Cuál es la causa principal del cambio climático contemporáneo?",
+          "opciones": [
+            "La economía circular",
+            "El reciclaje de residuos",
+            "La biodiversidad marina",
+            "Emisiones humanas de gases de efecto invernadero"
+          ],
+          "respuesta_correcta": "Emisiones humanas de gases de efecto invernadero",
+          "explicacion": "CO2, CH4 y otros gases."
+        },
+        {
+          "id": 6,
+          "tema": "clima",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué significa neutralidad climática?",
+          "opciones": [
+            "Reciclar únicamente papel y cartón",
+            "Eliminar todo transporte público",
+            "Equilibrar emisiones con reducciones o compensaciones equivalentes",
+            "No emitir absolutamente nada en ningún proceso"
+          ],
+          "respuesta_correcta": "Equilibrar emisiones con reducciones o compensaciones equivalentes",
+          "explicacion": "Balance neto cero."
+        },
+        {
+          "id": 7,
+          "tema": "social",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué organización se relaciona con condiciones laborales y trabajo digno?",
+          "opciones": [
+            "OMS exclusivamente",
+            "OIT",
+            "FMI",
+            "Banco Mundial"
+          ],
+          "respuesta_correcta": "OIT",
+          "explicacion": "Organización Internacional del Trabajo."
+        },
+        {
+          "id": 8,
+          "tema": "biodiversidad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es biodiversidad?",
+          "opciones": [
+            "Variedad de organismos vivos, genes, especies y ecosistemas",
+            "Cantidad de CO2 emitida por una empresa",
+            "Número de trabajadores en riesgo de pobreza",
+            "Porcentaje de reciclaje de plástico"
+          ],
+          "respuesta_correcta": "Variedad de organismos vivos, genes, especies y ecosistemas",
+          "explicacion": "Incluye varios niveles de vida."
+        },
+        {
+          "id": 9,
+          "tema": "ods",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué naturaleza tienen los ODS?",
+          "opciones": [
+            "Solo ambientales y europeos",
+            "Solo obligatorios para empresas privadas",
+            "Independientes entre sí",
+            "Universales, integrados y aplicables a todos los países"
+          ],
+          "respuesta_correcta": "Universales, integrados y aplicables a todos los países",
+          "explicacion": "ODS conectados y globales."
+        },
+        {
+          "id": 10,
+          "tema": "huella",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué marca el Día de la Sobrecapacidad de la Tierra?",
+          "opciones": [
+            "El día que más plástico se recicla",
+            "El inicio anual de Agenda 2030",
+            "La fecha en que la humanidad consume lo que el planeta puede regenerar en un año",
+            "La fecha del primer tratado climático"
+          ],
+          "respuesta_correcta": "La fecha en que la humanidad consume lo que el planeta puede regenerar en un año",
+          "explicacion": "Mide consumo insostenible."
+        }
+      ]
+    },
+    {
+      "slug": "itp",
+      "nombre": "Itinerario personal para la empleabilidad 2",
+      "resumen_estudio": "Más probable: contratos, fijo-discontinuo, SEPE 10 días, Seguridad Social, entrevistas, LinkedIn y networking.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "contratos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué contrato combina empleo y formación?",
+          "opciones": [
+            "Contrato indefinido ordinario",
+            "Contrato mercantil",
+            "Contrato de sustitución",
+            "Contrato formativo"
+          ],
+          "respuesta_correcta": "Contrato formativo",
+          "explicacion": "Formación + trabajo."
+        },
+        {
+          "id": 2,
+          "tema": "contratos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué modalidad encaja con campañas agrícolas periódicas?",
+          "opciones": [
+            "Indefinido continuo ordinario",
+            "Contrato verbal obligatorio",
+            "Fijo-discontinuo",
+            "Contrato de sustitución"
+          ],
+          "respuesta_correcta": "Fijo-discontinuo",
+          "explicacion": "Indefinido pero no continuo."
+        },
+        {
+          "id": 3,
+          "tema": "contratos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Duración máxima general del contrato por circunstancias de producción?",
+          "opciones": [
+            "Sin límite",
+            "6 meses ampliables a 12 por convenio",
+            "1 mes no ampliable",
+            "2 años siempre"
+          ],
+          "respuesta_correcta": "6 meses ampliables a 12 por convenio",
+          "explicacion": "Pregunta literal."
+        },
+        {
+          "id": 4,
+          "tema": "contratos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué elemento NO es esencial en un contrato de trabajo?",
+          "opciones": [
+            "Antigüedad",
+            "Consentimiento",
+            "Objeto",
+            "Salario"
+          ],
+          "respuesta_correcta": "Antigüedad",
+          "explicacion": "Esenciales: consentimiento, objeto y salario."
+        },
+        {
+          "id": 5,
+          "tema": "seguridad_social",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué ocurre si no se da de alta a un trabajador en Seguridad Social?",
+          "opciones": [
+            "El contrato queda automáticamente extinguido",
+            "El trabajador pasa a ser autónomo",
+            "No tiene consecuencias laborales",
+            "El contrato se presume indefinido"
+          ],
+          "respuesta_correcta": "El contrato se presume indefinido",
+          "explicacion": "Consecuencia legal típica."
+        },
+        {
+          "id": 6,
+          "tema": "sepe",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Quién debe comunicar el contrato al SEPE y en qué plazo?",
+          "opciones": [
+            "El SEPE, antes de firmar",
+            "La Seguridad Social, en 6 meses",
+            "El empresario, en 10 días",
+            "El trabajador, en 30 días"
+          ],
+          "respuesta_correcta": "El empresario, en 10 días",
+          "explicacion": "Plazo y responsable."
+        },
+        {
+          "id": 7,
+          "tema": "contratos",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué es el periodo de prueba?",
+          "opciones": [
+            "Contrato especial de emprendimiento",
+            "Tiempo inicial para comprobar la idoneidad entre trabajador y puesto",
+            "Tiempo obligatorio de vacaciones",
+            "Fase donde no hay salario"
+          ],
+          "respuesta_correcta": "Tiempo inicial para comprobar la idoneidad entre trabajador y puesto",
+          "explicacion": "Puede extinguir cualquiera de las partes."
+        },
+        {
+          "id": 8,
+          "tema": "seleccion",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué caracteriza una entrevista estructurada?",
+          "opciones": [
+            "Usa guion común y aumenta la objetividad",
+            "Se basa solo en improvisación",
+            "Evita comparar candidatos",
+            "No tiene criterios definidos"
+          ],
+          "respuesta_correcta": "Usa guion común y aumenta la objetividad",
+          "explicacion": "Mismas preguntas o criterios."
+        },
+        {
+          "id": 9,
+          "tema": "seleccion",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué busca una entrevista por competencias?",
+          "opciones": [
+            "Únicamente datos personales",
+            "Solo conocimientos teóricos sin ejemplos",
+            "Firma inmediata del contrato",
+            "Situaciones pasadas y conductas reales del candidato"
+          ],
+          "respuesta_correcta": "Situaciones pasadas y conductas reales del candidato",
+          "explicacion": "Predice conducta futura."
+        },
+        {
+          "id": 10,
+          "tema": "empleabilidad",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "¿Qué define mejor el networking?",
+          "opciones": [
+            "Eliminar contactos antiguos",
+            "Realizar pruebas psicométricas",
+            "Crear y mantener relaciones profesionales",
+            "Enviar currículums sin adaptar"
+          ],
+          "respuesta_correcta": "Crear y mantener relaciones profesionales",
+          "explicacion": "Contactos profesionales útiles."
+        }
+      ]
+    },
+    {
+      "slug": "ingles",
+      "nombre": "Inglés",
+      "resumen_estudio": "Más probable: job/work, telephoning, meetings, emails y frases profesionales básicas.",
+      "preguntas": [
+        {
+          "id": 1,
+          "tema": "vocabulary",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "What is the best meaning of job?",
+          "opciones": [
+            "Work in general only",
+            "A meeting agenda",
+            "A phone message",
+            "A specific position or employment"
+          ],
+          "respuesta_correcta": "A specific position or employment",
+          "explicacion": "Job = puesto concreto."
+        },
+        {
+          "id": 2,
+          "tema": "vocabulary",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "What is the best meaning of work?",
+          "opciones": [
+            "Only a salary",
+            "Only an interview",
+            "Work in general or the place where you work",
+            "Only a specific job offer"
+          ],
+          "respuesta_correcta": "Work in general or the place where you work",
+          "explicacion": "Work es más general."
+        },
+        {
+          "id": 3,
+          "tema": "telephoning",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "Which expression is correct to ask for someone on the phone?",
+          "opciones": [
+            "I have job Marta",
+            "Could I speak to Marta, please?",
+            "I am agree with Marta",
+            "Best regards to Marta"
+          ],
+          "respuesta_correcta": "Could I speak to Marta, please?",
+          "explicacion": "Frase típica de llamadas."
+        },
+        {
+          "id": 4,
+          "tema": "telephoning",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "What does 'Can I take a message?' mean?",
+          "opciones": [
+            "¿Puedo tomar un mensaje?",
+            "¿Puedo borrar el correo?",
+            "¿Puedo contratarte?",
+            "¿Puedo repetir la reunión?"
+          ],
+          "respuesta_correcta": "¿Puedo tomar un mensaje?",
+          "explicacion": "Cuando la persona no está disponible."
+        },
+        {
+          "id": 5,
+          "tema": "grammar",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "Which sentence is grammatically correct?",
+          "opciones": [
+            "I am agree",
+            "I have agree",
+            "I do agreement",
+            "I agree"
+          ],
+          "respuesta_correcta": "I agree",
+          "explicacion": "No se dice I am agree."
+        },
+        {
+          "id": 6,
+          "tema": "meetings",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "Which expression is useful to ask for clarification?",
+          "opciones": [
+            "Best regards",
+            "Please find attached",
+            "Could you clarify that?",
+            "Can I take a message?"
+          ],
+          "respuesta_correcta": "Could you clarify that?",
+          "explicacion": "Pedir aclaración."
+        },
+        {
+          "id": 7,
+          "tema": "email",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "Which expression is a formal email closing?",
+          "opciones": [
+            "Ok lol",
+            "Best regards",
+            "Bye bro",
+            "See ya"
+          ],
+          "respuesta_correcta": "Best regards",
+          "explicacion": "Cierre formal."
+        },
+        {
+          "id": 8,
+          "tema": "email",
+          "probabilidad": "casi_seguro",
+          "dificultad": "media_alta",
+          "pregunta": "What does 'Please find attached' mean?",
+          "opciones": [
+            "Adjunto...",
+            "Estoy llamando por...",
+            "No estoy de acuerdo",
+            "Espere, por favor"
+          ],
+          "respuesta_correcta": "Adjunto...",
+          "explicacion": "Email con archivos adjuntos."
+        }
+      ]
+    }
+  ]
+}
