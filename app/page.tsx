@@ -3,8 +3,10 @@
 import { useMemo, useState, type CSSProperties, type ReactNode } from "react"
 import {
   ArrowLeft,
+  Bookmark,
   BookOpen,
   Check,
+  ChevronLeft,
   ChevronRight,
   ClipboardCheck,
   ListChecks,
@@ -1750,6 +1752,12 @@ type CourseId = "1dam" | "2dam"
 type Screen = "courses" | "subjects" | "detail" | "test"
 type ThemeMode = "dark" | "light"
 type AnswerResult = "correct" | "wrong" | "blank"
+type QuestionState = {
+  selectedAnswer: number | null
+  result: AnswerResult | null
+  revealed: boolean
+  marked: boolean
+}
 
 type CourseConfig = {
   id: CourseId
@@ -1924,6 +1932,15 @@ function getQuestionAnswer(question: Question) {
 
 function getQuestionCount(subjectsToCount: Subject[]) {
   return subjectsToCount.reduce((total, subject) => total + subject.questions.length, 0)
+}
+
+function createInitialQuestionState(): QuestionState {
+  return {
+    selectedAnswer: null,
+    result: null,
+    revealed: false,
+    marked: false,
+  }
 }
 
 function accentStyle(accent?: string) {
@@ -2262,39 +2279,79 @@ function TestPanel({
   onBack: () => void
 }) {
   const [currentQuestion, setCurrentQuestion] = useState(0)
-  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null)
-  const [showResult, setShowResult] = useState(false)
   const [finished, setFinished] = useState(false)
-  const [answers, setAnswers] = useState<AnswerResult[]>([])
 
   const questions = subject.questions
+  const [questionStates, setQuestionStates] = useState<QuestionState[]>(() => questions.map(createInitialQuestionState))
   const question = questions[currentQuestion]
+  const currentState = questionStates[currentQuestion] ?? createInitialQuestionState()
   const correctAnswer = question ? getQuestionAnswer(question) : 0
-  const correctCount = answers.filter((answer) => answer === "correct").length
-  const wrongCount = answers.filter((answer) => answer === "wrong").length
-  const blankCount = answers.filter((answer) => answer === "blank").length
+  const correctCount = questionStates.filter((state) => state.result === "correct").length
+  const wrongCount = questionStates.filter((state) => state.result === "wrong").length
+  const blankCount = questionStates.filter((state) => state.result === "blank").length
+  const answeredCount = questionStates.filter((state) => state.result !== null).length
+  const markedCount = questionStates.filter((state) => state.marked).length
+  const allAnswered = questions.length > 0 && answeredCount === questions.length
   const penaltyScore = Math.max(0, correctCount - wrongCount / 3)
 
-  const finishOrNext = (result: AnswerResult) => {
-    const nextAnswers = [...answers, result]
-    setAnswers(nextAnswers)
+  const updateQuestionState = (questionIndex: number, update: Partial<QuestionState>) => {
+    setQuestionStates((currentStates) =>
+      currentStates.map((state, index) => (index === questionIndex ? { ...state, ...update } : state)),
+    )
+  }
 
-    if (currentQuestion >= questions.length - 1) {
-      setFinished(true)
+  const goToQuestion = (questionIndex: number) => {
+    setCurrentQuestion(Math.min(Math.max(questionIndex, 0), questions.length - 1))
+  }
+
+  const goToNextQuestion = () => {
+    if (currentQuestion < questions.length - 1) {
+      goToQuestion(currentQuestion + 1)
       return
     }
 
-    setCurrentQuestion((value) => value + 1)
-    setSelectedAnswer(null)
-    setShowResult(false)
+    const firstPending = questionStates.findIndex((state) => state.result === null)
+    if (firstPending >= 0) {
+      goToQuestion(firstPending)
+      return
+    }
+
+    setFinished(true)
+  }
+
+  const goToPreviousQuestion = () => {
+    goToQuestion(currentQuestion - 1)
+  }
+
+  const confirmCurrentAnswer = () => {
+    if (currentState.selectedAnswer === null || currentState.revealed) return
+
+    updateQuestionState(currentQuestion, {
+      result: currentState.selectedAnswer === correctAnswer ? "correct" : "wrong",
+      revealed: true,
+    })
+  }
+
+  const markBlank = () => {
+    if (currentState.revealed) return
+
+    updateQuestionState(currentQuestion, {
+      selectedAnswer: null,
+      result: "blank",
+      revealed: true,
+    })
+  }
+
+  const toggleMarked = () => {
+    updateQuestionState(currentQuestion, {
+      marked: !currentState.marked,
+    })
   }
 
   const restart = () => {
     setCurrentQuestion(0)
-    setSelectedAnswer(null)
-    setShowResult(false)
     setFinished(false)
-    setAnswers([])
+    setQuestionStates(questions.map(createInitialQuestionState))
   }
 
   if (questions.length === 0) {
@@ -2314,6 +2371,9 @@ function TestPanel({
           <div className="result-ring">{percentage}%</div>
           <p className="eyebrow">{subject.name}</p>
           <h1>Resultado</h1>
+          <p className="result-subline">
+            {answeredCount}/{questions.length} preguntas completadas
+          </p>
           <div className="result-grid">
             <span>
               <strong>{correctCount}</strong>
@@ -2362,55 +2422,110 @@ function TestPanel({
 
       <div className="answer-list">
         {question.options.map((option, index) => {
-          const isSelected = selectedAnswer === index
+          const isSelected = currentState.selectedAnswer === index
           const isCorrect = index === correctAnswer
-          const isWrongSelection = showResult && isSelected && !isCorrect
+          const isWrongSelection = currentState.revealed && isSelected && !isCorrect
 
           return (
             <button
-              key={option}
+              key={`${index}-${option}`}
               className="answer-option"
               data-selected={isSelected}
-              data-correct={showResult && isCorrect}
+              data-correct={currentState.revealed && isCorrect}
               data-wrong={isWrongSelection}
               onClick={() => {
-                if (!showResult) setSelectedAnswer(index)
+                if (!currentState.revealed) {
+                  updateQuestionState(currentQuestion, {
+                    selectedAnswer: index,
+                  })
+                }
               }}
             >
               <span>{String.fromCharCode(65 + index)}</span>
               <strong>{option}</strong>
-              {showResult && isCorrect && <Check aria-hidden="true" />}
+              {currentState.revealed && isCorrect && <Check aria-hidden="true" />}
               {isWrongSelection && <X aria-hidden="true" />}
             </button>
           )
         })}
       </div>
 
-      {showResult && question.explanation && <p className="explanation">{question.explanation}</p>}
+      {currentState.revealed && question.explanation && <p className="explanation">{question.explanation}</p>}
 
       <div className="test-actions">
-        {!showResult ? (
+        {!currentState.revealed ? (
           <>
-            <button className="secondary-action" onClick={() => finishOrNext("blank")}>
+            <button className="secondary-action" onClick={markBlank}>
               Dejar en blanco
             </button>
             <button
               className="primary-action compact-action"
-              disabled={selectedAnswer === null}
-              onClick={() => setShowResult(true)}
+              disabled={currentState.selectedAnswer === null}
+              onClick={confirmCurrentAnswer}
             >
               Confirmar
             </button>
           </>
         ) : (
-          <button
-            className="primary-action"
-            onClick={() => finishOrNext(selectedAnswer === correctAnswer ? "correct" : "wrong")}
-          >
-            {currentQuestion < questions.length - 1 ? "Siguiente" : "Ver resultado"}
+          <button className="primary-action" onClick={goToNextQuestion}>
+            {currentQuestion < questions.length - 1 ? "Siguiente" : allAnswered ? "Ver resultado" : "Ir a pendiente"}
             <ChevronRight aria-hidden="true" />
           </button>
         )}
+      </div>
+
+      <div className="question-dock" aria-label="Navegador de preguntas">
+        <div className="dock-controls">
+          <button
+            className="dock-icon-button"
+            onClick={goToPreviousQuestion}
+            disabled={currentQuestion === 0}
+            aria-label="Pregunta anterior"
+          >
+            <ChevronLeft aria-hidden="true" />
+          </button>
+          <button className="mark-toggle" data-marked={currentState.marked} onClick={toggleMarked}>
+            <Bookmark aria-hidden="true" />
+            {currentState.marked ? "Marcada" : "Marcar"}
+          </button>
+          <button
+            className="dock-icon-button"
+            onClick={goToNextQuestion}
+            disabled={currentQuestion === questions.length - 1 && allAnswered}
+            aria-label="Pregunta siguiente"
+          >
+            <ChevronRight aria-hidden="true" />
+          </button>
+        </div>
+
+        <div className="question-strip" role="list">
+          {questions.map((item, index) => {
+            const state = questionStates[index] ?? createInitialQuestionState()
+
+            return (
+              <button
+                key={item.id ?? index}
+                className="question-jump"
+                data-active={index === currentQuestion}
+                data-status={state.result ?? "pending"}
+                data-marked={state.marked}
+                onClick={() => goToQuestion(index)}
+                aria-label={`Ir a pregunta ${index + 1}`}
+              >
+                {index + 1}
+              </button>
+            )
+          })}
+        </div>
+
+        <div className="dock-summary">
+          <span>
+            {answeredCount}/{questions.length} hechas · {markedCount} marcadas
+          </span>
+          <button className="dock-result-button" disabled={!allAnswered} onClick={() => setFinished(true)}>
+            Resultado
+          </button>
+        </div>
       </div>
     </section>
   )
