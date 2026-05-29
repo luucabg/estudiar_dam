@@ -21,6 +21,7 @@ import desarrolloInterfacesData from "@/desarrollo_interfaces.json"
 import digitalizacionData from "@/digitalizacion.json"
 import gestionEmpresarialData from "@/gestion_empresarial.json"
 import inglesData from "@/ingles.json"
+import studyInfo from "@/info.json"
 import studyPack from "@/index.json"
 import itpData from "@/itp.json"
 import multimediaData from "@/multimedia_dispositivos_moviles.json"
@@ -1801,37 +1802,43 @@ const secondDamData = [
   inglesData,
 ]
 
-const secondDamSubjects: Subject[] = secondDamData.map((subject, index) => ({
-  id: subject.slug,
-  name: subject.asignatura,
-  icon: getInitials(subject.asignatura),
-  color: "",
-  accent: secondDamAccents[index % secondDamAccents.length],
-  difficulty: subject.dificultad,
-  priority: subject.prioridad,
-  probableQuestionsTitle: "Conceptos a memorizar",
-  probableQuestions: subject.conceptos_memorizar_literal.map((item) => ({
-    pregunta: item.concepto,
-    respuesta: item.respuesta,
-  })),
-  theory: [
-    {
-      title: "Resumen para novato",
-      content: [subject.resumen_para_novato],
-    },
-    {
-      title: "Tips de examen",
-      content: subject.tips_examen,
-    },
-  ],
-  questions: subject.preguntas.map((question) => ({
-    id: question.id,
-    question: question.pregunta,
-    options: question.opciones,
-    correctAnswer: Math.max(question.opciones.indexOf(question.respuesta_correcta), 0),
-    explanation: question.explicacion,
-  })),
-}))
+const secondDamSubjects: Subject[] = secondDamData.map((subject, index) => {
+  const oldSubject = studyInfo.asignaturas[index]
+
+  return {
+    id: subject.slug,
+    name: subject.asignatura,
+    icon: getInitials(subject.asignatura),
+    color: "",
+    accent: secondDamAccents[index % secondDamAccents.length],
+    difficulty: subject.dificultad,
+    priority: subject.prioridad,
+    likely: oldSubject.lo_que_mas_probablemente_sale,
+    cheatSheet: oldSubject.chuleta,
+    probableQuestions: oldSubject.preguntas_muy_probables,
+    theory: [
+      {
+        title: "Temario super resumido",
+        content: oldSubject.temario_super_resumido,
+      },
+      {
+        title: "Lo que más probablemente sale",
+        content: oldSubject.lo_que_mas_probablemente_sale,
+      },
+      {
+        title: "Chuleta",
+        content: oldSubject.chuleta,
+      },
+    ],
+    questions: subject.preguntas.map((question) => ({
+      id: question.id,
+      question: question.pregunta,
+      options: question.opciones,
+      correctAnswer: Math.max(question.opciones.indexOf(question.respuesta_correcta), 0),
+      explanation: question.explicacion,
+    })),
+  }
+})
 
 const courses: Record<CourseId, CourseConfig> = {
   "1dam": {
