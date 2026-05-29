@@ -1802,8 +1802,42 @@ const secondDamData = [
   inglesData,
 ]
 
+const invalidOptionLabels = [
+  "respuesta parecida pero incorrecta",
+  "concepto de otra asignatura",
+  "opcion demasiado absoluta",
+  "opción demasiado absoluta",
+]
+
+function hasPlaceholderOption(options: string[]) {
+  return options.some((option) => invalidOptionLabels.includes(option.trim().toLowerCase()))
+}
+
+function mapNewQuestions(subject: (typeof secondDamData)[number]): Question[] {
+  return subject.preguntas
+    .filter((question) => !hasPlaceholderOption(question.opciones))
+    .map((question) => ({
+      id: question.id,
+      question: question.pregunta,
+      options: question.opciones,
+      correctAnswer: Math.max(question.opciones.indexOf(question.respuesta_correcta), 0),
+      explanation: question.explicacion,
+    }))
+}
+
+function mapOldQuestions(oldSubject: (typeof studyInfo.asignaturas)[number]): Question[] {
+  return oldSubject.preguntas_tipo_test.map((question, questionIndex) => ({
+    id: questionIndex + 1,
+    question: question.pregunta,
+    options: question.opciones,
+    correctAnswer: Math.max(question.opciones.indexOf(question.respuesta_correcta), 0),
+    explanation: question.explicacion,
+  }))
+}
+
 const secondDamSubjects: Subject[] = secondDamData.map((subject, index) => {
   const oldSubject = studyInfo.asignaturas[index]
+  const newQuestions = mapNewQuestions(subject)
 
   return {
     id: subject.slug,
@@ -1830,13 +1864,7 @@ const secondDamSubjects: Subject[] = secondDamData.map((subject, index) => {
         content: oldSubject.chuleta,
       },
     ],
-    questions: subject.preguntas.map((question) => ({
-      id: question.id,
-      question: question.pregunta,
-      options: question.opciones,
-      correctAnswer: Math.max(question.opciones.indexOf(question.respuesta_correcta), 0),
-      explanation: question.explicacion,
-    })),
+    questions: newQuestions.length > 0 ? newQuestions : mapOldQuestions(oldSubject),
   }
 })
 
